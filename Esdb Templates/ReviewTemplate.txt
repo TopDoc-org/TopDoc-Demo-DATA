@@ -1,0 +1,271 @@
+PUT _scripts/reviewTemplate
+{
+  "script": {
+    "lang": "mustache",
+    "source": """
+    {
+    "size": {{sizeValue}}, 
+     "from": {{fromValue}},
+     {{#boolSort}}
+     "sort":[
+       {"{{sortField}}":{"order":"{{sortOrder}}"}}
+    ],
+     {{/boolSort}}
+    "query": {
+    "bool": {     
+         "must": [
+        
+           {{#boolUserId}}
+          {
+          "term": {
+            "userId": {{userIdValue}}
+          }
+        }
+        {{/boolUserId}}
+        
+        {{#boolDoctorId}}
+        {{#boolDoctorIdComma}}, {{/boolDoctorIdComma}}
+        {
+          "term": {
+            "doctorId": {{doctorIdValue}}
+          }
+        }
+        {{/boolDoctorId}}
+          
+        
+      ]
+      
+    }
+  },
+   "aggs": {
+        "TotalAggs": {
+        "global": {},
+        "aggs": {
+            {{#avgReviewRatingAggregation}}
+            "avgReviewRatingAggs": {
+            "filter": {
+                 "bool": {     
+         "must": [
+        
+        {
+          "term": {
+            "doctorId": {{doctorIdValue}}
+          }
+        }
+        
+      ]
+      
+    }
+            }
+            ,
+            "aggs": {
+                "avgReviewRatingAggs": {
+                "avg": {
+                    "field": "reviewRating"
+                }
+                }
+            }
+            }
+            {{/avgReviewRatingAggregation}}
+            
+            {{#avgAccurateDiagnosisRatingAggregation}}
+            {{#avgAccurateDiagnosisRatingAggregationComma}},{{/avgAccurateDiagnosisRatingAggregationComma}}
+            "avgAccurateDiagnosisRatingAggs": {
+            "filter": {
+                 "bool": {     
+         "must": [
+        
+        {
+          "term": {
+            "doctorId": {{doctorIdValue}}
+          }
+        }
+        
+      ]
+      
+    }
+            }
+            ,
+            "aggs": {
+                "avgAccurateDiagnosisRatingAggs": {
+                "avg": {
+                    "field": "accurateDiagnosisRating"
+                }
+                }
+            }
+            }
+            {{/avgAccurateDiagnosisRatingAggregation}}
+            
+            {{#avgFriendlinessAndWaitTimeRatingAggregation}}
+            {{#avgFriendlinessAndWaitTimeRatingAggregationComma}},{{/avgFriendlinessAndWaitTimeRatingAggregationComma}}
+            "avgFriendlinessAndWaitTimeRatingAggs": {
+            "filter": {
+                 "bool": {     
+         "must": [
+        
+        {
+          "term": {
+            "doctorId": {{doctorIdValue}}
+          }
+        }
+        
+      ]
+      
+    }
+            }
+            ,
+            "aggs": {
+                "avgFriendlinessAndWaitTimeRatingAggs": {
+                "avg": {
+                    "field": "friendlinessAndWaitTimeRating"
+                }
+                }
+            }
+            }
+            {{/avgFriendlinessAndWaitTimeRatingAggregation}}
+            
+            {{#avgBedsideMannerismRatingAggregation}}
+            {{#avgBedsideMannerismRatingAggregationComma}},{{/avgBedsideMannerismRatingAggregationComma}}
+            "avgBedsideMannerismRatingAggs": {
+            "filter": {
+                 "bool": {     
+         "must": [
+        
+        {
+          "term": {
+            "doctorId": {{doctorIdValue}}
+          }
+        }
+        
+      ]
+      
+    }
+            }
+            ,
+            "aggs": {
+                "avgBedsideMannerismRatingAggs": {
+                "avg": {
+                    "field": "bedsideMannerismRating"
+                }
+                }
+            }
+            }
+            {{/avgBedsideMannerismRatingAggregation}}
+            
+            {{#avgStaffCourteousnessRatingAggregation}}
+            {{#avgStaffCourteousnessRatingAggregationComma}},{{/avgStaffCourteousnessRatingAggregationComma}}
+            "avgStaffCourteousnessRatingAggs": {
+            "filter": {
+                 "bool": {     
+         "must": [
+        
+        {
+          "term": {
+            "doctorId": {{doctorIdValue}}
+          }
+        }
+        
+      ]
+      
+    }
+            }
+            ,
+            "aggs": {
+                "avgStaffCourteousnessRatingAggs": {
+                "avg": {
+                    "field": "staffCourteousnessRating"
+                }
+                }
+            }
+            }
+            {{/avgStaffCourteousnessRatingAggregation}}
+            
+            {{#avgPatientEducationRatingAggregation}}
+            {{#avgPatientEducationRatingAggregationComma}},{{/avgPatientEducationRatingAggregationComma}}
+            "avgPatientEducationRatingAggs": {
+            "filter": {
+                 "bool": {     
+         "must": [
+        
+        {
+          "term": {
+            "doctorId": {{doctorIdValue}}
+          }
+        }
+        
+      ]
+      
+    }
+            }
+            ,
+            "aggs": {
+                "avgPatientEducationRatingAggs": {
+                "avg": {
+                    "field": "patientEducationRating"
+                }
+                }
+            }
+            }
+            {{/avgPatientEducationRatingAggregation}}
+
+             {{#rangeReviewRatingAggregation}}
+            {{#rangeReviewRatingAggregationComma}},{{/rangeReviewRatingAggregationComma}}
+            "rangeReviewRatingAggs": {
+            "filter": {
+                "bool": {     
+         "must": [
+        {
+        
+          "term": {
+            "doctorId": {{doctorIdValue}}
+          }
+        
+        }
+      ]
+      
+    }
+            }
+            ,
+            "aggs": {
+                "rangeReviewRatingAggs": {
+               "range": {
+                "field": "reviewRating",
+                "ranges": [
+                    {
+                    "key": "5 Star", 
+                    "from": "4.1",
+                    "to": "5.1"
+                    },
+                    {
+                    "key": "4 Star", 
+                    "from": "3.1",
+                    "to": "4.1"
+                    },
+                    {
+                    "key": "3 Star", 
+                    "from": "2.1",
+                    "to": "3.1"
+                    },
+                    {
+                    "key": "2 Star", 
+                    "from": "1.1",
+                    "to": "2.1"
+                    },
+                    {
+                    "key": "1 Star", 
+                    "from": "0",
+                    "to": "1.1"
+                    }
+                ]
+                }
+                }
+            }
+            }
+            {{/rangeReviewRatingAggregation}}
+      
+        }
+        }
+    }
+} """
+  }
+}

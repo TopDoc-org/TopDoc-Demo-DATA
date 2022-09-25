@@ -1,0 +1,314 @@
+PUT review_v1/_doc/1
+{
+  "reviewRating": 2.6,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20221021T115513+0000",
+  "userId": 1,
+  "doctorId": 1,
+  "userName": "Jaadu",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20221021T115513+0000",
+  "userScheduleId": 12345,
+  "accurateDiagnosisRating": 4,
+  "friendlinessAndWaitTimeRating": 2,
+  "bedsideMannerismRating": 3,
+  "staffCourteousnessRating": 5,
+  "patientEducationRating": 1
+}
+
+PUT review_v1/_doc/2
+{
+  "reviewRating": 1.6,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20180513T123456+0000",
+  "userId": 2,
+  "doctorId": 1,
+  "userName": "nitish",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20180513T123456+0000",
+  "userScheduleId": 12345,
+  "accurateDiagnosisRating": 1,
+  "friendlinessAndWaitTimeRating": 2,
+  "bedsideMannerismRating": 3,
+  "staffCourteousnessRating": 5,
+  "patientEducationRating": 4
+}
+
+PUT review_v1/_doc/3
+{
+  "reviewRating": 4.6,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20221021T115513+0000",
+  "userId": 3,
+  "doctorId": 1,
+  "userName": "sai",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20221021T115513+0000",
+  "userScheduleId": 12348,
+  "accurateDiagnosisRating": 2,
+  "friendlinessAndWaitTimeRating": 3,
+  "bedsideMannerismRating": 4,
+  "staffCourteousnessRating": 5,
+  "patientEducationRating": 1
+}
+PUT review_v1/_doc/4
+{
+  "reviewRating": 2.5,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20221021T115513+0000",
+  "userId": 4,
+  "doctorId": 1,
+  "userName": "raj",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20221021T115513+0000",
+  "userScheduleId": 12345,
+  "accurateDiagnosisRating": 3,
+  "friendlinessAndWaitTimeRating": 4,
+  "bedsideMannerismRating": 5,
+  "staffCourteousnessRating": 1,
+  "patientEducationRating": 2
+}
+PUT review_v1/_doc/5
+{
+  "reviewRating": 4,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20221021T115513+0000",
+  "userId": 5,
+  "doctorId": 1,
+  "userName": "akash",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20221021T115513+0000",
+  "userScheduleId": 45655,
+  "accurateDiagnosisRating": 4,
+  "friendlinessAndWaitTimeRating": 5,
+  "bedsideMannerismRating": 1,
+  "staffCourteousnessRating": 2,
+  "patientEducationRating": 3
+}
+PUT review_v1/_doc/6
+{
+  "reviewRating": 1,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20221021T115513+0000",
+  "userId": 6,
+  "doctorId": 1,
+  "userName": "sam",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20221021T115513+0000",
+  "userScheduleId": 123445,
+  "accurateDiagnosisRating": 5,
+  "friendlinessAndWaitTimeRating": 1,
+  "bedsideMannerismRating": 2,
+  "staffCourteousnessRating": 3,
+  "patientEducationRating": 4
+}
+
+PUT review_v1/_doc/7
+{
+  "reviewRating": 2.6,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20221021T115513+0000",
+  "userId": 1,
+  "doctorId": 2,
+  "userName": "Jaadu",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20221021T115513+0000",
+  "userScheduleId": 12345,
+  "accurateDiagnosisRating": 1,
+  "friendlinessAndWaitTimeRating": 2,
+  "bedsideMannerismRating": 3,
+  "staffCourteousnessRating": 5,
+  "patientEducationRating": 4
+}
+
+PUT review_v1/_doc/8
+{
+  "reviewRating": 1.6,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20221021T115513+0000",
+  "userId": 2,
+  "doctorId": 2,
+  "userName": "nitish",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20221021T115513+0000",
+  "userScheduleId": 12345,
+  "accurateDiagnosisRating": 2,
+  "friendlinessAndWaitTimeRating": 3,
+  "bedsideMannerismRating": 4,
+  "staffCourteousnessRating": 5,
+  "patientEducationRating": 1
+}
+
+PUT review_v1/_doc/9
+{
+  "reviewRating": 4.6,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20221021T115513+0000",
+  "userId": 3,
+  "doctorId": 2,
+  "userName": "sai",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20221021T115513+0000",
+  "userScheduleId": 12348,
+  "accurateDiagnosisRating": 3,
+  "friendlinessAndWaitTimeRating": 4,
+  "bedsideMannerismRating": 5,
+  "staffCourteousnessRating": 1,
+  "patientEducationRating": 2
+}
+PUT review_v1/_doc/10
+{
+  "reviewRating": 2.5,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20221021T115513+0000",
+  "userId": 4,
+  "doctorId": 2,
+  "userName": "raj",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20221021T115513+0000",
+  "userScheduleId": 12345,
+  "accurateDiagnosisRating": 4,
+  "friendlinessAndWaitTimeRating": 5,
+  "bedsideMannerismRating": 1,
+  "staffCourteousnessRating": 2,
+  "patientEducationRating": 3
+}
+PUT review_v1/_doc/11
+{
+  "reviewRating": 4,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20221021T115513+0000",
+  "userId": 5,
+  "doctorId": 2,
+  "userName": "akash",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20221021T115513+0000",
+  "userScheduleId": 45655,
+  "accurateDiagnosisRating": 5,
+  "friendlinessAndWaitTimeRating": 1,
+  "bedsideMannerismRating": 2,
+  "staffCourteousnessRating": 3,
+  "patientEducationRating": 4
+}
+PUT review_v1/_doc/12
+{
+  "reviewRating": 1,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20221021T115513+0000",
+  "userId": 6,
+  "doctorId": 2,
+  "userName": "sam",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20221021T115513+0000",
+  "userScheduleId": 123445,
+  "accurateDiagnosisRating": 1,
+  "friendlinessAndWaitTimeRating": 2,
+  "bedsideMannerismRating": 3,
+  "staffCourteousnessRating": 5,
+  "patientEducationRating": 4
+}
+
+PUT review_v1/_doc/13
+{
+  "reviewRating": 2.6,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20221021T115513+0000",
+  "userId": 1,
+  "doctorId": 3,
+  "userName": "Jaadu",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20221021T115513+0000",
+  "userScheduleId": 12345,
+  "accurateDiagnosisRating": 2,
+  "friendlinessAndWaitTimeRating": 3,
+  "bedsideMannerismRating": 4,
+  "staffCourteousnessRating": 5,
+  "patientEducationRating": 1
+}
+
+PUT review_v1/_doc/14
+{
+  "reviewRating": 1.6,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20221021T115513+0000",
+  "userId": 2,
+  "doctorId": 3,
+  "userName": "nitish",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20221021T115513+0000",
+  "userScheduleId": 12345,
+  "accurateDiagnosisRating": 3,
+  "friendlinessAndWaitTimeRating": 4,
+  "bedsideMannerismRating": 5,
+  "staffCourteousnessRating": 1,
+  "patientEducationRating": 2
+}
+
+PUT review_v1/_doc/15
+{
+  "reviewRating": 4.6,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20221021T115513+0000",
+  "userId": 3,
+  "doctorId": 3,
+  "userName": "sai",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20221021T115513+0000",
+  "userScheduleId": 12348,
+  "accurateDiagnosisRating": 4,
+  "friendlinessAndWaitTimeRating": 5,
+  "bedsideMannerismRating": 1,
+  "staffCourteousnessRating": 2,
+  "patientEducationRating": 3
+}
+PUT review_v1/_doc/16
+{
+  "reviewRating": 2.5,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20221021T115513+0000",
+  "userId": 4,
+  "doctorId": 3,
+  "userName": "raj",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20221021T115513+0000",
+  "userScheduleId": 12345,
+  "accurateDiagnosisRating": 5,
+  "friendlinessAndWaitTimeRating": 1,
+  "bedsideMannerismRating": 2,
+  "staffCourteousnessRating": 3,
+  "patientEducationRating": 4
+}
+PUT review_v1/_doc/17
+{
+  "reviewRating": 4,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20221021T115513+0000",
+  "userId": 5,
+  "doctorId": 3,
+  "userName": "akash",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20221021T115513+0000",
+  "userScheduleId": 45655,
+  "accurateDiagnosisRating": 1,
+  "friendlinessAndWaitTimeRating": 2,
+  "bedsideMannerismRating": 3,
+  "staffCourteousnessRating": 5,
+  "patientEducationRating": 4
+}
+PUT review_v1/_doc/18
+{
+  "reviewRating": 1,
+  "reviewMessage": "you the best doctor in my locality.",
+  "reviewDate": "20221021T115513+0000",
+  "userId": 6,
+  "doctorId": 3,
+  "userName": "sam",
+  "isVerifiedUser": true,
+  "reviewlastEditedOn": "20221021T115513+0000",
+  "userScheduleId": 123445,
+  "accurateDiagnosisRating": 2,
+  "friendlinessAndWaitTimeRating": 3,
+  "bedsideMannerismRating": 4,
+  "staffCourteousnessRating": 5,
+  "patientEducationRating": 1
+}

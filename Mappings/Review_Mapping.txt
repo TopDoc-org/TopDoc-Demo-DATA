@@ -1,0 +1,60 @@
+PUT review_v1
+{
+  "aliases": {
+    "review": {}
+  },
+    "mappings": {
+        "properties": {
+              "reviewRating": {
+                "type": "double"
+            },
+            "reviewMessage": {
+                "type": "text"
+            },
+            "reviewDate" : {
+            "type" : "date",
+            "format" : "basic_date_time_no_millis"
+            },
+            "userId" : {
+            "type" : "keyword"
+            },
+            "userName" : {
+            "type" : "text",
+            "fields" : {
+                "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+                }
+            }
+            },
+            "isVerifiedUser": {
+                "type": "boolean"
+            },
+             "doctorId": {
+                "type": "keyword"
+            },
+            "reviewlastEditedOn" : {
+            "type" : "date",
+            "format" : "basic_date_time_no_millis"
+            },
+             "userScheduleId": {
+                "type": "keyword"
+            },
+            "accurateDiagnosisRating": {
+                "type": "double"
+            },
+            "friendlinessAndWaitTimeRating": {
+                "type": "double"
+            },
+            "bedsideMannerismRating": {
+                "type": "double"
+            },
+            "staffCourteousnessRating": {
+                "type": "double"
+            },
+            "patientEducationRating": {
+                "type": "double"
+            }
+        }
+    }
+}

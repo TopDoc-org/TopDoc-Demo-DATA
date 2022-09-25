@@ -1,0 +1,1153 @@
+PUT doctor_v1/_doc/1
+{
+  "address": "MasterCanteen,unit-3,Odisha,756401",
+  "ailmentsTreated": [
+    "Cancer",
+    "Skin Disease",
+    "Chemo"
+  ],
+  "averageRating": "4.65",
+  "city": "Bhubaneswar",
+  "country": "India",
+  "id" : 1,
+  "designation": "Neurosurgeon",
+  "education": [
+    {
+      "degree": "MCh",
+      "description": "MCH is short for mean corpuscular hemoglobin",
+      "endDate": "1997",
+      "fieldOfStudy": "Neuro Surgery",
+      "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "startDate": "1995"
+    },
+    {
+      "degree": "MBBS",
+      "description": "Bachelor of Medicine Bachelor of Surgery",
+      "endDate": "1994",
+      "fieldOfStudy": "Neuro Surgery",
+      "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "startDate": "1989"
+    }
+  ],
+  "email": "harshBhargav@gmail.com",
+  "experience": [
+    {
+      "organisation": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "description": " Optimized the whole medical infrastructure",
+      "endDate": null,
+      "location": "Bangalore",
+      "startDate": "2000",
+      "title": "HOD and Professor of Neurosurgery Dept"
+    },
+    {
+      "organisation": "Srirama Chandra Bhanja Medical College and Hospital",
+      "description": "Handled thousand sof patients",
+      "endDate": "2000",
+      "location": "Cuttack",
+      "startDate": "1996",
+      "title": "HOD and Professor of Neurosurgery Dept"
+    }
+  ],
+  "firstName": "Harsh",
+  "gender": "male",
+  "hospital": {
+    "identifier": "54321",
+    "name": "Srirama Chandra Bhanja Medical College and Hospital"
+  },
+  "isPersonAllowed": "true",
+  "isVideoAllowed": "true",
+  "landmark": "Near JK Dance school",
+  "languages": ["English, Hindi, Oriya"],
+  "lastName": "Bhargav",
+  "licenses": [{
+    "identifier": "12345",
+    "name": "MBBS License",
+    "registrationYear": "15022022",
+    "validUpTo": "15022024",
+    "provider": "Delhi Medical Council"
+  }],
+  "locality": "Old town, Bhubaneswar",
+  "location": "41.12,-71.34",
+  "name": "Harsh Bhargav",
+  "phone": 6370020831,
+  "schedule": {
+      "monday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "tuesday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "wednesday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "thursday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "friday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "saturday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "sunday": {
+        "session1_start_time": "",
+        "session1_end_time": "",
+        "session2_start_time": "",
+        "session2_end_time": ""
+      }
+    } ,
+  "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
+  "reviewTags": [
+    {
+      "tagName": "tag1_doc1",
+      "description": "tag1 description here"
+    },
+    {
+      "tagName": "tag2_doc1",
+      "description": "tag2 description here"
+    }
+  ],
+  "noOfReviews": 77,
+  "consultations": 145,
+  "satisfiedPatients": 34,
+  "awardsAndPublications": [
+    {
+      "awardName": "award 1",
+      "place": "Jabalpur",
+      "date": "2022-07-22"
+    },
+    {
+      "awardName": "award 2",
+      "place": "Mysore",
+      "date": "2022-01-17"
+    }
+  ],
+  "associatedClinics": [
+    {
+      "clinicName": "hello verify",
+      "location": "Hyderabad",
+       "clinicRating":4.5,
+      "fees": 999,
+      "tagReceived": [
+        "tag1",
+        "tag2"
+      ],
+      "schedule": [{
+        "from": "Monday",
+        "to": "Saturday",
+        "duration": "10:26am - 02:30pm"
+      }]
+    }
+  ],
+  "specialization": [
+    "Neurosurgeon",
+    "gyno"
+  ],
+  "state": "Odisha",
+  "yearsOfExperience": "24"
+}
+
+PUT doctor_v1/_doc/2
+{
+  "address": "Veerana Palya, Outer Ring Road, Landmark : Near Manyata Tech Park, Bangalore",
+  "ailmentsTreated": [
+    "Cancer",
+    "Skin Disease",
+    "Chemo"
+  ],
+  "averageRating": "4.65",
+   "id" : 2,
+  "city": "Bengaluru",
+  "country": "India",
+  "designation": "Neurosurgeon",
+  "education": [
+    {
+      "degree": "MCh",
+      "description": "MCH is short for mean corpuscular hemoglobin",
+      "endDate": "1997",
+      "fieldOfStudy": "Neuro Surgery",
+      "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "startDate": "1995"
+    },
+    {
+      "degree": "MBBS",
+      "description": "Bachelor of Medicine Bachelor of Surgery",
+      "endDate": "1994",
+      "fieldOfStudy": "Neuro Surgery",
+      "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "startDate": "1989"
+    }
+  ],
+  "email": "ayushkataria@gmail.com",
+  "experience": [
+    {
+      "organisation": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "description": " Optimized the whole medical infrastructure",
+      "endDate": null,
+      "location": "Bangalore",
+      "startDate": "2000",
+      "title": "HOD and Professor of Neurosurgery Dept"
+    },
+    {
+      "organisation": "Srirama Chandra Bhanja Medical College and Hospital",
+      "description": "Handled thousand sof patients",
+      "endDate": "2000",
+      "location": "Cuttack",
+      "startDate": "1996",
+      "title": "HOD and Professor of Neurosurgery Dept"
+    }
+  ],
+  "firstName": "Harsh",
+  "gender": "male",
+  "hospital": {
+    "identifier": "64321",
+    "name": "Srirama Chandra Bhanja Medical College and Hospital"
+  },
+  "isPersonAllowed": "true",
+  "isVideoAllowed": "true",
+  "landmark": "Near JK Dance school",
+  "languages": ["English, Hindi, Oriya"],
+  "lastName": "Kataria",
+  "licenses":[ {
+    "identifier": "82345",
+    "name": "MBBS License",
+    "registrationYear": "15022022",
+    "validUpTo": "15022024",
+    "provider": "Delhi Medical Council"
+  }],
+  "locality": "Old town, Bengaluru",
+  "location": "41.12,-71.34",
+  "name": "Ayush kataria",
+  "phone": 6370020831,
+ "schedule": {
+      "monday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "tuesday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "wednesday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "thursday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "friday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "saturday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "sunday": {
+        "session1_start_time": "",
+        "session1_end_time": "",
+        "session2_start_time": "",
+        "session2_end_time": ""
+      }
+    } ,
+ "profImageUrl": "https://images.theconversation.com/files/304957/original/file-20191203-66986-im7o5.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop",
+  "reviewTags" : [
+{
+"tagName" : "tag1_doc2",
+"description" : "tag1 description here"
+},
+{
+"tagName" : "tag2_doc2",
+"description" : "tag2 description here"
+}
+],
+"noOfReviews" : 5,
+"consultations" : 55,
+"satisfiedPatients" : 9,
+"awardsAndPublications" :[
+{
+"awardName" : "award 1_doc2",
+"place" : "chennai",
+"date" : "2022-09-11"
+},
+{
+"awardName" : "award 2_doc2",
+"place" : "Banglore",
+"date" : "2022-12-09"
+}
+],
+"associatedClinics" : [
+{
+"clinicName" : "Health Kart" ,
+"location" : "Pune",
+"fees" : 1111 ,
+"tagReceived" : ["tag1_doc2","tag2_doc2"],
+"schedule": [{
+        "from": "Monday",
+        "to": "Saturday",
+        "duration": "10:26am - 02:30pm"
+      }]
+}
+],
+  "specialization": ["Neurosurgeon","gyno"],
+  "state": "Karnataka",
+  "yearsOfExperience": "24"
+}
+
+PUT doctor_v1/_doc/3
+{
+  "address": "MasterCanteen,unit-3,Odisha,756401",
+  "ailmentsTreated": [
+    "Tooth cleaning",
+    "tooth repairing"
+  ],
+  "averageRating": "4.65",
+  "city": "Bhubaneswar",
+   "id" : 3,
+  "country": "India",
+  "designation": "Neurosurgeon",
+  "education": [
+    {
+      "degree": "MCh",
+      "description": "MCH is short for mean corpuscular hemoglobin",
+      "endDate": "1997",
+      "fieldOfStudy": "Neuro Surgery",
+      "grade": "A",
+      "school": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "startDate": "1995"
+    },
+    {
+      "degree": "MBBS",
+      "description": "Bachelor of Medicine Bachelor of Surgery",
+      "endDate": "1994",
+      "fieldOfStudy": "Neuro Surgery",
+      "grade": "A",
+      "school": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "startDate": "1989"
+    }
+  ],
+  "email": "nitishkumar@gmail.com",
+  "experience": [
+    {
+      "organisation": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "description": " Optimized the whole medical infrastructure",
+      "endDate": null,
+      "location": "Bangalore",
+      "startDate": "2000",
+      "title": "HOD and Professor of Neurosurgery Dept"
+    },
+    {
+      "organisation": "Srirama Chandra Bhanja Medical College and Hospital",
+      "description": "Handled thousand sof patients",
+      "endDate": "2000",
+      "location": "Cuttack",
+      "startDate": "1996",
+      "title": "HOD and Professor of Neurosurgery Dept"
+    }
+  ],
+  "firstName": "Nitish",
+  "gender": "male",
+  "hospital": {
+    "identifier": "74321",
+    "name": "Srirama Chandra Bhanja Medical College and Hospital"
+  },
+  "isPersonAllowed": "true",
+  "isVideoAllowed": "true",
+  "landmark": "Near JK Dance school",
+  "languages": ["English, Hindi, Oriya"],
+  "lastName": "Kataria",
+  "licenses": [{
+    "identifier": "42345",
+    "name": "MBBS License",
+    "registrationYear": "15022022",
+    "validUpTo": "15022024",
+    "provider": "Delhi Medical Council"
+  }],
+  "locality": "Old town, Bhubaneswar",
+  "location": "41.12,-71.34",
+  "name": "Nitish kumar",
+  "phone": 6370020831,
+  "schedule": {
+      "monday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "tuesday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "wednesday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "thursday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "friday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "saturday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "sunday": {
+        "session1_start_time": "",
+        "session1_end_time": "",
+        "session2_start_time": "",
+        "session2_end_time": ""
+      }
+    } ,
+    "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
+  "reviewTags": [
+    {
+      "tagName": "tag1_doc1",
+      "description": "tag1 description here"
+    },
+    {
+      "tagName": "tag2_doc1",
+      "description": "tag2 description here"
+    }
+  ],
+  "noOfReviews": 77,
+  "consultations": 145,
+  "satisfiedPatients": 34,
+  "awardsAndPublications": [
+    {
+      "awardName": "award 1",
+      "place": "Jabalpur",
+      "date": "2022-07-22"
+    },
+    {
+      "awardName": "award 2",
+      "place": "Mysore",
+      "date": "2022-01-17"
+    }
+  ],
+  "associatedClinics": [
+    {
+      "clinicName": "hello verify",
+      "location": "Hyderabad",
+      "fees": 999,
+      "tagReceived": [
+        "tag1",
+        "tag2"
+      ],
+      "schedule": [{
+        "from": "Monday",
+        "to": "Saturday",
+        "duration": "10:26am - 02:30pm"
+      }]
+    }
+  ],
+  "specialization": ["Dentist"],
+  "state": "Odisha",
+  "yearsOfExperience": "24"
+}
+
+PUT doctor_v1/_doc/4
+{
+  "address": "Veerana Palya, Outer Ring Road, Landmark : Near Manyata Tech Park, Bangalore",
+  "ailmentsTreated": [
+    "Cancer",
+    "Skin Disease",
+    "Chemo"
+  ],
+  "averageRating": "4.65",
+  "city": "Bengaluru",
+   "id" : 4,
+  "country": "India",
+  "designation": "Neurosurgeon",
+  "education": [
+    {
+      "degree": "MCh",
+      "description": "MCH is short for mean corpuscular hemoglobin",
+      "endDate": "1997",
+      "fieldOfStudy": "Neuro Surgery",
+      "grade": "A",
+      "school": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "startDate": "1995"
+    },
+    {
+      "degree": "MBBS",
+      "description": "Bachelor of Medicine Bachelor of Surgery",
+      "endDate": "1994",
+      "fieldOfStudy": "Neuro Surgery",
+      "grade": "A",
+      "school": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "startDate": "1989"
+    }
+  ],
+  "email": "AkashGaikwad@gmail.com",
+  "experience": [
+    {
+      "organisation": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "description": " Optimized the whole medical infrastructure",
+      "endDate": null,
+      "location": "Bangalore",
+      "startDate": "2000",
+      "title": "HOD and Professor of Neurosurgery Dept"
+    },
+    {
+      "organisation": "Srirama Chandra Bhanja Medical College and Hospital",
+      "description": "Handled thousand sof patients",
+      "endDate": "2000",
+      "location": "Cuttack",
+      "startDate": "1996",
+      "title": "HOD and Professor of Neurosurgery Dept"
+    }
+  ],
+  "firstName": "Harsh",
+  "gender": "male",
+  "hospital": {
+    "identifier": "84321",
+    "name": "Srirama Chandra Bhanja Medical College and Hospital"
+  },
+  "isPersonAllowed": "true",
+  "isVideoAllowed": "true",
+  "landmark": "Near JK Dance school",
+  "languages": ["English, Hindi, Marathi"],
+  "lastName": "Gaikwad",
+  "licenses":[ {
+    "identifier": "22345",
+    "name": "MBBS License",
+    "registrationYear": "15022022",
+    "validUpTo": "15022024",
+    "provider": "Delhi Medical Council"
+  }],
+  "locality": "Old town, Bengaluru",
+  "location": "41.12,-71.34",
+  "name": "Akash gaikwad",
+  "phone": 6370020831,
+  "schedule": {
+      "monday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "tuesday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "wednesday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "thursday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "friday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "saturday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "sunday": {
+        "session1_start_time": "",
+        "session1_end_time": "",
+        "session2_start_time": "",
+        "session2_end_time": ""
+      }
+    } ,
+    "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
+  "reviewTags": [
+    {
+      "tagName": "tag1_doc1",
+      "description": "tag1 description here"
+    },
+    {
+      "tagName": "tag2_doc1",
+      "description": "tag2 description here"
+    }
+  ],
+  "noOfReviews": 77,
+  "consultations": 145,
+  "satisfiedPatients": 34,
+  "awardsAndPublications": [
+    {
+      "awardName": "award 1",
+      "place": "Jabalpur",
+      "date": "2022-07-22"
+    },
+    {
+      "awardName": "award 2",
+      "place": "Mysore",
+      "date": "2022-01-17"
+    }
+  ],
+  "associatedClinics": [
+    {
+      "clinicName": "hello verify",
+      "location": "Hyderabad",
+      "fees": 999,
+      "tagReceived": [
+        "tag1",
+        "tag2"
+      ],
+      "schedule": [{
+        "from": "Monday",
+        "to": "Saturday",
+        "duration": "10:26am - 02:30pm"
+      }]
+    }
+  ],
+  "specialization": ["Neurosurgeon"],
+  "state": "Karnataka",
+  "yearsOfExperience": "24"
+}
+
+PUT doctor_v1/_doc/5
+{
+  "address": "MasterCanteen,unit-3,Odisha,756401",
+  "ailmentsTreated": [
+    "Cancer",
+    "Skin Disease",
+    "Chemo"
+  ],
+  "averageRating": "4.65",
+  "city": "Delhi",
+  "country": "India",
+   "id" : 5,
+  "designation": "Neurosurgeon",
+  "education": [
+    {
+      "degree": "MCh",
+      "description": "MCH is short for mean corpuscular hemoglobin",
+      "endDate": "1997",
+      "fieldOfStudy": "Neuro Surgery",
+      "grade": "A",
+      "school": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "startDate": "1995"
+    },
+    {
+      "degree": "MBBS",
+      "description": "Bachelor of Medicine Bachelor of Surgery",
+      "endDate": "1994",
+      "fieldOfStudy": "Neuro Surgery",
+      "grade": "A",
+      "school": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "startDate": "1989"
+    }
+  ],
+  "email": "harshAggarwal@gmail.com",
+  "experience": [
+    {
+      "organisation": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "description": " Optimized the whole medical infrastructure",
+      "endDate": null,
+      "location": "Bangalore",
+      "startDate": "2000",
+      "title": "HOD and Professor of Neurosurgery Dept"
+    },
+    {
+      "organisation": "Srirama Chandra Bhanja Medical College and Hospital",
+      "description": "Handled thousand sof patients",
+      "endDate": "2000",
+      "location": "Cuttack",
+      "startDate": "1996",
+      "title": "HOD and Professor of Neurosurgery Dept"
+    }
+  ],
+  "firstName": "Harsh",
+  "gender": "male",
+  "hospital": {
+    "identifier": "54321",
+    "name": "Srirama Chandra Bhanja Medical College and Hospital"
+  },
+  "isPersonAllowed": "true",
+  "isVideoAllowed": "true",
+  "landmark": "Near JK Dance school",
+  "languages": ["English, Hindi, Oriya"],
+  "lastName": "Aggarwal",
+  "licenses": [{
+    "identifier": "12345",
+    "name": "MBBS License",
+    "registrationYear": "15022022",
+    "validUpTo": "15022024",
+    "provider": "Delhi Medical Council"
+  }],
+  "locality": "Old town, Bhubaneswar",
+  "location": "41.12,-71.34",
+  "name": "Harsh Aggarwal",
+  "phone": 6370020831,
+  "schedule": {
+      "monday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "tuesday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "wednesday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "thursday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "friday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "saturday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "sunday": {
+        "session1_start_time": "",
+        "session1_end_time": "",
+        "session2_start_time": "",
+        "session2_end_time": ""
+      }
+    } ,
+    "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
+  "reviewTags": [
+    {
+      "tagName": "tag1_doc1",
+      "description": "tag1 description here"
+    },
+    {
+      "tagName": "tag2_doc1",
+      "description": "tag2 description here"
+    }
+  ],
+  "noOfReviews": 77,
+  "consultations": 145,
+  "satisfiedPatients": 34,
+  "awardsAndPublications": [
+    {
+      "awardName": "award 1",
+      "place": "Jabalpur",
+      "date": "2022-07-22"
+    },
+    {
+      "awardName": "award 2",
+      "place": "Mysore",
+      "date": "2022-01-17"
+    }
+  ],
+  "associatedClinics": [
+    {
+      "clinicName": "hello verify",
+      "location": "Hyderabad",
+      "fees": 999,
+      "tagReceived": [
+        "tag1",
+        "tag2"
+      ],
+      "schedule": [{
+        "from": "Monday",
+        "to": "Saturday",
+        "duration": "10:26am - 02:30pm"
+      }]
+    }
+  ],
+  "specialization": ["Neurosurgeon"],
+  "state": "Odisha",
+  "yearsOfExperience": "24"
+}
+
+PUT doctor_v1/_doc/6
+{
+  "address": "MasterCanteen,unit-3,Odisha,756401",
+  "ailmentsTreated": [
+    "Cancer",
+    "Skin Disease",
+    "Chemo"
+  ],
+  "averageRating": "4.65",
+  "city": "Bhubaneswar",
+   "id" : 6,
+  "country": "India",
+  "designation": "Neurosurgeon",
+  "education": [
+    {
+      "degree": "MCh",
+      "description": "MCH is short for mean corpuscular hemoglobin",
+      "endDate": "1997",
+      "fieldOfStudy": "Neuro Surgery",
+      "grade": "A",
+      "school": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "startDate": "1995"
+    },
+    {
+      "degree": "MBBS",
+      "description": "Bachelor of Medicine Bachelor of Surgery",
+      "endDate": "1994",
+      "fieldOfStudy": "Neuro Surgery",
+      "grade": "A",
+      "school": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "startDate": "1989"
+    }
+  ],
+  "email": "harshBhargav@gmail.com",
+  "experience": [
+    {
+      "organisation": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "description": " Optimized the whole medical infrastructure",
+      "endDate": null,
+      "location": "Bangalore",
+      "startDate": "2000",
+      "title": "HOD and Professor of Neurosurgery Dept"
+    },
+    {
+      "organisation": "Srirama Chandra Bhanja Medical College and Hospital",
+      "description": "Handled thousand sof patients",
+      "endDate": "2000",
+      "location": "Cuttack",
+      "startDate": "1996",
+      "title": "HOD and Professor of Neurosurgery Dept"
+    }
+  ],
+  "firstName": "Harsh Kumar",
+  "gender": "male",
+  "hospital": {
+    "properties": {
+      "identifier": "54321",
+      "name": "Srirama Chandra Bhanja Medical College and Hospital"
+    }
+  },
+  "isPersonAllowed": "true",
+  "isVideoAllowed": "true",
+  "landmark": "Near JK Dance school",
+  "languages": ["English, Hindi, Oriya"],
+  "lastName": "Bhargav",
+  "licenses": [{
+    "identifier": "12345",
+    "name": "MBBS License",
+    "registrationYear": "15022022",
+    "validUpTo": "15022024",
+    "provider": "Delhi Medical Council"
+  }],
+  "locality": "Old town, Bhubaneswar",
+  "location": "41.12,-71.34",
+  "name": "Harsh Kumar Bhargav",
+  "phone": 6370020831,
+  "schedule": {
+      "monday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "tuesday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "wednesday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "thursday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "friday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "saturday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "sunday": {
+        "session1_start_time": "",
+        "session1_end_time": "",
+        "session2_start_time": "",
+        "session2_end_time": ""
+      }
+    } ,
+    "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
+  "reviewTags": [
+    {
+      "tagName": "tag1_doc1",
+      "description": "tag1 description here"
+    },
+    {
+      "tagName": "tag2_doc1",
+      "description": "tag2 description here"
+    }
+  ],
+  "noOfReviews": 77,
+  "consultations": 145,
+  "satisfiedPatients": 34,
+  "awardsAndPublications": [
+    {
+      "awardName": "award 1",
+      "place": "Jabalpur",
+      "date": "2022-07-22"
+    },
+    {
+      "awardName": "award 2",
+      "place": "Mysore",
+      "date": "2022-01-17"
+    }
+  ],
+  "associatedClinics": [
+    {
+      "clinicName": "hello verify",
+      "location": "Hyderabad",
+      "fees": 999,
+      "tagReceived": [
+        "tag1",
+        "tag2"
+      ],
+      "schedule": [{
+        "from": "Monday",
+        "to": "Saturday",
+        "duration": "10:26am - 02:30pm"
+      }]
+    }
+  ],
+  "specialization": ["Neurosurgeon"],
+  "state": "Odisha",
+  "yearsOfExperience": "24"
+}
+
+
+PUT doctor_v1/_doc/7
+{
+  "address": "MasterCanteen,unit-3,Odisha,756401",
+  "ailmentsTreated": [
+    "Cancer",
+    "Skin Disease",
+    "Chemo"
+  ],
+  "averageRating": "4.65",
+  "city": "Bhubaneswar",
+   "id" : 7,
+  "country": "India",
+  "designation": "Neurosurgeon",
+  "education": [
+    {
+      "degree": "MCh",
+      "description": "MCH is short for mean corpuscular hemoglobin",
+      "endDate": "1997",
+      "fieldOfStudy": "Neuro Surgery",
+      "grade": "A",
+      "school": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "startDate": "1995"
+    },
+    {
+      "degree": "MBBS",
+      "description": "Bachelor of Medicine Bachelor of Surgery",
+      "endDate": "1994",
+      "fieldOfStudy": "Neuro Surgery",
+      "grade": "A",
+      "school": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "startDate": "1989"
+    }
+  ],
+  "email": "harshBhargav@gmail.com",
+  "experience": [
+    {
+      "organisation": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+      "description": " Optimized the whole medical infrastructure",
+      "endDate": null,
+      "location": "Bangalore",
+      "startDate": "2000",
+      "title": "HOD and Professor of Neurosurgery Dept"
+    },
+    {
+      "organisation": "Srirama Chandra Bhanja Medical College and Hospital",
+      "description": "Handled thousand sof patients",
+      "endDate": "2000",
+      "location": "Cuttack",
+      "startDate": "1996",
+      "title": "HOD and Professor of Neurosurgery Dept"
+    }
+  ],
+  "firstName": "Harsh",
+  "gender": "male",
+  "hospital": {
+    "identifier": "54321",
+    "name": "Srirama Chandra Bhanja Medical College and Hospital"
+  },
+  "isPersonAllowed": "true",
+  "isVideoAllowed": "true",
+  "landmark": "Near JK Dance school",
+  "languages": ["English", "Hindi", "Oriya"],
+  "lastName": "Bhargav",
+  "licenses":[ {
+    "identifier": "12345",
+    "name": "MBBS License",
+    "registrationYear": "15022022",
+    "validUpTo": "15022024",
+    "provider": "Delhi Medical Council"
+  }],
+  "locality": "Old town, Bhubaneswar",
+  "location": "41.12,-71.34",
+  "name": "Harsh Bhargav",
+  "phone": 6370020831,
+  "schedule": {
+      "monday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "tuesday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "wednesday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "thursday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "friday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "saturday": {
+        "session1_start_time": "09:30",
+        "session1_end_time": "13:00",
+        "session2_start_time": "17:00",
+        "session2_end_time": "20:30"
+      },
+      "sunday": {
+        "session1_start_time": "",
+        "session1_end_time": "",
+        "session2_start_time": "",
+        "session2_end_time": ""
+      }
+    } ,
+    "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
+  "reviewTags": [
+    {
+      "tagName": "tag1_doc1",
+      "description": "tag1 description here"
+    },
+    {
+      "tagName": "tag2_doc1",
+      "description": "tag2 description here"
+    }
+  ],
+  "noOfReviews": 77,
+  "consultations": 145,
+  "satisfiedPatients": 34,
+  "awardsAndPublications": [
+    {
+      "awardName": "award 1",
+      "place": "Jabalpur",
+      "date": "2022-07-22"
+    },
+    {
+      "awardName": "award 2",
+      "place": "Mysore",
+      "date": "2022-01-17"
+    }
+  ],
+  "associatedClinics": [
+    {
+      "clinicName": "hello verify",
+      "location": "Hyderabad",
+      "fees": 999,
+      "tagReceived": [
+        "tag1",
+        "tag2"
+      ],
+      "schedule": [{
+        "from": "Monday",
+        "to": "Saturday",
+        "duration": "10:26am - 02:30pm"
+      }]
+    }
+  ],
+  "specialization": ["Neurosurgeon"],
+  "state": "Odisha",
+  "yearsOfExperience": "24"
+}
