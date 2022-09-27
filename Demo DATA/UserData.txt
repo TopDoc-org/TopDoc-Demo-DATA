@@ -18,6 +18,7 @@ PUT user_v1/_doc/1
     "role": "Patient",
     "languages": ["English","hindi"],
     "blood_donor": true,
+    "favouriteDoctor":[{"id":"1","date":"11-07-1978"},{"id":"2","date":"11-07-1978"},{"id":"3","date":"11-07-1978"},{"id":"4","date":"11-07-1978"},{"id":"5","date":"11-07-1978"},{"id":"6","date":"11-07-1978"}],
     "medical_records": {
       "blood_group": "O+",
       "pre_existing_conditions": [
@@ -81,6 +82,7 @@ PUT user_v1/_doc/2
     "role": "Patient",
     "languages": ["English","hindi"],
     "blood_donor": true,
+    "favouriteDoctor":[{"id":"1","date":"11-07-1978"},{"id":"2","date":"11-07-1978"},{"id":"3","date":"11-07-1978"},{"id":"4","date":"11-07-1978"},{"id":"5","date":"11-07-1978"},{"id":"6","date":"11-07-1978"}],
     "medical_records": {
       "blood_group": "O+",
       "pre_existing_conditions": [
@@ -143,6 +145,7 @@ PUT user_v1/_doc/2
     "role": "Patient",
     "languages": ["English","hindi"],
     "blood_donor": true,
+    "favouriteDoctor":[{"id":"1","date":"11-07-1978"},{"id":"2","date":"11-07-1978"},{"id":"3","date":"11-07-1978"},{"id":"4","date":"11-07-1978"},{"id":"5","date":"11-07-1978"},{"id":"6","date":"11-07-1978"}],
     "medical_records": {
       "blood_group": "O+",
       "pre_existing_conditions": [
@@ -206,6 +209,7 @@ PUT user_v1/_doc/4
     "role": "Patient",
     "languages": ["English","hindi"],
     "blood_donor": true,
+    "favouriteDoctor":[{"id":"1","date":"11-07-1978"},{"id":"2","date":"11-07-1978"},{"id":"3","date":"11-07-1978"},{"id":"4","date":"11-07-1978"},{"id":"5","date":"11-07-1978"},{"id":"6","date":"11-07-1978"}],
     "medical_records": {
       "blood_group": "O+",
       "pre_existing_conditions": [
@@ -269,6 +273,7 @@ PUT user_v1/_doc/5
     "role": "Patient",
     "languages": ["English","hindi"],
     "blood_donor": true,
+    "favouriteDoctor":[{"id":"1","date":"11-07-1980"},{"id":"2","date":"11-07-1990"},{"id":"3","date":"11-07-1955"},{"id":"4","date":"11-07-1967"},{"id":"5","date":"11-07-1978"},{"id":"6","date":"11-07-1978"}],
     "medical_records": {
       "blood_group": "O+",
       "pre_existing_conditions": [
