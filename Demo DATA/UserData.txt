@@ -18,7 +18,7 @@ PUT user_v1/_doc/1
     "role": "Patient",
     "languages": ["English","hindi"],
     "blood_donor": true,
-    "favouriteDoctor":[{"doctorId":"1","date":"20221021T115513+0000"},{"doctorId":"2","date":"20211021T115513+00007"},{"doctorId":"3","date":"20201021T115513+0000"},{"doctorId":"4","date":"20191021T115513+0000"},{"doctorId":"5","date":"20181021T115513+0000"},{"doctorId":"6","date":"20171021T115513+0000"}],
+    "favouriteDoctor":[{"doctorId":"1","date":"20221021T115513+0000"},{"doctorId":"2","date":"20211021T115513+0000"},{"doctorId":"3","date":"20201021T115513+0000"},{"doctorId":"4","date":"20191021T115513+0000"},{"doctorId":"5","date":"20181021T115513+0000"},{"doctorId":"6","date":"20171021T115513+0000"}],
     "medical_records": {
       "blood_group": "O+",
       "pre_existing_conditions": [
@@ -82,7 +82,7 @@ PUT user_v1/_doc/2
     "role": "Patient",
     "languages": ["English","hindi"],
     "blood_donor": true,
-    "favouriteDoctor":[{"doctorId":"1","date":"20221021T115513+0000"},{"doctorId":"2","date":"20211021T115513+00007"},{"doctorId":"3","date":"20201021T115513+0000"},{"doctorId":"4","date":"20191021T115513+0000"},{"doctorId":"5","date":"20181021T115513+0000"},{"doctorId":"6","date":"20171021T115513+0000"}],
+    "favouriteDoctor":[{"doctorId":"1","date":"20221021T115513+0000"},{"doctorId":"2","date":"20211021T115513+0000"},{"doctorId":"3","date":"20201021T115513+0000"},{"doctorId":"4","date":"20191021T115513+0000"},{"doctorId":"5","date":"20181021T115513+0000"},{"doctorId":"6","date":"20171021T115513+0000"}],
     "medical_records": {
       "blood_group": "O+",
       "pre_existing_conditions": [
@@ -145,7 +145,7 @@ PUT user_v1/_doc/2
     "role": "Patient",
     "languages": ["English","hindi"],
     "blood_donor": true,
-    "favouriteDoctor":[{"doctorId":"1","date":"20221021T115513+0000"},{"doctorId":"2","date":"20211021T115513+00007"},{"doctorId":"3","date":"20201021T115513+0000"},{"doctorId":"4","date":"20191021T115513+0000"},{"doctorId":"5","date":"20181021T115513+0000"},{"doctorId":"6","date":"20171021T115513+0000"}],
+    "favouriteDoctor":[{"doctorId":"1","date":"20221021T115513+0000"},{"doctorId":"2","date":"20211021T115513+0000"},{"doctorId":"3","date":"20201021T115513+0000"},{"doctorId":"4","date":"20191021T115513+0000"},{"doctorId":"5","date":"20181021T115513+0000"},{"doctorId":"6","date":"20171021T115513+0000"}],
     "medical_records": {
       "blood_group": "O+",
       "pre_existing_conditions": [
@@ -209,7 +209,7 @@ PUT user_v1/_doc/4
     "role": "Patient",
     "languages": ["English","hindi"],
     "blood_donor": true,
-    "favouriteDoctor":[{"doctorId":"1","date":"20221021T115513+0000"},{"doctorId":"2","date":"20211021T115513+00007"},{"doctorId":"3","date":"20201021T115513+0000"},{"doctorId":"4","date":"20191021T115513+0000"},{"doctorId":"5","date":"20181021T115513+0000"},{"doctorId":"6","date":"20171021T115513+0000"}],
+    "favouriteDoctor":[{"doctorId":"1","date":"20221021T115513+0000"},{"doctorId":"2","date":"20211021T115513+0000"},{"doctorId":"3","date":"20201021T115513+0000"},{"doctorId":"4","date":"20191021T115513+0000"},{"doctorId":"5","date":"20181021T115513+0000"},{"doctorId":"6","date":"20171021T115513+0000"}],
     "medical_records": {
       "blood_group": "O+",
       "pre_existing_conditions": [
@@ -273,7 +273,7 @@ PUT user_v1/_doc/5
     "role": "Patient",
     "languages": ["English","hindi"],
     "blood_donor": true,
-   "favouriteDoctor":[{"doctorId":"1","date":"20221021T115513+0000"},{"doctorId":"2","date":"20211021T115513+00007"},{"doctorId":"3","date":"20201021T115513+0000"},{"doctorId":"4","date":"20191021T115513+0000"},{"doctorId":"5","date":"20181021T115513+0000"},{"doctorId":"6","date":"20171021T115513+0000"}],
+   "favouriteDoctor":[{"doctorId":"1","date":"20221021T115513+0000"},{"doctorId":"2","date":"20211021T115513+0000"},{"doctorId":"3","date":"20201021T115513+0000"},{"doctorId":"4","date":"20191021T115513+0000"},{"doctorId":"5","date":"20181021T115513+0000"},{"doctorId":"6","date":"20171021T115513+0000"}],
     "medical_records": {
       "blood_group": "O+",
       "pre_existing_conditions": [
