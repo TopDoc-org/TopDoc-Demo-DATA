@@ -206,11 +206,11 @@ PUT user_v1
             "favouriteDoctor":{
                 "properties": {
                             "date": {
-                                "type": "date"
+                                "type": "date",
                                 "format" : "basic_date_time_no_millis"
                             },
                             "doctorId": {
-                                "type": "keyword",
+                                "type": "keyword"
                             }
                         }
             }
