@@ -57,7 +57,7 @@ PUT doctor_v1/_doc/1
   "isPersonAllowed": "true",
   "isVideoAllowed": "true",
   "landmark": "Near JK Dance school",
-  "languages": ["English, Hindi, Oriya"],
+  "languages": ["English", "Hindi", "Oriya"],
   "lastName": "Bhargav",
   "licenses": [{
     "identifier": "12345",
@@ -224,7 +224,7 @@ PUT doctor_v1/_doc/2
   "isPersonAllowed": "true",
   "isVideoAllowed": "true",
   "landmark": "Near JK Dance school",
-  "languages": ["English, Hindi, Oriya"],
+  "languages": ["English", "Hindi", "Oriya"],
   "lastName": "Kataria",
   "licenses":[ {
     "identifier": "82345",
@@ -385,7 +385,7 @@ PUT doctor_v1/_doc/3
   "isPersonAllowed": "true",
   "isVideoAllowed": "true",
   "landmark": "Near JK Dance school",
-  "languages": ["English, Hindi, Oriya"],
+  "languages": ["English", "Hindi", "Oriya"],
   "lastName": "Kataria",
   "licenses": [{
     "identifier": "42345",
@@ -550,7 +550,7 @@ PUT doctor_v1/_doc/4
   "isPersonAllowed": "true",
   "isVideoAllowed": "true",
   "landmark": "Near JK Dance school",
-  "languages": ["English, Hindi, Marathi"],
+  "languages": ["English", "Hindi", "Oriya"],
   "lastName": "Gaikwad",
   "licenses":[ {
     "identifier": "22345",
@@ -715,7 +715,7 @@ PUT doctor_v1/_doc/5
   "isPersonAllowed": "true",
   "isVideoAllowed": "true",
   "landmark": "Near JK Dance school",
-  "languages": ["English, Hindi, Oriya"],
+  "languages": ["English", "Hindi", "Oriya"],
   "lastName": "Aggarwal",
   "licenses": [{
     "identifier": "12345",
@@ -882,7 +882,7 @@ PUT doctor_v1/_doc/6
   "isPersonAllowed": "true",
   "isVideoAllowed": "true",
   "landmark": "Near JK Dance school",
-  "languages": ["English, Hindi, Oriya"],
+  "languages": ["English", "Hindi", "Oriya"],
   "lastName": "Bhargav",
   "licenses": [{
     "identifier": "12345",
