@@ -187,7 +187,7 @@ PUT user_v1
             "coins":{
                 "type": "long"
             },
-             "firstName": {
+             "first_name": {
                 "type": "text",
                 "fields": {
                         "keyword": {
@@ -195,7 +195,7 @@ PUT user_v1
                         }
                 }
             },
-             "lastName": {
+             "last_name": {
                 "type": "text",
                 "fields": {
                         "keyword": {
