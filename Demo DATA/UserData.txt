@@ -12,6 +12,7 @@ PUT user_v1/_doc/1
     "landmark": "shushant singh rajput chowk",
     "locality": "Purnea sadar",
     "city": "Purnea",
+    "district":"Purnea",
     "state": "Bihar",
     "country": "India",
     "Zipcode": 854301,
@@ -59,7 +60,8 @@ PUT user_v1/_doc/1
       "fbcStatus" : 145 ,
       "weight" : 73.54,
       "orderDate" : "20221021T115513+0000"
-    }]
+    }],
+    "lastSeenAdsPage": 2
   }
   
 PUT user_v1/_doc/2
@@ -76,6 +78,7 @@ PUT user_v1/_doc/2
     "landmark": "shushant singh rajput chowk",
     "locality": "Purnea sadar",
     "city": "Purnea",
+    "district":"Purnea",
     "state": "Bihar",
     "country": "India",
     "Zipcode": 854301,
@@ -123,7 +126,8 @@ PUT user_v1/_doc/2
       "fbcStatus" : 145 ,
       "weight" : "73.54",
       "orderDate" : "20221021T115513+0000"
-    }]
+    }],
+    "lastSeenAdsPage": 2
   }
   PUT user_v1/_doc/3
 {
@@ -139,6 +143,7 @@ PUT user_v1/_doc/2
     "landmark": "shushant singh rajput chowk",
     "locality": "Purnea sadar",
     "city": "Purnea",
+    "district":"Purnea",
     "state": "Bihar",
     "country": "India",
     "Zipcode": 854301,
@@ -186,7 +191,8 @@ PUT user_v1/_doc/2
       "fbcStatus" : 126 ,
       "weight" : "65.89",
       "orderDate" : "20221021T115513+0000"
-    }]
+    }],
+    "lastSeenAdsPage": 1
   }
 
 PUT user_v1/_doc/4
@@ -203,6 +209,7 @@ PUT user_v1/_doc/4
     "landmark": "shushant singh rajput chowk",
     "locality": "Purnea sadar",
     "city": "Purnea",
+    "district":"Purnea",
     "state": "Bihar",
     "country": "India",
     "Zipcode": 854301,
@@ -250,7 +257,8 @@ PUT user_v1/_doc/4
       "fbcStatus" : 211 ,
       "weight" : "62.16",
       "orderDate" : "20221021T115513+0000"
-    }]
+    }],
+    "lastSeenAdsPage": 3
   }
 
 PUT user_v1/_doc/5
@@ -267,6 +275,7 @@ PUT user_v1/_doc/5
     "landmark": "shushant singh rajput chowk",
     "locality": "Purnea sadar",
     "city": "Purnea",
+    "district":"Purnea",
     "state": "Bihar",
     "country": "India",
     "Zipcode": 854301,
@@ -314,5 +323,6 @@ PUT user_v1/_doc/5
       "fbcStatus" : 122 ,
       "weight" : "65.56",
       "orderDate" : "20221021T115513+0000"
-    }]
+    }],
+    "lastSeenAdsPage": 1
   }

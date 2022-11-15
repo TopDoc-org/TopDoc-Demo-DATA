@@ -20,6 +20,14 @@ PUT user_v1
             "city": {
                 "type": "keyword"
             },
+            "district":{
+                "type": "text",
+                "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                }
+            },
             "country": {
                 "type": "keyword"
             },
@@ -213,6 +221,9 @@ PUT user_v1
                                 "type": "keyword"
                             }
                         }
+            },
+            "lastSeenAdsPage":{
+                "type": "long"
             }
         }
     }

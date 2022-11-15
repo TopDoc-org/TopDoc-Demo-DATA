@@ -103,6 +103,14 @@ PUT doctor_v1
                         }
                 }
             },
+            "district":{
+                "type": "text",
+                "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                }
+            },
             "country": {
                 "type": "keyword"
             },
