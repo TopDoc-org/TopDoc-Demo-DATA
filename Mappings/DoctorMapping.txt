@@ -45,19 +45,44 @@ PUT doctor_v1
             "associatedClinics": {
                 "type": "nested",
                 "properties": {
+                     "clinicId": {
+                        "type": "keyword"
+                    },
                     "clinicName": {
                         "type": "keyword"
                     },
                     "clinicRating": {
                         "type": "double"
                     },
-                    "location": {
+                    "clinicLocation": {
                         "type": "keyword"
                     },
+                     "geoPoint": {
+                        "type": "geo_point"
+                    },
+                    "country": {
+                        "type": "keyword"
+                    },
+                    "district": {
+                        "type": "keyword"
+                    },
+                    "state": {
+                        "type": "keyword"
+                    },
+                    "zipCode": {
+                        "type": "keyword"
+                    },
+                     
                     "fees": {
                         "type": "float"
                     },
                     "tagReceived": {
+                        "type": "keyword"
+                    },
+                     "isActive": {
+                        "type": "boolean"
+                    },
+                      "clinicImageUrl": {
                         "type": "keyword"
                     },
                     "schedule": {
