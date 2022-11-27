@@ -85,7 +85,7 @@ PUT doctor_v1
                       "clinicImageUrl": {
                         "type": "keyword"
                     },
-                    "schedule": {
+                    "clinicSchedule": {
                         "type": "nested",
                         "properties": {
                             "from": {
