@@ -8,9 +8,9 @@ PUT doctor_v1/_doc/1
   ],
   "averageRating": "4.65",
   "city": "Bhubaneswar",
-  "district":"Khordha",
+  "district": "Khordha",
   "country": "India",
-  "id" : 1,
+  "id": 1,
   "designation": "Neurosurgeon",
   "education": [
     {
@@ -58,63 +58,69 @@ PUT doctor_v1/_doc/1
   "isPersonAllowed": "true",
   "isVideoAllowed": "true",
   "landmark": "Near JK Dance school",
-  "languages": ["English", "Hindi", "Oriya"],
+  "languages": [
+    "English",
+    "Hindi",
+    "Oriya"
+  ],
   "lastName": "Bhargav",
-  "licenses": [{
-    "identifier": "12345",
-    "name": "MBBS License",
-    "registrationYear": "15022022",
-    "validUpTo": "15022024",
-    "provider": "Delhi Medical Council"
-  }],
+  "licenses": [
+    {
+      "identifier": "12345",
+      "name": "MBBS License",
+      "registrationYear": "15022022",
+      "validUpTo": "15022024",
+      "provider": "Delhi Medical Council"
+    }
+  ],
   "locality": "Old town, Bhubaneswar",
   "location": "41.12,-71.34",
   "name": "Harsh Bhargav",
   "phone": 6370020831,
   "schedule": {
-      "monday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "tuesday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "wednesday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "thursday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "friday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "saturday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "sunday": {
-        "session1_start_time": "",
-        "session1_end_time": "",
-        "session2_start_time": "",
-        "session2_end_time": ""
-      }
-    } ,
+    "monday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "tuesday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "wednesday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "thursday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "friday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "saturday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "sunday": {
+      "session1_start_time": "",
+      "session1_end_time": "",
+      "session2_start_time": "",
+      "session2_end_time": ""
+    }
+  },
   "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
   "reviewTags": [
     {
@@ -143,19 +149,73 @@ PUT doctor_v1/_doc/1
   ],
   "associatedClinics": [
     {
-      "clinicName": "hello verify",
-      "location": "Hyderabad",
-       "clinicRating":4.5,
-      "fees": 999,
+      "clinicLocation": "Bangalore",
+      "fees": 500,
+      "country": "India",
+      "geoPoint": "39.12,-71.34",
+      "district": "Bangalore",
+      "clinicId": "1",
+      "clinicImageUrl": "dsjdhsadsdfhf.png",
+      "isActive": true,
+      "clinicName": "Bansal Clinic",
+      "clinicRating": 4.3,
+      "state": "Karnataka",
       "tagReceived": [
-        "tag1",
-        "tag2"
+        "Cleaning topper",
+        "Patient friendly"
       ],
-      "schedule": [{
+      "zipCode": "486661",
+      "clinicSchedule": {
         "from": "Monday",
+        "to": "Tuesday",
+        "duration": "09:00 AM-09:00 PM"
+      }
+    },
+    {
+      "clinicLocation": "Mysore",
+      "fees": 500,
+      "country": "India",
+      "geoPoint": "41.12,-79.34",
+      "district": "Mysore",
+      "clinicId": "2",
+      "clinicImageUrl": "dssadfhdjkhf.png",
+      "isActive": true,
+      "clinicName": "Amaze Clinic",
+      "clinicRating": 4.7,
+      "state": "Karnataka",
+      "tagReceived": [
+        "Cleaning topper",
+        "Patient friendly"
+      ],
+      "zipCode": "486661",
+      "clinicSchedule": {
+        "from": "Wednesday",
+        "to": "Thursday",
+        "duration": "09:00 AM-09:00 PM"
+      }
+    },
+    {
+      "clinicLocation": "Mysore",
+      "fees": 500,
+      "country": "India",
+      "geoPoint": "51.12,-69.34",
+      "district": "Mysore",
+      "clinicId": "3",
+      "clinicImageUrl": "dsasdscddjkhf.png",
+      "isActive": false,
+      "clinicName": "Mohit Clinic",
+      "clinicRating": 4.5,
+      "state": "Karnataka",
+      "tagReceived": [
+        "Cleaning topper",
+        "Patient friendly"
+      ],
+      "zipCode": "486661",
+      "clinicSchedule": {
+        "from": "Friday",
         "to": "Saturday",
-        "duration": "10:26am - 02:30pm"
-      }]
+        "duration": "09:00 AM-09:00 PM"
+      }
     }
   ],
   "specialization": [
@@ -175,9 +235,9 @@ PUT doctor_v1/_doc/2
     "Chemo"
   ],
   "averageRating": "4.65",
-   "id" : 2,
+  "id": 2,
   "city": "Bengaluru",
-  "district":"Bengaluru (Bangalore) Rural",
+  "district": "Bengaluru (Bangalore) Rural",
   "country": "India",
   "designation": "Neurosurgeon",
   "education": [
@@ -226,107 +286,173 @@ PUT doctor_v1/_doc/2
   "isPersonAllowed": "true",
   "isVideoAllowed": "true",
   "landmark": "Near JK Dance school",
-  "languages": ["English", "Hindi", "Oriya"],
+  "languages": [
+    "English",
+    "Hindi",
+    "Oriya"
+  ],
   "lastName": "Kataria",
-  "licenses":[ {
-    "identifier": "82345",
-    "name": "MBBS License",
-    "registrationYear": "15022022",
-    "validUpTo": "15022024",
-    "provider": "Delhi Medical Council"
-  }],
+  "licenses": [
+    {
+      "identifier": "82345",
+      "name": "MBBS License",
+      "registrationYear": "15022022",
+      "validUpTo": "15022024",
+      "provider": "Delhi Medical Council"
+    }
+  ],
   "locality": "Old town, Bengaluru",
   "location": "41.12,-71.34",
   "name": "Ayush kataria",
   "phone": 6370020831,
- "schedule": {
-      "monday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "tuesday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "wednesday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "thursday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "friday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "saturday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "sunday": {
-        "session1_start_time": "",
-        "session1_end_time": "",
-        "session2_start_time": "",
-        "session2_end_time": ""
-      }
-    } ,
- "profImageUrl": "https://images.theconversation.com/files/304957/original/file-20191203-66986-im7o5.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop",
-  "reviewTags" : [
-{
-"tagName" : "tag1_doc2",
-"description" : "tag1 description here"
-},
-{
-"tagName" : "tag2_doc2",
-"description" : "tag2 description here"
-}
-],
-"noOfReviews" : 5,
-"consultations" : 55,
-"satisfiedPatients" : 9,
-"awardsAndPublications" :[
-{
-"awardName" : "award 1_doc2",
-"place" : "chennai",
-"date" : "2022-09-11"
-},
-{
-"awardName" : "award 2_doc2",
-"place" : "Banglore",
-"date" : "2022-12-09"
-}
-],
-"associatedClinics" : [
-{
-"clinicName" : "Health Kart" ,
-"location" : "Pune",
-"fees" : 1111 ,
-"tagReceived" : ["tag1_doc2","tag2_doc2"],
-"schedule": [{
+  "schedule": {
+    "monday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "tuesday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "wednesday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "thursday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "friday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "saturday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "sunday": {
+      "session1_start_time": "",
+      "session1_end_time": "",
+      "session2_start_time": "",
+      "session2_end_time": ""
+    }
+  },
+  "profImageUrl": "https://images.theconversation.com/files/304957/original/file-20191203-66986-im7o5.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop",
+  "reviewTags": [
+    {
+      "tagName": "tag1_doc2",
+      "description": "tag1 description here"
+    },
+    {
+      "tagName": "tag2_doc2",
+      "description": "tag2 description here"
+    }
+  ],
+  "noOfReviews": 5,
+  "consultations": 55,
+  "satisfiedPatients": 9,
+  "awardsAndPublications": [
+    {
+      "awardName": "award 1_doc2",
+      "place": "chennai",
+      "date": "2022-09-11"
+    },
+    {
+      "awardName": "award 2_doc2",
+      "place": "Banglore",
+      "date": "2022-12-09"
+    }
+  ],
+  "associatedClinics": [
+    {
+      "clinicLocation": "Rewa",
+      "fees": 500,
+      "country": "India",
+      "geoPoint": "39.12,-71.34",
+      "district": "Rewa",
+      "clinicId": "1",
+      "clinicImageUrl": "saswedfhf.png",
+      "isActive": true,
+      "clinicName": "Bansal Clinic",
+      "clinicRating": 4.3,
+      "state": "MP",
+      "tagReceived": [
+        "Cleaning topper",
+        "Patient friendly"
+      ],
+      "zipCode": "486661",
+      "clinicSchedule": {
         "from": "Monday",
+        "to": "Tuesday",
+        "duration": "09:00 AM-09:00 PM"
+      }
+    },
+    {
+      "clinicLocation": "Rewa",
+      "fees": 500,
+      "country": "India",
+      "geoPoint": "41.12,-79.34",
+      "district": "Rewa",
+      "clinicId": "2",
+      "clinicImageUrl": "dssadsd.png",
+      "isActive": true,
+      "clinicName": "Amaze Clinic",
+      "clinicRating": 4.7,
+      "state": "MP",
+      "tagReceived": [
+        "Cleaning topper",
+        "Patient friendly"
+      ],
+      "zipCode": "486661",
+      "clinicSchedule": {
+        "from": "Wednesday",
+        "to": "Thursday",
+        "duration": "09:00 AM-09:00 PM"
+      }
+    },
+    {
+      "clinicLocation": "Satna",
+      "fees": 500,
+      "country": "India",
+      "geoPoint": "51.12,-69.34",
+      "district": "Satna",
+      "clinicId": "3",
+      "clinicImageUrl": "dsasdscddjkhf.png",
+      "isActive": false,
+      "clinicName": "Mohit Clinic",
+      "clinicRating": 4.5,
+      "state": "MP",
+      "tagReceived": [
+        "Cleaning topper",
+        "Patient friendly"
+      ],
+      "zipCode": "486661",
+      "clinicSchedule": {
+        "from": "Friday",
         "to": "Saturday",
-        "duration": "10:26am - 02:30pm"
-      }]
-}
-],
-  "specialization": ["Neurosurgeon","gyno"],
+        "duration": "09:00 AM-09:00 PM"
+      }
+    }
+  ],
+  "specialization": [
+    "Neurosurgeon",
+    "gyno"
+  ],
   "state": "Karnataka",
   "yearsOfExperience": "24"
 }
-
 PUT doctor_v1/_doc/3
 {
   "address": "MasterCanteen,unit-3,Odisha,756401",
@@ -336,8 +462,8 @@ PUT doctor_v1/_doc/3
   ],
   "averageRating": "4.65",
   "city": "Bhubaneswar",
-  "district":"Khordha",
-   "id" : 3,
+  "district": "Khordha",
+  "id": 3,
   "country": "India",
   "designation": "Neurosurgeon",
   "education": [
@@ -388,64 +514,70 @@ PUT doctor_v1/_doc/3
   "isPersonAllowed": "true",
   "isVideoAllowed": "true",
   "landmark": "Near JK Dance school",
-  "languages": ["English", "Hindi", "Oriya"],
+  "languages": [
+    "English",
+    "Hindi",
+    "Oriya"
+  ],
   "lastName": "Kataria",
-  "licenses": [{
-    "identifier": "42345",
-    "name": "MBBS License",
-    "registrationYear": "15022022",
-    "validUpTo": "15022024",
-    "provider": "Delhi Medical Council"
-  }],
+  "licenses": [
+    {
+      "identifier": "42345",
+      "name": "MBBS License",
+      "registrationYear": "15022022",
+      "validUpTo": "15022024",
+      "provider": "Delhi Medical Council"
+    }
+  ],
   "locality": "Old town, Bhubaneswar",
   "location": "41.12,-71.34",
   "name": "Nitish kumar",
   "phone": 6370020831,
   "schedule": {
-      "monday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "tuesday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "wednesday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "thursday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "friday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "saturday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "sunday": {
-        "session1_start_time": "",
-        "session1_end_time": "",
-        "session2_start_time": "",
-        "session2_end_time": ""
-      }
-    } ,
-    "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
+    "monday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "tuesday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "wednesday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "thursday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "friday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "saturday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "sunday": {
+      "session1_start_time": "",
+      "session1_end_time": "",
+      "session2_start_time": "",
+      "session2_end_time": ""
+    }
+  },
+  "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
   "reviewTags": [
     {
       "tagName": "tag1_doc1",
@@ -473,25 +605,81 @@ PUT doctor_v1/_doc/3
   ],
   "associatedClinics": [
     {
-      "clinicName": "hello verify",
-      "location": "Hyderabad",
-      "fees": 999,
+      "clinicLocation": "Rewa",
+      "fees": 500,
+      "country": "India",
+      "geoPoint": "39.12,-71.34",
+      "district": "Rewa",
+      "clinicId": "1",
+      "clinicImageUrl": "saswedfhf.png",
+      "isActive": true,
+      "clinicName": "Bansal Clinic",
+      "clinicRating": 4.3,
+      "state": "MP",
       "tagReceived": [
-        "tag1",
-        "tag2"
+        "Cleaning topper",
+        "Patient friendly"
       ],
-      "schedule": [{
+      "zipCode": "486661",
+      "clinicSchedule": {
         "from": "Monday",
+        "to": "Tuesday",
+        "duration": "09:00 AM-09:00 PM"
+      }
+    },
+    {
+      "clinicLocation": "Rewa",
+      "fees": 500,
+      "country": "India",
+      "geoPoint": "41.12,-79.34",
+      "district": "Rewa",
+      "clinicId": "2",
+      "clinicImageUrl": "dssadsd.png",
+      "isActive": true,
+      "clinicName": "Amaze Clinic",
+      "clinicRating": 4.7,
+      "state": "MP",
+      "tagReceived": [
+        "Cleaning topper",
+        "Patient friendly"
+      ],
+      "zipCode": "486661",
+      "clinicSchedule": {
+        "from": "Wednesday",
+        "to": "Thursday",
+        "duration": "09:00 AM-09:00 PM"
+      }
+    },
+    {
+      "clinicLocation": "Satna",
+      "fees": 500,
+      "country": "India",
+      "geoPoint": "51.12,-69.34",
+      "district": "Satna",
+      "clinicId": "3",
+      "clinicImageUrl": "dsasdscddjkhf.png",
+      "isActive": false,
+      "clinicName": "Mohit Clinic",
+      "clinicRating": 4.5,
+      "state": "MP",
+      "tagReceived": [
+        "Cleaning topper",
+        "Patient friendly"
+      ],
+      "zipCode": "486661",
+      "clinicSchedule": {
+        "from": "Friday",
         "to": "Saturday",
-        "duration": "10:26am - 02:30pm"
-      }]
+        "duration": "09:00 AM-09:00 PM"
+      }
     }
   ],
-  "specialization": ["Dentist"],
+  "specialization": [
+    "Dentist"
+  ],
   "state": "Odisha",
   "yearsOfExperience": "24"
 }
-
 PUT doctor_v1/_doc/4
 {
   "address": "Veerana Palya, Outer Ring Road, Landmark : Near Manyata Tech Park, Bangalore",
@@ -502,8 +690,8 @@ PUT doctor_v1/_doc/4
   ],
   "averageRating": "4.65",
   "city": "Bengaluru",
-  "district":"Bengaluru (Bangalore) Rural",
-   "id" : 4,
+  "district": "Bengaluru (Bangalore) Rural",
+  "id": 4,
   "country": "India",
   "designation": "Neurosurgeon",
   "education": [
@@ -554,64 +742,70 @@ PUT doctor_v1/_doc/4
   "isPersonAllowed": "true",
   "isVideoAllowed": "true",
   "landmark": "Near JK Dance school",
-  "languages": ["English", "Hindi", "Oriya"],
+  "languages": [
+    "English",
+    "Hindi",
+    "Oriya"
+  ],
   "lastName": "Gaikwad",
-  "licenses":[ {
-    "identifier": "22345",
-    "name": "MBBS License",
-    "registrationYear": "15022022",
-    "validUpTo": "15022024",
-    "provider": "Delhi Medical Council"
-  }],
+  "licenses": [
+    {
+      "identifier": "22345",
+      "name": "MBBS License",
+      "registrationYear": "15022022",
+      "validUpTo": "15022024",
+      "provider": "Delhi Medical Council"
+    }
+  ],
   "locality": "Old town, Bengaluru",
   "location": "41.12,-71.34",
   "name": "Akash gaikwad",
   "phone": 6370020831,
   "schedule": {
-      "monday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "tuesday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "wednesday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "thursday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "friday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "saturday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "sunday": {
-        "session1_start_time": "",
-        "session1_end_time": "",
-        "session2_start_time": "",
-        "session2_end_time": ""
-      }
-    } ,
-    "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
+    "monday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "tuesday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "wednesday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "thursday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "friday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "saturday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "sunday": {
+      "session1_start_time": "",
+      "session1_end_time": "",
+      "session2_start_time": "",
+      "session2_end_time": ""
+    }
+  },
+  "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
   "reviewTags": [
     {
       "tagName": "tag1_doc1",
@@ -639,26 +833,82 @@ PUT doctor_v1/_doc/4
   ],
   "associatedClinics": [
     {
-      "clinicName": "hello verify",
-      "location": "Hyderabad",
-      "fees": 999,
+      "clinicLocation": "Katni",
+      "fees": 500,
+      "country": "India",
+      "geoPoint": "39.12,-71.34",
+      "district": "Katni",
+      "clinicId": "1",
+      "clinicImageUrl": "saswedfhf.png",
+      "isActive": true,
+      "clinicName": "Bansal Clinic",
+      "clinicRating": 4.3,
+      "state": "MP",
       "tagReceived": [
-        "tag1",
-        "tag2"
+        "Cleaning topper",
+        "Patient friendly"
       ],
-      "schedule": [{
+      "zipCode": "486661",
+      "clinicSchedule": {
         "from": "Monday",
+        "to": "Tuesday",
+        "duration": "09:00 AM-09:00 PM"
+      }
+    },
+    {
+      "clinicLocation": "Katni",
+      "fees": 500,
+      "country": "India",
+      "geoPoint": "41.12,-79.34",
+      "district": "Katni",
+      "clinicId": "2",
+      "clinicImageUrl": "dssadsd.png",
+      "isActive": true,
+      "clinicName": "Amaze Clinic",
+      "clinicRating": 4.7,
+      "state": "MP",
+      "tagReceived": [
+        "Cleaning topper",
+        "Patient friendly"
+      ],
+      "zipCode": "486661",
+      "clinicSchedule": {
+        "from": "Wednesday",
+        "to": "Thursday",
+        "duration": "09:00 AM-09:00 PM"
+      }
+    },
+    {
+      "clinicLocation": "Katni",
+      "fees": 500,
+      "country": "India",
+      "geoPoint": "51.12,-69.34",
+      "district": "Katni",
+      "clinicId": "3",
+      "clinicImageUrl": "dsasdscddjkhf.png",
+      "isActive": false,
+      "clinicName": "Mohit Clinic",
+      "clinicRating": 4.5,
+      "state": "MP",
+      "tagReceived": [
+        "Cleaning topper",
+        "Patient friendly"
+      ],
+      "zipCode": "486661",
+      "clinicSchedule": {
+        "from": "Friday",
         "to": "Saturday",
-        "duration": "10:26am - 02:30pm"
-      }]
+        "duration": "09:00 AM-09:00 PM"
+      }
     }
   ],
-  "specialization": ["Neurosurgeon"],
+  "specialization": [
+    "Neurosurgeon"
+  ],
   "state": "Karnataka",
   "yearsOfExperience": "24"
 }
-
-PUT doctor_v1/_doc/5
+PUT doctor_v1/_doc/5 
 {
   "address": "MasterCanteen,unit-3,Odisha,756401",
   "ailmentsTreated": [
@@ -668,9 +918,9 @@ PUT doctor_v1/_doc/5
   ],
   "averageRating": "4.65",
   "city": "Delhi",
-  "district":"Central Delhi",
+  "district": "Central Delhi",
   "country": "India",
-   "id" : 5,
+  "id": 5,
   "designation": "Neurosurgeon",
   "education": [
     {
@@ -720,64 +970,70 @@ PUT doctor_v1/_doc/5
   "isPersonAllowed": "true",
   "isVideoAllowed": "true",
   "landmark": "Near JK Dance school",
-  "languages": ["English", "Hindi", "Oriya"],
+  "languages": [
+    "English",
+    "Hindi",
+    "Oriya"
+  ],
   "lastName": "Aggarwal",
-  "licenses": [{
-    "identifier": "12345",
-    "name": "MBBS License",
-    "registrationYear": "15022022",
-    "validUpTo": "15022024",
-    "provider": "Delhi Medical Council"
-  }],
+  "licenses": [
+    {
+      "identifier": "12345",
+      "name": "MBBS License",
+      "registrationYear": "15022022",
+      "validUpTo": "15022024",
+      "provider": "Delhi Medical Council"
+    }
+  ],
   "locality": "Old town, Bhubaneswar",
   "location": "41.12,-71.34",
   "name": "Harsh Aggarwal",
   "phone": 6370020831,
   "schedule": {
-      "monday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "tuesday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "wednesday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "thursday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "friday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "saturday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "sunday": {
-        "session1_start_time": "",
-        "session1_end_time": "",
-        "session2_start_time": "",
-        "session2_end_time": ""
-      }
-    } ,
-    "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
+    "monday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "tuesday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "wednesday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "thursday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "friday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "saturday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "sunday": {
+      "session1_start_time": "",
+      "session1_end_time": "",
+      "session2_start_time": "",
+      "session2_end_time": ""
+    }
+  },
+  "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
   "reviewTags": [
     {
       "tagName": "tag1_doc1",
@@ -805,25 +1061,58 @@ PUT doctor_v1/_doc/5
   ],
   "associatedClinics": [
     {
-      "clinicName": "hello verify",
-      "location": "Hyderabad",
-      "fees": 999,
+      "clinicLocation": "VIP",
+      "fees": 500,
+      "country": "India",
+      "geoPoint": "39.12,-71.34",
+      "district": "Bhopal",
+      "clinicId": "1",
+      "clinicImageUrl": "dsjdhaddjkhf.png",
+      "isActive": true,
+      "clinicName": "Metro Clinic",
+      "clinicRating": 4.3,
+      "state": "MP",
       "tagReceived": [
-        "tag1",
-        "tag2"
+        "Cleaning topper",
+        "Patient friendly"
       ],
-      "schedule": [{
+      "zipCode": "462039",
+      "clinicSchedule": {
         "from": "Monday",
-        "to": "Saturday",
-        "duration": "10:26am - 02:30pm"
-      }]
+        "to": "Tuesday",
+        "duration": "09:00 AM-09:00 PM"
+      }
+    },
+    {
+      "clinicLocation": "Kolar",
+      "fees": 500,
+      "country": "India",
+      "geoPoint": "41.12,-79.34",
+      "district": "Bhopal",
+      "clinicId": "2",
+      "clinicImageUrl": "dsjdhdjsdvfkhf.png",
+      "isActive": true,
+      "clinicName": "Narmada Clinic",
+      "clinicRating": 4.7,
+      "state": "MP",
+      "tagReceived": [
+        "Cleaning topper",
+        "Patient friendly"
+      ],
+      "zipCode": "4620411",
+      "clinicSchedule": {
+        "from": "Wednesday",
+        "to": "Thursday",
+        "duration": "09:00 AM-09:00 PM"
+      }
     }
   ],
-  "specialization": ["Neurosurgeon"],
+  "specialization": [
+    "Neurosurgeon"
+  ],
   "state": "Odisha",
   "yearsOfExperience": "24"
 }
-
 PUT doctor_v1/_doc/6
 {
   "address": "MasterCanteen,unit-3,Odisha,756401",
@@ -834,8 +1123,8 @@ PUT doctor_v1/_doc/6
   ],
   "averageRating": "4.65",
   "city": "Bhubaneswar",
-  "district":"Khordha",
-   "id" : 6,
+  "district": "Khordha",
+  "id": 6,
   "country": "India",
   "designation": "Neurosurgeon",
   "education": [
@@ -888,64 +1177,70 @@ PUT doctor_v1/_doc/6
   "isPersonAllowed": "true",
   "isVideoAllowed": "true",
   "landmark": "Near JK Dance school",
-  "languages": ["English", "Hindi", "Oriya"],
+  "languages": [
+    "English",
+    "Hindi",
+    "Oriya"
+  ],
   "lastName": "Bhargav",
-  "licenses": [{
-    "identifier": "12345",
-    "name": "MBBS License",
-    "registrationYear": "15022022",
-    "validUpTo": "15022024",
-    "provider": "Delhi Medical Council"
-  }],
+  "licenses": [
+    {
+      "identifier": "12345",
+      "name": "MBBS License",
+      "registrationYear": "15022022",
+      "validUpTo": "15022024",
+      "provider": "Delhi Medical Council"
+    }
+  ],
   "locality": "Old town, Bhubaneswar",
   "location": "41.12,-71.34",
   "name": "Harsh Kumar Bhargav",
   "phone": 6370020831,
   "schedule": {
-      "monday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "tuesday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "wednesday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "thursday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "friday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "saturday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "sunday": {
-        "session1_start_time": "",
-        "session1_end_time": "",
-        "session2_start_time": "",
-        "session2_end_time": ""
-      }
-    } ,
-    "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
+    "monday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "tuesday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "wednesday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "thursday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "friday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "saturday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "sunday": {
+      "session1_start_time": "",
+      "session1_end_time": "",
+      "session2_start_time": "",
+      "session2_end_time": ""
+    }
+  },
+  "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
   "reviewTags": [
     {
       "tagName": "tag1_doc1",
@@ -973,26 +1268,81 @@ PUT doctor_v1/_doc/6
   ],
   "associatedClinics": [
     {
-      "clinicName": "hello verify",
-      "location": "Hyderabad",
-      "fees": 999,
+      "clinicLocation": "Padra",
+      "fees": 400,
+      "country": "India",
+      "geoPoint": "39.12,-71.34",
+      "district": "Sidhi",
+      "clinicId": "1",
+      "clinicImageUrl": "dsjdfhdjkhf.png",
+      "isActive": true,
+      "clinicName": "Akash Clinic",
+      "clinicRating": 4.3,
+      "state": "Madhya Pradesh",
       "tagReceived": [
-        "tag1",
-        "tag2"
+        "Cleaning topper",
+        "Patient friendly"
       ],
-      "schedule": [{
+      "zipCode": "486661",
+      "clinicSchedule": {
         "from": "Monday",
+        "to": "Tuesday",
+        "duration": "09:00 AM-09:00 PM"
+      }
+    },
+    {
+      "clinicLocation": "Amaha",
+      "fees": 400,
+      "country": "India",
+      "geoPoint": "41.12,-79.34",
+      "district": "Sidhi",
+      "clinicId": "2",
+      "clinicImageUrl": "dsjdhscdfkhf.png",
+      "isActive": true,
+      "clinicName": "Neuro Clinic",
+      "clinicRating": 4.7,
+      "state": "Madhya Pradesh",
+      "tagReceived": [
+        "Cleaning topper",
+        "Patient friendly"
+      ],
+      "zipCode": "486661",
+      "clinicSchedule": {
+        "from": "Wednesday",
+        "to": "Thursday",
+        "duration": "09:00 AM-09:00 PM"
+      }
+    },
+    {
+      "clinicLocation": "Kotwali",
+      "fees": 400,
+      "country": "India",
+      "geoPoint": "51.12,-69.34",
+      "district": "Sidhi",
+      "clinicId": "3",
+      "clinicImageUrl": "dsjsddjkhf.png",
+      "isActive": false,
+      "clinicName": "Dental Clinic",
+      "clinicRating": 4.5,
+      "state": "Madhya Pradesh",
+      "tagReceived": [
+        "Cleaning topper",
+        "Patient friendly"
+      ],
+      "zipCode": "486661",
+      "clinicSchedule": {
+        "from": "Friday",
         "to": "Saturday",
-        "duration": "10:26am - 02:30pm"
-      }]
+        "duration": "09:00 AM-09:00 PM"
+      }
     }
   ],
-  "specialization": ["Neurosurgeon"],
+  "specialization": [
+    "Neurosurgeon"
+  ],
   "state": "Odisha",
   "yearsOfExperience": "24"
 }
-
-
 PUT doctor_v1/_doc/7
 {
   "address": "MasterCanteen,unit-3,Odisha,756401",
@@ -1003,8 +1353,8 @@ PUT doctor_v1/_doc/7
   ],
   "averageRating": "4.65",
   "city": "Bhubaneswar",
-  "district":"Khordha",
-   "id" : 7,
+  "district": "Khordha",
+  "id": 7,
   "country": "India",
   "designation": "Neurosurgeon",
   "education": [
@@ -1055,64 +1405,70 @@ PUT doctor_v1/_doc/7
   "isPersonAllowed": "true",
   "isVideoAllowed": "true",
   "landmark": "Near JK Dance school",
-  "languages": ["English", "Hindi", "Oriya"],
+  "languages": [
+    "English",
+    "Hindi",
+    "Oriya"
+  ],
   "lastName": "Bhargav",
-  "licenses":[ {
-    "identifier": "12345",
-    "name": "MBBS License",
-    "registrationYear": "15022022",
-    "validUpTo": "15022024",
-    "provider": "Delhi Medical Council"
-  }],
+  "licenses": [
+    {
+      "identifier": "12345",
+      "name": "MBBS License",
+      "registrationYear": "15022022",
+      "validUpTo": "15022024",
+      "provider": "Delhi Medical Council"
+    }
+  ],
   "locality": "Old town, Bhubaneswar",
   "location": "41.12,-71.34",
   "name": "Harsh Bhargav",
   "phone": 6370020831,
   "schedule": {
-      "monday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "tuesday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "wednesday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "thursday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "friday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "saturday": {
-        "session1_start_time": "09:30",
-        "session1_end_time": "13:00",
-        "session2_start_time": "17:00",
-        "session2_end_time": "20:30"
-      },
-      "sunday": {
-        "session1_start_time": "",
-        "session1_end_time": "",
-        "session2_start_time": "",
-        "session2_end_time": ""
-      }
-    } ,
-    "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
+    "monday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "tuesday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "wednesday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "thursday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "friday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "saturday": {
+      "session1_start_time": "09:30",
+      "session1_end_time": "13:00",
+      "session2_start_time": "17:00",
+      "session2_end_time": "20:30"
+    },
+    "sunday": {
+      "session1_start_time": "",
+      "session1_end_time": "",
+      "session2_start_time": "",
+      "session2_end_time": ""
+    }
+  },
+  "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
   "reviewTags": [
     {
       "tagName": "tag1_doc1",
@@ -1140,21 +1496,78 @@ PUT doctor_v1/_doc/7
   ],
   "associatedClinics": [
     {
-      "clinicName": "hello verify",
-      "location": "Hyderabad",
-      "fees": 999,
+      "clinicLocation": "Bangalore",
+      "fees": 500,
+      "country": "India",
+      "geoPoint": "39.12,-71.34",
+      "district": "Hassan",
+      "clinicId": "1",
+      "clinicImageUrl": "dsjdhdjdhyfhdjkhf.png",
+      "isActive": true,
+      "clinicName": "Bansal Clinic",
+      "clinicRating": 4.3,
+      "state": "Karnataka",
       "tagReceived": [
-        "tag1",
-        "tag2"
+        "Cleaning topper",
+        "Patient friendly"
       ],
-      "schedule": [{
+      "zipCode": "486661",
+      "clinicSchedule": {
         "from": "Monday",
+        "to": "Tuesday",
+        "duration": "09:00 AM-09:00 PM"
+      }
+    },
+    {
+      "clinicLocation": "Bangalore",
+      "fees": 500,
+      "country": "India",
+      "geoPoint": "41.12,-79.34",
+      "district": "Hassan",
+      "clinicId": "2",
+      "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png",
+      "isActive": true,
+      "clinicName": "Amaze Clinic",
+      "clinicRating": 4.7,
+      "state": "Karnataka",
+      "tagReceived": [
+        "Cleaning topper",
+        "Patient friendly"
+      ],
+      "zipCode": "486661",
+      "clinicSchedule": {
+        "from": "Wednesday",
+        "to": "Thursday",
+        "duration": "09:00 AM-09:00 PM"
+      }
+    },
+    {
+      "clinicLocation": "Bangalore",
+      "fees": 500,
+      "country": "India",
+      "geoPoint": "51.12,-69.34",
+      "district": "Hassan",
+      "clinicId": "3",
+      "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png",
+      "isActive": false,
+      "clinicName": "Mohit Clinic",
+      "clinicRating": 4.5,
+      "state": "Karnataka",
+      "tagReceived": [
+        "Cleaning topper",
+        "Patient friendly"
+      ],
+      "zipCode": "486661",
+      "clinicSchedule": {
+        "from": "Friday",
         "to": "Saturday",
-        "duration": "10:26am - 02:30pm"
-      }]
+        "duration": "09:00 AM-09:00 PM"
+      }
     }
   ],
-  "specialization": ["Neurosurgeon"],
+  "specialization": [
+    "Neurosurgeon"
+  ],
   "state": "Odisha",
   "yearsOfExperience": "24"
 }
