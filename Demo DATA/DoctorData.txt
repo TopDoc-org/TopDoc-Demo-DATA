@@ -77,50 +77,589 @@ PUT doctor_v1/_doc/1
   "location": "41.12,-71.34",
   "name": "Harsh Bhargav",
   "phone": 6370020831,
-  "schedule": {
-    "monday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "tuesday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "wednesday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "thursday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "friday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "saturday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "sunday": {
-      "session1_start_time": "",
-      "session1_end_time": "",
-      "session2_start_time": "",
-      "session2_end_time": ""
-    }
-  },
+  "schedule":  [
+      {
+        "date": "2022-01-16",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 111,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 112,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Monday"
+      },
+      {
+        "date": "2022-01-17",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 101,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Bansal Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "1",
+              "geoPoint": "39.12,-71.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.3,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Monday",
+                "to": "Tuesday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhdjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 102,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Tuesday"
+      },
+      {
+        "date": "2022-01-18",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 202,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 203,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Wednesday"
+      },
+      {
+        "date": "2022-01-19",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 209,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 210,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Thursday"
+      },
+      {
+        "date": "2022-01-20",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 207,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 208,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Friday"
+      },
+      {
+        "date": "2022-01-21",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 205,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 206,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Saturday"
+      },
+      {
+        "date": "2022-01-22",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 203,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 204,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Sunday"
+      }
+    ],
   "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
   "reviewTags": [
     {
@@ -305,50 +844,589 @@ PUT doctor_v1/_doc/2
   "location": "41.12,-71.34",
   "name": "Ayush kataria",
   "phone": 6370020831,
-  "schedule": {
-    "monday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "tuesday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "wednesday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "thursday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "friday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "saturday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "sunday": {
-      "session1_start_time": "",
-      "session1_end_time": "",
-      "session2_start_time": "",
-      "session2_end_time": ""
-    }
-  },
+  "schedule":  [
+      {
+        "date": "2022-01-16",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 111,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 112,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Monday"
+      },
+      {
+        "date": "2022-01-17",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 101,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Bansal Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "1",
+              "geoPoint": "39.12,-71.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.3,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Monday",
+                "to": "Tuesday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhdjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 102,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Tuesday"
+      },
+      {
+        "date": "2022-01-18",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 202,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 203,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Wednesday"
+      },
+      {
+        "date": "2022-01-19",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 209,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 210,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Thursday"
+      },
+      {
+        "date": "2022-01-20",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 207,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 208,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Friday"
+      },
+      {
+        "date": "2022-01-21",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 205,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 206,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Saturday"
+      },
+      {
+        "date": "2022-01-22",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 203,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 204,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Sunday"
+      }
+    ],
   "profImageUrl": "https://images.theconversation.com/files/304957/original/file-20191203-66986-im7o5.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop",
   "reviewTags": [
     {
@@ -533,50 +1611,589 @@ PUT doctor_v1/_doc/3
   "location": "41.12,-71.34",
   "name": "Nitish kumar",
   "phone": 6370020831,
-  "schedule": {
-    "monday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "tuesday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "wednesday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "thursday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "friday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "saturday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "sunday": {
-      "session1_start_time": "",
-      "session1_end_time": "",
-      "session2_start_time": "",
-      "session2_end_time": ""
-    }
-  },
+  "schedule":  [
+      {
+        "date": "2022-01-16",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 111,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 112,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Monday"
+      },
+      {
+        "date": "2022-01-17",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 101,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Bansal Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "1",
+              "geoPoint": "39.12,-71.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.3,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Monday",
+                "to": "Tuesday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhdjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 102,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Tuesday"
+      },
+      {
+        "date": "2022-01-18",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 202,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 203,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Wednesday"
+      },
+      {
+        "date": "2022-01-19",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 209,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 210,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Thursday"
+      },
+      {
+        "date": "2022-01-20",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 207,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 208,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Friday"
+      },
+      {
+        "date": "2022-01-21",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 205,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 206,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Saturday"
+      },
+      {
+        "date": "2022-01-22",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 203,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 204,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Sunday"
+      }
+    ],
   "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
   "reviewTags": [
     {
@@ -761,50 +2378,589 @@ PUT doctor_v1/_doc/4
   "location": "41.12,-71.34",
   "name": "Akash gaikwad",
   "phone": 6370020831,
-  "schedule": {
-    "monday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "tuesday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "wednesday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "thursday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "friday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "saturday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "sunday": {
-      "session1_start_time": "",
-      "session1_end_time": "",
-      "session2_start_time": "",
-      "session2_end_time": ""
-    }
-  },
+  "schedule":  [
+      {
+        "date": "2022-01-16",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 111,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 112,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Monday"
+      },
+      {
+        "date": "2022-01-17",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 101,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Bansal Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "1",
+              "geoPoint": "39.12,-71.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.3,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Monday",
+                "to": "Tuesday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhdjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 102,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Tuesday"
+      },
+      {
+        "date": "2022-01-18",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 202,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 203,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Wednesday"
+      },
+      {
+        "date": "2022-01-19",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 209,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 210,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Thursday"
+      },
+      {
+        "date": "2022-01-20",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 207,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 208,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Friday"
+      },
+      {
+        "date": "2022-01-21",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 205,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 206,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Saturday"
+      },
+      {
+        "date": "2022-01-22",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 203,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 204,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Sunday"
+      }
+    ],
   "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
   "reviewTags": [
     {
@@ -989,50 +3145,589 @@ PUT doctor_v1/_doc/5
   "location": "41.12,-71.34",
   "name": "Harsh Aggarwal",
   "phone": 6370020831,
-  "schedule": {
-    "monday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "tuesday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "wednesday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "thursday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "friday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "saturday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "sunday": {
-      "session1_start_time": "",
-      "session1_end_time": "",
-      "session2_start_time": "",
-      "session2_end_time": ""
-    }
-  },
+  "schedule":  [
+      {
+        "date": "2022-01-16",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 111,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 112,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Monday"
+      },
+      {
+        "date": "2022-01-17",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 101,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Bansal Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "1",
+              "geoPoint": "39.12,-71.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.3,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Monday",
+                "to": "Tuesday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhdjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 102,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Tuesday"
+      },
+      {
+        "date": "2022-01-18",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 202,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 203,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Wednesday"
+      },
+      {
+        "date": "2022-01-19",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 209,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 210,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Thursday"
+      },
+      {
+        "date": "2022-01-20",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 207,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 208,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Friday"
+      },
+      {
+        "date": "2022-01-21",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 205,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 206,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Saturday"
+      },
+      {
+        "date": "2022-01-22",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 203,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 204,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Sunday"
+      }
+    ],
   "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
   "reviewTags": [
     {
@@ -1196,50 +3891,589 @@ PUT doctor_v1/_doc/6
   "location": "41.12,-71.34",
   "name": "Harsh Kumar Bhargav",
   "phone": 6370020831,
-  "schedule": {
-    "monday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "tuesday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "wednesday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "thursday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "friday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "saturday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "sunday": {
-      "session1_start_time": "",
-      "session1_end_time": "",
-      "session2_start_time": "",
-      "session2_end_time": ""
-    }
-  },
+  "schedule":  [
+      {
+        "date": "2022-01-16",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 111,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 112,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Monday"
+      },
+      {
+        "date": "2022-01-17",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 101,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Bansal Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "1",
+              "geoPoint": "39.12,-71.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.3,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Monday",
+                "to": "Tuesday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhdjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 102,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Tuesday"
+      },
+      {
+        "date": "2022-01-18",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 202,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 203,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Wednesday"
+      },
+      {
+        "date": "2022-01-19",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 209,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 210,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Thursday"
+      },
+      {
+        "date": "2022-01-20",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 207,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 208,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Friday"
+      },
+      {
+        "date": "2022-01-21",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 205,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 206,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Saturday"
+      },
+      {
+        "date": "2022-01-22",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 203,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 204,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Sunday"
+      }
+    ],
   "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
   "reviewTags": [
     {
@@ -1424,50 +4658,589 @@ PUT doctor_v1/_doc/7
   "location": "41.12,-71.34",
   "name": "Harsh Bhargav",
   "phone": 6370020831,
-  "schedule": {
-    "monday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "tuesday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "wednesday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "thursday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "friday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "saturday": {
-      "session1_start_time": "09:30",
-      "session1_end_time": "13:00",
-      "session2_start_time": "17:00",
-      "session2_end_time": "20:30"
-    },
-    "sunday": {
-      "session1_start_time": "",
-      "session1_end_time": "",
-      "session2_start_time": "",
-      "session2_end_time": ""
-    }
-  },
+  "schedule":  [
+      {
+        "date": "2022-01-16",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 111,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 112,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Monday"
+      },
+      {
+        "date": "2022-01-17",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 101,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Bansal Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "1",
+              "geoPoint": "39.12,-71.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.3,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Monday",
+                "to": "Tuesday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhdjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 102,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Tuesday"
+      },
+      {
+        "date": "2022-01-18",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 202,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 203,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Wednesday"
+      },
+      {
+        "date": "2022-01-19",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 209,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 210,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Thursday"
+      },
+      {
+        "date": "2022-01-20",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 207,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 208,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Friday"
+      },
+      {
+        "date": "2022-01-21",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 205,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 206,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Saturday"
+      },
+      {
+        "date": "2022-01-22",
+        "sessions": [
+          {
+            "sessionSlots": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30",
+              "10:00",
+              "10:30",
+              "11:00"
+            ],
+            "startTime": "08:00",
+            "sessionId": 203,
+            "endTime": "11:00",
+            "clinic": {
+              "clinicName": "Mohit Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "3",
+              "geoPoint": "51.12,-69.34",
+              "isActive": false,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.5,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Friday",
+                "to": "Saturday"
+              },
+              "clinicImageUrl": "dsjdhdjdhyfhscxsddjkhf.png"
+            },
+            "prioritySlots": []
+          },
+          {
+            "sessionSlots": [
+              "13:00",
+              "13:30",
+              "14:00",
+              "14:30",
+              "15:00",
+              "15:30",
+              "16:00",
+              "16:30"
+            ],
+            "startTime": "13:00",
+            "sessionId": 204,
+            "endTime": "16:30",
+            "clinic": {
+              "clinicName": "Amaze Clinic",
+              "country": "India",
+              "zipCode": "486661",
+              "fees": 500,
+              "clinicId": "2",
+              "geoPoint": "41.12,-79.34",
+              "isActive": true,
+              "clinicLocation": "Bangalore",
+              "clinicRating": 4.7,
+              "district": "Hassan",
+              "tagReceived": [
+                "Cleaning topper",
+                "Patient friendly"
+              ],
+              "state": "Karnataka",
+              "clinicSchedule": {
+                "duration": "09:00 AM-09:00 PM",
+                "from": "Wednesday",
+                "to": "Thursday"
+              },
+              "clinicImageUrl": "dsjdhdjdhydcsdvdffhdjkhf.png"
+            },
+            "prioritySlots": []
+          }
+        ],
+        "dayName": "Sunday"
+      }
+    ],
   "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
   "reviewTags": [
     {
