@@ -1,0 +1,235 @@
+PUT booking_v1/_doc/321
+{
+  "doctorId": "1",
+  "appointmentType": "video",
+  "slotType": "normal",
+  "status":"booked",
+  "sessionEndTime": "10:00",
+  "sessionStartTime": "13:00",
+  "sessionId": 125,
+  "userId": 1,
+  "userType":"registered",
+  "bookingTimeStamp": "2021-01-01T07:30:00.000-0530",
+  "appointmentId": "6ec4e887-79d0-46ab-992b-132582b078de",
+  "slotTime": "11:30",
+  "slotDay": "Monday",
+  "slotId": 321,
+  "reasonForVisit": "Back Pain",
+  "clinicId":1,
+  "clinicDetails": {
+    "clinicLocation": "Bangalore",
+    "fees": 500,
+    "country": "India",
+    "geoPoint": "41.12,-71.34",
+    "district": "Hassan",
+    "clinicId": "1",
+    "clinicImageUrl": "dsjdhdjdhyfhdjkhf.png",
+    "isActive": true,
+    "clinicName": "Bansal Clinic",
+    "clinicRating": 4.5,
+    "state": "Karnataka",
+    "tagReceived": [
+      "Cleaning topper",
+      "Patient friendly"
+    ],
+    "zipCode": "486661"
+  },
+  "appointmentDate": "2022-07-22"
+}
+
+PUT booking_v1/_doc/1234
+{
+  "doctorId": "1",
+  "appointmentType": "video",
+  "slotType": "priority",
+  "status":"notBooked",
+  "sessionEndTime": "17:00",
+  "sessionStartTime": "13:00",
+  "sessionId": 123,
+  "userId": 2,
+  "userType":"unRegistered",
+  "bookingTimeStamp": "2021-01-01T07:30:00.000-0530",
+  "appointmentId": "6ec4e887-79d0-445b-992b-132582b078de",
+  "slotTime": "13:30",
+  "slotDay": "Tuesday",
+  "slotId": 1234,
+  "reasonForVisit": "Front Pain",
+  "clinicId":1,
+  "clinicDetails": {
+    "clinicLocation": "Bangalore",
+    "fees": 500,
+    "country": "India",
+    "geoPoint": "41.12,-71.34",
+    "district": "Hassan",
+    "clinicId": "1",
+    "clinicImageUrl": "dsjdhdjdhyfhdjkhf.png",
+    "isActive": true,
+    "clinicName": "Bansal Clinic",
+    "clinicRating": 4.5,
+    "state": "Karnataka",
+    "tagReceived": [
+      "Cleaning topper",
+      "Patient friendly"
+    ],
+    "zipCode": "486661"
+  },
+  "appointmentDate": "2022-07-22"
+}
+
+
+PUT booking_v1/_doc/4321
+{
+  "doctorId": "1",
+  "appointmentType": "inPerson",
+  "slotType": "normal",
+  "status":"booked",
+  "sessionEndTime": "16:00",
+  "sessionStartTime": "13:00",
+  "sessionId": 125,
+  "userId": 1,
+  "userType":"registered",
+  "bookingTimeStamp": "2021-01-01T07:30:00.000-0530",
+  "appointmentId": "6ec74887-79d0-445b-992b-132582b078de",
+  "slotTime": "15:30",
+  "slotDay": "Wednesday",
+  "slotId": 4321,
+  "reasonForVisit": "Upward Pain",
+  "clinicId":2,
+  "clinicDetails": {
+    "clinicLocation": "Bangalore",
+    "fees": 500,
+    "country": "India",
+    "geoPoint": "41.12,-71.34",
+    "district": "Hassan",
+    "clinicId": "1",
+    "clinicImageUrl": "dsjdhdjdhyfhdjkhf.png",
+    "isActive": true,
+    "clinicName": "Bansal Clinic",
+    "clinicRating": 4.5,
+    "state": "Karnataka",
+    "tagReceived": [
+      "Cleaning topper",
+      "Patient friendly"
+    ],
+    "zipCode": "486661"
+  },
+  "appointmentDate": "2022-11-22"
+}
+
+PUT booking_v1/_doc/3214
+{
+  "doctorId": "2",
+  "appointmentType": "inPerson",
+  "slotType": "priority",
+  "status":"booked",
+  "sessionEndTime": "16:00",
+  "sessionStartTime": "13:00",
+  "sessionId": 195,
+  "userId": 2,
+  "userType":"unRegistered",
+  "bookingTimeStamp": "2021-01-01T07:30:00.000-0530",
+  "appointmentId": "6ec74887-79d0-445b-992b-132582b078de",
+  "slotTime": "15:30",
+  "slotDay": "Wednesday",
+  "slotId": 3214,
+  "reasonForVisit": "Downward Pain",
+  "clinicId":2,
+  "clinicDetails": {
+    "clinicLocation": "Bangalore",
+    "fees": 500,
+    "country": "India",
+    "geoPoint": "41.12,-71.34",
+    "district": "Hassan",
+    "clinicId": "1",
+    "clinicImageUrl": "dsjdhdjdhyfhdjkhf.png",
+    "isActive": true,
+    "clinicName": "Bansal Clinic",
+    "clinicRating": 4.5,
+    "state": "Karnataka",
+    "tagReceived": [
+      "Cleaning topper",
+      "Patient friendly"
+    ],
+    "zipCode": "486661"
+  },
+  "appointmentDate": "2022-08-22"
+}
+
+PUT booking_v1/_doc/4568
+{
+  "doctorId": "2",
+  "appointmentType": "inPerson",
+  "slotType": "normal",
+  "status":"booked",
+  "sessionEndTime": "16:00",
+  "sessionStartTime": "13:00",
+  "sessionId": 195,
+  "userId": 2,
+  "userType":"registered",
+  "bookingTimeStamp": "2021-01-01T07:30:00.000-0530",
+  "appointmentId": "6ec74887-79d0-445b-992b-132582b078de",
+  "slotTime": "15:30",
+  "slotDay": "Wednesday",
+  "slotId": 4568,
+  "reasonForVisit": "Downward Pain",
+  "clinicId":3,
+  "clinicDetails": {
+    "clinicLocation": "Bangalore",
+    "fees": 500,
+    "country": "India",
+    "geoPoint": "41.12,-71.34",
+    "district": "Hassan",
+    "clinicId": "1",
+    "clinicImageUrl": "dsjdhdjdhyfhdjkhf.png",
+    "isActive": true,
+    "clinicName": "Bansal Clinic",
+    "clinicRating": 4.5,
+    "state": "Karnataka",
+    "tagReceived": [
+      "Cleaning topper",
+      "Patient friendly"
+    ],
+    "zipCode": "486661"
+  },
+  "appointmentDate": "2021-08-22"
+}
+
+PUT booking_v1/_doc/4584
+{
+  "doctorId": "2",
+  "appointmentType": "inPerson",
+  "slotType": "normal",
+  "status":"booked",
+  "sessionEndTime": "16:00",
+  "sessionStartTime": "13:00",
+  "sessionId": 195,
+  "userId": 2,
+  "userType":"unRegistered",
+  "bookingTimeStamp": "2021-01-01T07:30:00.000-0530",
+  "appointmentId": "6ec74887-79d0-445b-992b-132582b078de",
+  "slotTime": "15:30",
+  "slotDay": "Wednesday",
+  "slotId": 4584,
+  "reasonForVisit": "Downward Pain",
+  "clinicId":3,
+  "clinicDetails": {
+    "clinicLocation": "Bangalore",
+    "fees": 500,
+    "country": "India",
+    "geoPoint": "41.12,-71.34",
+    "district": "Hassan",
+    "clinicId": "1",
+    "clinicImageUrl": "dsjdhdjdhyfhdjkhf.png",
+    "isActive": true,
+    "clinicName": "Bansal Clinic",
+    "clinicRating": 4.5,
+    "state": "Karnataka",
+    "tagReceived": [
+      "Cleaning topper",
+      "Patient friendly"
+    ],
+    "zipCode": "486661"
+  },
+  "appointmentDate": "2021-08-22"
+}
+
