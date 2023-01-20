@@ -165,6 +165,9 @@ PUT user_v1
             "role": {
                 "type": "text"
             },
+            "userType": {
+             "type": "keyword"
+            },
             "state" : {
             "type" : "keyword"
             },
