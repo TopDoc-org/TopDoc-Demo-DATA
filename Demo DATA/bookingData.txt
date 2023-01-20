@@ -1,4 +1,4 @@
-PUT booking_v1/_doc/321
+PUT booking_v1/_doc/11:30125
 {
   "doctorId": "1",
   "appointmentType": "video",
@@ -13,7 +13,7 @@ PUT booking_v1/_doc/321
   "appointmentId": "6ec4e887-79d0-46ab-992b-132582b078de",
   "slotTime": "11:30",
   "slotDay": "Monday",
-  "slotId": 321,
+  "slotId": "11:30125",
   "reasonForVisit": "Back Pain",
   "clinicId":1,
   "clinicDetails": {
@@ -37,7 +37,7 @@ PUT booking_v1/_doc/321
   "appointmentDate": "2022-07-22"
 }
 
-PUT booking_v1/_doc/1234
+PUT booking_v1/_doc/13:30123
 {
   "doctorId": "1",
   "appointmentType": "video",
@@ -52,7 +52,7 @@ PUT booking_v1/_doc/1234
   "appointmentId": "6ec4e887-79d0-445b-992b-132582b078de",
   "slotTime": "13:30",
   "slotDay": "Tuesday",
-  "slotId": 1234,
+  "slotId": "13:30123",
   "reasonForVisit": "Front Pain",
   "clinicId":1,
   "clinicDetails": {
@@ -77,7 +77,7 @@ PUT booking_v1/_doc/1234
 }
 
 
-PUT booking_v1/_doc/4321
+PUT booking_v1/_doc/15:30125
 {
   "doctorId": "1",
   "appointmentType": "inPerson",
@@ -92,7 +92,7 @@ PUT booking_v1/_doc/4321
   "appointmentId": "6ec74887-79d0-445b-992b-132582b078de",
   "slotTime": "15:30",
   "slotDay": "Wednesday",
-  "slotId": 4321,
+  "slotId": "15:30125",
   "reasonForVisit": "Upward Pain",
   "clinicId":2,
   "clinicDetails": {
@@ -113,10 +113,10 @@ PUT booking_v1/_doc/4321
     ],
     "zipCode": "486661"
   },
-  "appointmentDate": "2022-11-22"
+  "appointmentDate": "2022-10-12"
 }
 
-PUT booking_v1/_doc/3214
+PUT booking_v1/_doc/15:30195
 {
   "doctorId": "2",
   "appointmentType": "inPerson",
@@ -131,7 +131,7 @@ PUT booking_v1/_doc/3214
   "appointmentId": "6ec74887-79d0-445b-992b-132582b078de",
   "slotTime": "15:30",
   "slotDay": "Wednesday",
-  "slotId": 3214,
+  "slotId": "15:30195",
   "reasonForVisit": "Downward Pain",
   "clinicId":2,
   "clinicDetails": {
@@ -152,10 +152,10 @@ PUT booking_v1/_doc/3214
     ],
     "zipCode": "486661"
   },
-  "appointmentDate": "2022-08-22"
+  "appointmentDate": "2022-10-12"
 }
 
-PUT booking_v1/_doc/4568
+PUT booking_v1/_doc/15:35195
 {
   "doctorId": "2",
   "appointmentType": "inPerson",
@@ -168,9 +168,9 @@ PUT booking_v1/_doc/4568
   "userType":"registered",
   "bookingTimeStamp": "2021-01-01T07:30:00.000-0530",
   "appointmentId": "6ec74887-79d0-445b-992b-132582b078de",
-  "slotTime": "15:30",
+  "slotTime": "15:35",
   "slotDay": "Wednesday",
-  "slotId": 4568,
+  "slotId": "15:35195",
   "reasonForVisit": "Downward Pain",
   "clinicId":3,
   "clinicDetails": {
@@ -194,7 +194,7 @@ PUT booking_v1/_doc/4568
   "appointmentDate": "2021-08-22"
 }
 
-PUT booking_v1/_doc/4584
+PUT booking_v1/_doc/15:40195
 {
   "doctorId": "2",
   "appointmentType": "inPerson",
@@ -207,9 +207,9 @@ PUT booking_v1/_doc/4584
   "userType":"unRegistered",
   "bookingTimeStamp": "2021-01-01T07:30:00.000-0530",
   "appointmentId": "6ec74887-79d0-445b-992b-132582b078de",
-  "slotTime": "15:30",
+  "slotTime": "15:40",
   "slotDay": "Wednesday",
-  "slotId": 4584,
+  "slotId": "15:40195",
   "reasonForVisit": "Downward Pain",
   "clinicId":3,
   "clinicDetails": {
