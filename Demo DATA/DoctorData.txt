@@ -76,7 +76,7 @@ PUT doctor_v1/_doc/1
   "locality": "Old town, Bhubaneswar",
   "location": "41.12,-71.34",
   "name": "Harsh Bhargav",
-  "phone": 6370020831,
+  "mobile": 6370020831,
   "schedule":  [
       {
         "date": "2022-01-16",
@@ -843,7 +843,7 @@ PUT doctor_v1/_doc/2
   "locality": "Old town, Bengaluru",
   "location": "41.12,-71.34",
   "name": "Ayush kataria",
-  "phone": 6370020831,
+  "mobile": 6370020831,
   "schedule":  [
       {
         "date": "2022-01-16",
@@ -1610,7 +1610,7 @@ PUT doctor_v1/_doc/3
   "locality": "Old town, Bhubaneswar",
   "location": "41.12,-71.34",
   "name": "Nitish kumar",
-  "phone": 6370020831,
+  "mobile": 6370020831,
   "schedule":  [
       {
         "date": "2022-01-16",
@@ -2377,7 +2377,7 @@ PUT doctor_v1/_doc/4
   "locality": "Old town, Bengaluru",
   "location": "41.12,-71.34",
   "name": "Akash gaikwad",
-  "phone": 6370020831,
+  "mobile": 6370020831,
   "schedule":  [
       {
         "date": "2022-01-16",
@@ -3144,7 +3144,7 @@ PUT doctor_v1/_doc/5
   "locality": "Old town, Bhubaneswar",
   "location": "41.12,-71.34",
   "name": "Harsh Aggarwal",
-  "phone": 6370020831,
+  "mobile": 6370020831,
   "schedule":  [
       {
         "date": "2022-01-16",
@@ -3890,7 +3890,7 @@ PUT doctor_v1/_doc/6
   "locality": "Old town, Bhubaneswar",
   "location": "41.12,-71.34",
   "name": "Harsh Kumar Bhargav",
-  "phone": 6370020831,
+  "mobile": 6370020831,
   "schedule":  [
       {
         "date": "2022-01-16",
@@ -4657,7 +4657,7 @@ PUT doctor_v1/_doc/7
   "locality": "Old town, Bhubaneswar",
   "location": "41.12,-71.34",
   "name": "Harsh Bhargav",
-  "phone": 6370020831,
+  "mobile": 6370020831,
   "schedule":  [
       {
         "date": "2022-01-16",
