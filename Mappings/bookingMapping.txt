@@ -20,6 +20,66 @@ PUT booking_v1
       "userId": {
         "type": "keyword"
       },
+      "sessionId": {
+        "type": "keyword"
+      },
+      "symptoms": {
+        "type": "keyword"
+      },
+      "tests": {
+        "type": "keyword",  
+      },
+      "medicines": {
+        "type": "nested",
+        "properties": {
+          "tablet&Syrups": {
+            "type": "nested",
+            "properties": {
+                "dosage": {
+                 "type": "long"  
+                },
+                "name": {
+                 "type": "keyword"  
+                },
+                "dosageUnit": {
+                 "type": "keyword"  
+                },
+                "duration": {
+                 "type": "keyword"  
+                },
+                "repeatition": {
+                 "type": "keyword"  
+                },
+                "dosageTiming": {
+                 "type": "keyword"  
+                },
+                "toBeTaken": {
+                 "type": "keyword"  
+                }
+            }
+          },
+          "customType": {
+            "type": "nested",
+            "properties": {
+                "dosage&Instruction": {
+                 "type": "text"  
+                },
+                "name": {
+                 "type": "keyword"  
+                },
+                "duration": {
+                 "type": "keyword"  
+                },
+                "repeatition": {
+                 "type": "keyword"  
+                },
+                "dosageTiming": {
+                 "type": "keyword"  
+                }
+            }
+          }
+        }
+      },
       "userType": {
         "type": "keyword"
       },
