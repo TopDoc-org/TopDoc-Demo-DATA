@@ -3,19 +3,35 @@ PUT booking_v1/_doc/11:30125
   "doctorId": "1",
   "appointmentType": "video",
   "slotType": "normal",
-  "status":"booked",
+  "status": "booked",
   "sessionEndTime": "10:00",
   "sessionStartTime": "13:00",
   "sessionId": 125,
   "userId": 1,
-  "userType":"registered",
+  "userType": "registered",
   "bookingTimeStamp": "2021-01-01T07:30:00.000-0530",
   "appointmentId": "6ec4e887-79d0-46ab-992b-132582b078de",
   "slotTime": "11:30",
   "slotDay": "Monday",
   "slotId": "11:30125",
+  "symptoms": [
+    "fever",
+    "cold",
+    "headache",
+    "weakness"
+  ],
+  "tests": [
+    "NAATs",
+    "CBC",
+    "TSH",
+    "gastric fluid analysis",
+    "aminocentesis"
+  ],
+  "medicine": [
+    
+  ],
   "reasonForVisit": "Back Pain",
-  "clinicId":1,
+  "clinicId": 1,
   "clinicDetails": {
     "clinicLocation": "Bangalore",
     "fees": 500,
@@ -32,7 +48,12 @@ PUT booking_v1/_doc/11:30125
       "Cleaning topper",
       "Patient friendly"
     ],
-    "zipCode": "486661"
+    "zipCode": "486661",
+    "clinicSchedule": {
+      "from": "Wednesday",
+      "to": "Thursday",
+      "duration": "09:00 AM-09:00 PM"
+    }
   },
   "appointmentDate": "2022-07-22"
 }
@@ -42,19 +63,35 @@ PUT booking_v1/_doc/13:30123
   "doctorId": "1",
   "appointmentType": "video",
   "slotType": "priority",
-  "status":"notBooked",
+  "status": "notBooked",
   "sessionEndTime": "17:00",
   "sessionStartTime": "13:00",
   "sessionId": 123,
   "userId": 2,
-  "userType":"unRegistered",
+  "userType": "unRegistered",
   "bookingTimeStamp": "2021-01-01T07:30:00.000-0530",
   "appointmentId": "6ec4e887-79d0-445b-992b-132582b078de",
   "slotTime": "13:30",
   "slotDay": "Tuesday",
   "slotId": "13:30123",
+  "symptoms": [
+    "fever",
+    "cold",
+    "headache",
+    "weakness"
+  ],
+  "tests": [
+    "NAATs",
+    "CBC",
+    "TSH",
+    "gastric fluid analysis",
+    "aminocentesis"
+  ],
+  "medicine": [
+    
+  ],
   "reasonForVisit": "Front Pain",
-  "clinicId":1,
+  "clinicId": 1,
   "clinicDetails": {
     "clinicLocation": "Bangalore",
     "fees": 500,
@@ -71,30 +108,50 @@ PUT booking_v1/_doc/13:30123
       "Cleaning topper",
       "Patient friendly"
     ],
-    "zipCode": "486661"
+    "zipCode": "486661",
+    "clinicSchedule": {
+      "from": "Wednesday",
+      "to": "Thursday",
+      "duration": "09:00 AM-09:00 PM"
+    }
   },
   "appointmentDate": "2022-07-22"
 }
-
 
 PUT booking_v1/_doc/15:30125
 {
   "doctorId": "1",
   "appointmentType": "inPerson",
   "slotType": "normal",
-  "status":"booked",
+  "status": "booked",
   "sessionEndTime": "16:00",
   "sessionStartTime": "13:00",
   "sessionId": 125,
   "userId": 1,
-  "userType":"registered",
+  "userType": "registered",
   "bookingTimeStamp": "2021-01-01T07:30:00.000-0530",
   "appointmentId": "6ec74887-79d0-445b-992b-132582b078de",
   "slotTime": "15:30",
   "slotDay": "Wednesday",
   "slotId": "15:30125",
+  "symptoms": [
+    "fever",
+    "cold",
+    "headache",
+    "weakness"
+  ],
+  "tests": [
+    "NAATs",
+    "CBC",
+    "TSH",
+    "gastric fluid analysis",
+    "aminocentesis"
+  ],
+  "medicine": [
+    
+  ],
   "reasonForVisit": "Upward Pain",
-  "clinicId":2,
+  "clinicId": 2,
   "clinicDetails": {
     "clinicLocation": "Bangalore",
     "fees": 500,
@@ -111,7 +168,12 @@ PUT booking_v1/_doc/15:30125
       "Cleaning topper",
       "Patient friendly"
     ],
-    "zipCode": "486661"
+    "zipCode": "486661",
+    "clinicSchedule": {
+      "from": "Wednesday",
+      "to": "Thursday",
+      "duration": "09:00 AM-09:00 PM"
+    }
   },
   "appointmentDate": "2022-10-12"
 }
@@ -121,19 +183,35 @@ PUT booking_v1/_doc/15:30195
   "doctorId": "2",
   "appointmentType": "inPerson",
   "slotType": "priority",
-  "status":"booked",
+  "status": "booked",
   "sessionEndTime": "16:00",
   "sessionStartTime": "13:00",
   "sessionId": 195,
   "userId": 2,
-  "userType":"unRegistered",
+  "userType": "unRegistered",
   "bookingTimeStamp": "2021-01-01T07:30:00.000-0530",
   "appointmentId": "6ec74887-79d0-445b-992b-132582b078de",
   "slotTime": "15:30",
   "slotDay": "Wednesday",
   "slotId": "15:30195",
+  "symptoms": [
+    "fever",
+    "cold",
+    "headache",
+    "weakness"
+  ],
+  "tests": [
+    "NAATs",
+    "CBC",
+    "TSH",
+    "gastric fluid analysis",
+    "aminocentesis"
+  ],
+  "medicine": [
+    
+  ],
   "reasonForVisit": "Downward Pain",
-  "clinicId":2,
+  "clinicId": 2,
   "clinicDetails": {
     "clinicLocation": "Bangalore",
     "fees": 500,
@@ -150,7 +228,12 @@ PUT booking_v1/_doc/15:30195
       "Cleaning topper",
       "Patient friendly"
     ],
-    "zipCode": "486661"
+    "zipCode": "486661",
+    "clinicSchedule": {
+      "from": "Wednesday",
+      "to": "Thursday",
+      "duration": "09:00 AM-09:00 PM"
+    }
   },
   "appointmentDate": "2022-10-12"
 }
@@ -160,19 +243,35 @@ PUT booking_v1/_doc/15:35195
   "doctorId": "2",
   "appointmentType": "inPerson",
   "slotType": "normal",
-  "status":"booked",
+  "status": "booked",
   "sessionEndTime": "16:00",
   "sessionStartTime": "13:00",
   "sessionId": 195,
   "userId": 2,
-  "userType":"registered",
+  "userType": "registered",
   "bookingTimeStamp": "2021-01-01T07:30:00.000-0530",
   "appointmentId": "6ec74887-79d0-445b-992b-132582b078de",
   "slotTime": "15:35",
   "slotDay": "Wednesday",
   "slotId": "15:35195",
+  "symptoms": [
+    "fever",
+    "cold",
+    "headache",
+    "weakness"
+  ],
+  "tests": [
+    "NAATs",
+    "CBC",
+    "TSH",
+    "gastric fluid analysis",
+    "aminocentesis"
+  ],
+  "medicine": [
+    
+  ],
   "reasonForVisit": "Downward Pain",
-  "clinicId":3,
+  "clinicId": 3,
   "clinicDetails": {
     "clinicLocation": "Bangalore",
     "fees": 500,
@@ -189,7 +288,12 @@ PUT booking_v1/_doc/15:35195
       "Cleaning topper",
       "Patient friendly"
     ],
-    "zipCode": "486661"
+    "zipCode": "486661",
+    "clinicSchedule": {
+      "from": "Wednesday",
+      "to": "Thursday",
+      "duration": "09:00 AM-09:00 PM"
+    }
   },
   "appointmentDate": "2021-08-22"
 }
@@ -199,19 +303,35 @@ PUT booking_v1/_doc/15:40195
   "doctorId": "2",
   "appointmentType": "inPerson",
   "slotType": "normal",
-  "status":"booked",
+  "status": "booked",
   "sessionEndTime": "16:00",
   "sessionStartTime": "13:00",
   "sessionId": 195,
   "userId": 2,
-  "userType":"unRegistered",
+  "userType": "unRegistered",
   "bookingTimeStamp": "2021-01-01T07:30:00.000-0530",
   "appointmentId": "6ec74887-79d0-445b-992b-132582b078de",
   "slotTime": "15:40",
   "slotDay": "Wednesday",
   "slotId": "15:40195",
+  "symptoms": [
+    "fever",
+    "cold",
+    "headache",
+    "weakness"
+  ],
+  "tests": [
+    "NAATs",
+    "CBC",
+    "TSH",
+    "gastric fluid analysis",
+    "aminocentesis"
+  ],
+  "medicine": [
+    
+  ],
   "reasonForVisit": "Downward Pain",
-  "clinicId":3,
+  "clinicId": 3,
   "clinicDetails": {
     "clinicLocation": "Bangalore",
     "fees": 500,
@@ -228,8 +348,12 @@ PUT booking_v1/_doc/15:40195
       "Cleaning topper",
       "Patient friendly"
     ],
-    "zipCode": "486661"
+    "zipCode": "486661",
+    "clinicSchedule": {
+      "from": "Wednesday",
+      "to": "Thursday",
+      "duration": "09:00 AM-09:00 PM"
+    }
   },
   "appointmentDate": "2021-08-22"
 }
-
