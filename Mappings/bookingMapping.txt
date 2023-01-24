@@ -8,9 +8,6 @@ PUT booking_v1
       "doctorId": {
         "type": "keyword"
       },
-      "sessionId": {
-        "type": "keyword"
-      },
       "appointmentId": {
         "type": "keyword"
       },
