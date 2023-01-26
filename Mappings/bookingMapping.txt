@@ -29,11 +29,11 @@ PUT booking_v1
       "medicines": {
         "type": "nested",
         "properties": {
-          "tablet&Syrups": {
-            "type": "nested",
-            "properties": {
                 "dosage": {
                  "type": "long"  
+                },
+                "medType": {
+                 "type": "keyword"  
                 },
                 "name": {
                  "type": "keyword"  
@@ -52,30 +52,11 @@ PUT booking_v1
                 },
                 "toBeTaken": {
                  "type": "keyword"  
-                }
-            }
-          },
-          "customType": {
-            "type": "nested",
-            "properties": {
-                "dosage&Instruction": {
+                },
+                "dosageInstruction": {
                  "type": "text"  
-                },
-                "name": {
-                 "type": "keyword"  
-                },
-                "duration": {
-                 "type": "keyword"  
-                },
-                "repeatition": {
-                 "type": "keyword"  
-                },
-                "dosageTiming": {
-                 "type": "keyword"  
                 }
-            }
-          }
-        }
+           }
       },
       "userType": {
         "type": "keyword"
