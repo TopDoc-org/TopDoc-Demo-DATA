@@ -8,6 +8,29 @@ PUT doctor_v1/_doc/1
   ],
   "averageRating": "4.65",
   "city": "Bhubaneswar",
+  "password":"12345678sfag",
+  "pin":"1234",
+  "medicinesKeywordList":[
+    "Amoxicillin 500 mg"
+    "Vitamin D 50000 IU"
+    "Ibuprofen 800 mg"
+    "Cetirizine hydrochloride 10 mg"
+    "Azithromycin 250 mg"
+    "Amlodipine besylate 10 mg"
+  ],
+  "testsKeywordList":[
+     "NAATs",
+    "CBC",
+    "TSH",
+    "gastric fluid analysis",
+    "aminocentesis"
+  ],
+  "symptomsKeywordList":[ 
+    "fever",
+    "cold",
+    "headache",
+    "weakness"
+    ],
   "district": "Khordha",
   "country": "India",
   "id": 1,
@@ -776,6 +799,29 @@ PUT doctor_v1/_doc/2
   "averageRating": "4.65",
   "id": 2,
   "city": "Bengaluru",
+  "password":"1234456ag",
+  "pin":"1484",
+  "medicinesKeywordList":[
+    "Amoxicillin 500 mg"
+    "Vitamin D 50000 IU"
+    "Ibuprofen 800 mg"
+    "Cetirizine hydrochloride 10 mg"
+    "Azithromycin 250 mg"
+    "Amlodipine besylate 10 mg"
+  ],
+  "testsKeywordList":[
+     "NAATs",
+    "CBC",
+    "TSH",
+    "gastric fluid analysis",
+    "aminocentesis"
+  ],
+  "symptomsKeywordList":[ 
+    "fever",
+    "cold",
+    "headache",
+    "weakness"
+    ],
   "district": "Bengaluru (Bangalore) Rural",
   "country": "India",
   "designation": "Neurosurgeon",
@@ -1540,6 +1586,29 @@ PUT doctor_v1/_doc/3
   ],
   "averageRating": "4.65",
   "city": "Bhubaneswar",
+  "password":"8468555678sfag",
+  "pin":"1256",
+  "medicinesKeywordList":[
+    "Amoxicillin 500 mg"
+    "Vitamin D 50000 IU"
+    "Ibuprofen 800 mg"
+    "Cetirizine hydrochloride 10 mg"
+    "Azithromycin 250 mg"
+    "Amlodipine besylate 10 mg"
+  ],
+  "testsKeywordList":[
+     "NAATs",
+    "CBC",
+    "TSH",
+    "gastric fluid analysis",
+    "aminocentesis"
+  ],
+  "symptomsKeywordList":[ 
+    "fever",
+    "cold",
+    "headache",
+    "weakness"
+    ],
   "district": "Khordha",
   "id": 3,
   "country": "India",
@@ -2306,6 +2375,29 @@ PUT doctor_v1/_doc/4
     "Chemo"
   ],
   "averageRating": "4.65",
+  "password":"1484278sfag",
+  "pin":"7834",
+  "medicinesKeywordList":[
+    "Amoxicillin 500 mg"
+    "Vitamin D 50000 IU"
+    "Ibuprofen 800 mg"
+    "Cetirizine hydrochloride 10 mg"
+    "Azithromycin 250 mg"
+    "Amlodipine besylate 10 mg"
+  ],
+  "testsKeywordList":[
+     "NAATs",
+    "CBC",
+    "TSH",
+    "gastric fluid analysis",
+    "aminocentesis"
+  ],
+  "symptomsKeywordList":[ 
+    "fever",
+    "cold",
+    "headache",
+    "weakness"
+    ],
   "city": "Bengaluru",
   "district": "Bengaluru (Bangalore) Rural",
   "id": 4,
@@ -3075,6 +3167,29 @@ PUT doctor_v1/_doc/5
   "averageRating": "4.65",
   "city": "Delhi",
   "district": "Central Delhi",
+  "password":"78sfag",
+  "pin":"8644",
+  "medicinesKeywordList":[
+    "Amoxicillin 500 mg"
+    "Vitamin D 50000 IU"
+    "Ibuprofen 800 mg"
+    "Cetirizine hydrochloride 10 mg"
+    "Azithromycin 250 mg"
+    "Amlodipine besylate 10 mg"
+  ],
+  "testsKeywordList":[
+     "NAATs",
+    "CBC",
+    "TSH",
+    "gastric fluid analysis",
+    "aminocentesis"
+  ],
+  "symptomsKeywordList":[ 
+    "fever",
+    "cold",
+    "headache",
+    "weakness"
+    ],
   "country": "India",
   "id": 5,
   "designation": "Neurosurgeon",
@@ -3819,6 +3934,29 @@ PUT doctor_v1/_doc/6
   "averageRating": "4.65",
   "city": "Bhubaneswar",
   "district": "Khordha",
+  "password":"45678sfag",
+  "pin":"9634",
+  "medicinesKeywordList":[
+    "Amoxicillin 500 mg"
+    "Vitamin D 50000 IU"
+    "Ibuprofen 800 mg"
+    "Cetirizine hydrochloride 10 mg"
+    "Azithromycin 250 mg"
+    "Amlodipine besylate 10 mg"
+  ],
+  "testsKeywordList":[
+     "NAATs",
+    "CBC",
+    "TSH",
+    "gastric fluid analysis",
+    "aminocentesis"
+  ],
+  "symptomsKeywordList":[ 
+    "fever",
+    "cold",
+    "headache",
+    "weakness"
+    ],
   "id": 6,
   "country": "India",
   "designation": "Neurosurgeon",
@@ -4587,6 +4725,29 @@ PUT doctor_v1/_doc/7
   ],
   "averageRating": "4.65",
   "city": "Bhubaneswar",
+  "password":"128sfag",
+  "pin":"1211",
+  "medicinesKeywordList":[
+    "Amoxicillin 500 mg"
+    "Vitamin D 50000 IU"
+    "Ibuprofen 800 mg"
+    "Cetirizine hydrochloride 10 mg"
+    "Azithromycin 250 mg"
+    "Amlodipine besylate 10 mg"
+  ],
+  "testsKeywordList":[
+     "NAATs",
+    "CBC",
+    "TSH",
+    "gastric fluid analysis",
+    "aminocentesis"
+  ],
+  "symptomsKeywordList":[ 
+    "fever",
+    "cold",
+    "headache",
+    "weakness"
+    ],
   "district": "Khordha",
   "id": 7,
   "country": "India",

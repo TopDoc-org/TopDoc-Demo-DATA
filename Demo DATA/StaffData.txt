@@ -11,35 +11,35 @@ PUT staff_v1/_doc/1
     {
       "degree": "MCh",
       "description": "MCH is short for mean corpuscular hemoglobin",
-      "endDate": "1997",
+      "endDate": "1997-12-23",
       "fieldOfStudy": "Neuro Surgery",
       "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
-      "startDate": "1995"
+      "startDate": "1997-12-23"
     },
     {
       "degree": "MBBS",
       "description": "Bachelor of Medicine Bachelor of Surgery",
-      "endDate": "1994",
+      "endDate": "1997-12-23",
       "fieldOfStudy": "Neuro Surgery",
       "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
-      "startDate": "1989"
+      "startDate": "1997-12-23"
     }
   ],
   "experience": [
     {
       "organisation": "National Institute of Mental Health and Neurosciences (NIMHANS)",
       "description": "Optimized the whole medical infrastructure",
-      "endDate": "null",
+      "endDate": "1997-12-23",
       "location": "Bangalore",
-      "startDate": "2000",
+      "startDate": "1997-12-23",
       "title": "HOD and Professor of Neurosurgery Dept"
     },
     {
       "organisation": "Srirama Chandra Bhanja Medical College and Hospital",
       "description": "Handled thousand sof patients",
-      "endDate": "2000",
+      "endDate": "1997-12-23",
       "location": "Cuttack",
-      "startDate": "1996",
+      "startDate": "1997-12-23",
       "title": "HOD and Professor of Neurosurgery Dept"
     }
   ],
@@ -62,35 +62,35 @@ PUT staff_v1/_doc/2
     {
       "degree": "MCh",
       "description": "MCH is short for mean corpuscular hemoglobin",
-      "endDate": "1997",
+      "endDate": "1997-12-23",
       "fieldOfStudy": "Neuro Surgery",
       "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
-      "startDate": "1995"
+      "startDate": "1997-12-23"
     },
     {
       "degree": "MBBS",
       "description": "Bachelor of Medicine Bachelor of Surgery",
-      "endDate": "1994",
+      "endDate": "1997-12-23",
       "fieldOfStudy": "Neuro Surgery",
       "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
-      "startDate": "1989"
+      "startDate": "1997-12-23"
     }
   ],
   "experience": [
     {
       "organisation": "National Institute of Mental Health and Neurosciences (NIMHANS)",
       "description": "Optimized the whole medical infrastructure",
-      "endDate": "null",
+      "endDate": "1997-12-23",
       "location": "Bangalore",
-      "startDate": "2000",
+      "startDate": "1997-12-23",
       "title": "HOD and Professor of Neurosurgery Dept"
     },
     {
       "organisation": "Srirama Chandra Bhanja Medical College and Hospital",
       "description": "Handled thousand sof patients",
-      "endDate": "2000",
+      "endDate": "1997-12-23",
       "location": "Cuttack",
-      "startDate": "1996",
+      "startDate": "1997-12-23",
       "title": "HOD and Professor of Neurosurgery Dept"
     }
   ],
@@ -114,35 +114,35 @@ PUT staff_v1/_doc/3
     {
       "degree": "MCh",
       "description": "MCH is short for mean corpuscular hemoglobin",
-      "endDate": "1997",
+      "endDate": "1997-12-23",
       "fieldOfStudy": "Neuro Surgery",
       "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
-      "startDate": "1995"
+      "startDate": "1997-12-23"
     },
     {
       "degree": "MBBS",
       "description": "Bachelor of Medicine Bachelor of Surgery",
-      "endDate": "1994",
+      "endDate": "1997-12-23",
       "fieldOfStudy": "Neuro Surgery",
       "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
-      "startDate": "1989"
+      "startDate": "1997-12-23"
     }
   ],
   "experience": [
     {
       "organisation": "National Institute of Mental Health and Neurosciences (NIMHANS)",
       "description": "Optimized the whole medical infrastructure",
-      "endDate": "null",
+      "endDate": "1997-12-23",
       "location": "Bangalore",
-      "startDate": "2000",
+      "startDate": "1997-12-23",
       "title": "HOD and Professor of Neurosurgery Dept"
     },
     {
       "organisation": "Srirama Chandra Bhanja Medical College and Hospital",
       "description": "Handled thousand sof patients",
-      "endDate": "2000",
+      "endDate": "1997-12-23",
       "location": "Cuttack",
-      "startDate": "1996",
+      "startDate": "1997-12-23",
       "title": "HOD and Professor of Neurosurgery Dept"
     }
   ],
@@ -165,35 +165,35 @@ PUT staff_v1/_doc/4
     {
       "degree": "MCh",
       "description": "MCH is short for mean corpuscular hemoglobin",
-      "endDate": "1997",
+      "endDate": "1997-12-23",
       "fieldOfStudy": "Neuro Surgery",
       "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
-      "startDate": "1995"
+      "startDate": "1997-12-23"
     },
     {
       "degree": "MBBS",
       "description": "Bachelor of Medicine Bachelor of Surgery",
-      "endDate": "1994",
+      "endDate": "1997-12-23",
       "fieldOfStudy": "Neuro Surgery",
       "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
-      "startDate": "1989"
+      "startDate": "1997-12-23"
     }
   ],
   "experience": [
     {
       "organisation": "National Institute of Mental Health and Neurosciences (NIMHANS)",
       "description": "Optimized the whole medical infrastructure",
-      "endDate": "null",
+      "endDate": "1997-12-23",
       "location": "Bangalore",
-      "startDate": "2000",
+      "startDate": "1997-12-23",
       "title": "HOD and Professor of Neurosurgery Dept"
     },
     {
       "organisation": "Srirama Chandra Bhanja Medical College and Hospital",
       "description": "Handled thousand sof patients",
-      "endDate": "2000",
+      "endDate": "1997-12-23",
       "location": "Cuttack",
-      "startDate": "1996",
+      "startDate": "1997-12-23",
       "title": "HOD and Professor of Neurosurgery Dept"
     }
   ],
@@ -219,35 +219,35 @@ PUT staff_v1/_doc/5
     {
       "degree": "MCh",
       "description": "MCH is short for mean corpuscular hemoglobin",
-      "endDate": "1997",
+      "endDate": "1997-12-23",
       "fieldOfStudy": "Neuro Surgery",
       "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
-      "startDate": "1995"
+      "startDate": "1997-12-23"
     },
     {
       "degree": "MBBS",
       "description": "Bachelor of Medicine Bachelor of Surgery",
-      "endDate": "1994",
+      "endDate": "1997-12-23",
       "fieldOfStudy": "Neuro Surgery",
       "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
-      "startDate": "1989"
+      "startDate": "1997-12-23"
     }
   ],
   "experience": [
     {
       "organisation": "National Institute of Mental Health and Neurosciences (NIMHANS)",
       "description": "Optimized the whole medical infrastructure",
-      "endDate": "null",
+      "endDate": "1997-12-23",
       "location": "Bangalore",
-      "startDate": "2000",
+      "startDate": "1997-12-23",
       "title": "HOD and Professor of Neurosurgery Dept"
     },
     {
       "organisation": "Srirama Chandra Bhanja Medical College and Hospital",
       "description": "Handled thousand sof patients",
-      "endDate": "2000",
+      "endDate": "1997-12-23",
       "location": "Cuttack",
-      "startDate": "1996",
+      "startDate": "1997-12-23",
       "title": "HOD and Professor of Neurosurgery Dept"
     }
   ],
@@ -271,35 +271,35 @@ PUT staff_v1/_doc/6
     {
       "degree": "MCh",
       "description": "MCH is short for mean corpuscular hemoglobin",
-      "endDate": "1997",
+      "endDate": "1997-12-23",
       "fieldOfStudy": "Neuro Surgery",
       "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
-      "startDate": "1995"
+      "startDate": "1997-12-23"
     },
     {
       "degree": "MBBS",
       "description": "Bachelor of Medicine Bachelor of Surgery",
-      "endDate": "1994",
+      "endDate": "1997-12-23",
       "fieldOfStudy": "Neuro Surgery",
       "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
-      "startDate": "1989"
+      "startDate": "1997-12-23"
     }
   ],
   "experience": [
     {
       "organisation": "National Institute of Mental Health and Neurosciences (NIMHANS)",
       "description": "Optimized the whole medical infrastructure",
-      "endDate": "null",
+      "endDate": "1997-12-23",
       "location": "Bangalore",
-      "startDate": "2000",
+      "startDate": "1997-12-23",
       "title": "HOD and Professor of Neurosurgery Dept"
     },
     {
       "organisation": "Srirama Chandra Bhanja Medical College and Hospital",
       "description": "Handled thousand sof patients",
-      "endDate": "2000",
+      "endDate": "1997-12-23",
       "location": "Cuttack",
-      "startDate": "1996",
+      "startDate": "1997-12-23",
       "title": "HOD and Professor of Neurosurgery Dept"
     }
   ],

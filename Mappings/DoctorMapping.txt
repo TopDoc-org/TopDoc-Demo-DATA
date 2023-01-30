@@ -400,6 +400,21 @@ PUT doctor_v1
       },
       "yearsOfExperience": {
         "type": "long"
+      },
+      "symptomsKeywordList": {
+        "type": "keyword"
+      },
+      "testsKeywordList": {
+        "type": "keyword"  
+      },
+      "medicinesKeywordList": {
+        "type": "keyword" 
+      },
+      "pin": {
+        "type": "keyword" 
+      },
+      "password": {
+        "type": "keyword" 
       }
     }
   }
