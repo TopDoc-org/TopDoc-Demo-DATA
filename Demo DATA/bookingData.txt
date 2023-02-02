@@ -15,6 +15,7 @@ PUT booking_v1/_doc/11:30125
   "slotDay": "Monday",
   "slotId": "11:30125",
   "nextApptDate":"2023-11-26",
+  "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
     "fever",
     "cold",
@@ -76,6 +77,7 @@ PUT booking_v1/_doc/13:30123
   "slotTime": "13:30",
   "slotDay": "Tuesday",
   "slotId": "13:30123",
+  "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
     "fever",
     "cold",
@@ -137,6 +139,7 @@ PUT booking_v1/_doc/15:30125
   "slotTime": "15:30",
   "slotDay": "Wednesday",
   "slotId": "15:30125",
+  "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
     "fever",
     "cold",
@@ -198,6 +201,7 @@ PUT booking_v1/_doc/15:30195
   "slotTime": "15:30",
   "slotDay": "Wednesday",
   "slotId": "15:30195",
+  "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
     "fever",
     "cold",
@@ -259,6 +263,7 @@ PUT booking_v1/_doc/15:35195
   "slotTime": "15:35",
   "slotDay": "Wednesday",
   "slotId": "15:35195",
+  "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
     "fever",
     "cold",
@@ -321,6 +326,7 @@ PUT booking_v1/_doc/15:40195
   "slotTime": "15:40",
   "slotDay": "Wednesday",
   "slotId": "15:40195",
+  "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
     "fever",
     "cold",

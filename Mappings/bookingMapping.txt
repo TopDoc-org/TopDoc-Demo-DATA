@@ -26,6 +26,9 @@ PUT booking_v1
       "symptoms": {
         "type": "keyword"
       },
+      "diagnosis": {
+        "type": "keyword"
+      },
       "tests": {
         "type": "keyword"  
       },

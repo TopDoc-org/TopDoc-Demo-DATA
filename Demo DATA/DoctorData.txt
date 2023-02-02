@@ -10,6 +10,7 @@ PUT doctor_v1/_doc/1
   "city": "Bhubaneswar",
   "password":"12345678sfag",
   "pin":"1234",
+  "diagnosisKeywordList":["typhoid","malaria","coding"],
   "medicinesKeywordList":[
     "Amoxicillin 500 mg"
     "Vitamin D 50000 IU"
@@ -801,6 +802,7 @@ PUT doctor_v1/_doc/2
   "city": "Bengaluru",
   "password":"1234456ag",
   "pin":"1484",
+  "diagnosisKeywordList":["typhoid","malaria","coding"],
   "medicinesKeywordList":[
     "Amoxicillin 500 mg"
     "Vitamin D 50000 IU"
@@ -1588,6 +1590,7 @@ PUT doctor_v1/_doc/3
   "city": "Bhubaneswar",
   "password":"8468555678sfag",
   "pin":"1256",
+  "diagnosisKeywordList":["typhoid","malaria","coding"],
   "medicinesKeywordList":[
     "Amoxicillin 500 mg"
     "Vitamin D 50000 IU"
@@ -2377,6 +2380,7 @@ PUT doctor_v1/_doc/4
   "averageRating": "4.65",
   "password":"1484278sfag",
   "pin":"7834",
+  "diagnosisKeywordList":["typhoid","malaria","coding"],
   "medicinesKeywordList":[
     "Amoxicillin 500 mg"
     "Vitamin D 50000 IU"
@@ -3169,6 +3173,7 @@ PUT doctor_v1/_doc/5
   "district": "Central Delhi",
   "password":"78sfag",
   "pin":"8644",
+  "diagnosisKeywordList":["typhoid","malaria","coding"],
   "medicinesKeywordList":[
     "Amoxicillin 500 mg"
     "Vitamin D 50000 IU"
@@ -3936,6 +3941,7 @@ PUT doctor_v1/_doc/6
   "district": "Khordha",
   "password":"45678sfag",
   "pin":"9634",
+  "diagnosisKeywordList":["typhoid","malaria","coding"],
   "medicinesKeywordList":[
     "Amoxicillin 500 mg"
     "Vitamin D 50000 IU"
@@ -4727,6 +4733,7 @@ PUT doctor_v1/_doc/7
   "city": "Bhubaneswar",
   "password":"128sfag",
   "pin":"1211",
+  "diagnosisKeywordList":["typhoid","malaria","coding"],
   "medicinesKeywordList":[
     "Amoxicillin 500 mg"
     "Vitamin D 50000 IU"
