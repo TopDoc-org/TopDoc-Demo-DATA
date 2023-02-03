@@ -356,7 +356,7 @@ PUT doctor_v1
                       "fees": {
                         "type": "double"
                       },
-                      "tagReceived": {
+                      "tagReceived": { 
                         "type": "keyword"
                       },
                       "isActive": {
@@ -400,6 +400,24 @@ PUT doctor_v1
       },
       "yearsOfExperience": {
         "type": "long"
+      },
+      "symptomsKeywordList": {
+        "type": "keyword"
+      },
+       "diagnosisKeywordList": {
+        "type": "keyword"
+      },
+      "testsKeywordList": {
+        "type": "keyword"  
+      },
+      "medicinesKeywordList": {
+        "type": "keyword" 
+      },
+      "pin": {
+        "type": "keyword" 
+      },
+      "password": {
+        "type": "keyword" 
       }
     }
   }
