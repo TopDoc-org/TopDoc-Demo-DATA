@@ -1,64 +1,70 @@
 PUT notification_v1/_doc/1
 {
+    "notificationId":"1",
     "priority": "medium",
     "message": "Your Dr. Jhunjhunwala has been delayed the session by 30 minutes",
     "time": "17:00",
     "status": "delivered",
     "medium": ["app","sms"],
-    "userId": 2,
+    "id": 2,
     "senderId": ["application",7999411516]
 }
 
 PUT notification_v1/_doc/2
 {
+    "notificationId":"2",
     "priority": "low",
     "message": "Your session is cancelled by your doctor, apologies for inconvenience",
     "time": "15:00",
     "status": "seen",
     "medium": ["app"],
-    "userId": 1,
+    "id": 1,
     "senderId": ["application"]
 }
 
 PUT notification_v1/_doc/3
 {
+    "notificationId":"3",
     "priority": "high",
     "message": "Your session is cancelled by your doctor, apologies for inconvenience",
     "time": "08:00",
     "status": "failed",
     "medium": ["app","sms","mail"],
-    "userId": 9,
+    "id": 9,
     "senderId": ["application","topdoc@gmail.com",7999411516]
 }
 
 PUT notification_v1/_doc/4
 {
+    "notificationId":"4",
     "priority": "medium",
     "message": "Your Dr. Jhunjhunwala has been delayed the session by 30 minutes",
     "time": "10:00",
     "status": "delivered",
     "medium": ["app","sms"],
-    "userId": 7,
+    "id": 7,
     "senderId": ["application",7999411516]
 
 PUT notification_v1/_doc/5
 {
+    "notificationId":"5",
     "priority": "high",
     "message": "Your session is cancelled by your doctor, apologies for inconvenience",
     "time": "11:00",
     "status": "seen",
     "medium": ["app","sms","mail"],
-    "userId": 3,
+    "id": 3,
     "senderId": ["application","topdoc@gmail.com",7999411516]
 }
 
 PUT notification_v1/_doc/6
 {
+    "notificationId":"6",
     "priority": "low",
     "message": "app update is available",
     "time": "13:00",
     "status": "failed",
     "medium": ["app"],
-    "userId": 5,
+    "id": 5,
     "senderId": ["application"]
 }
