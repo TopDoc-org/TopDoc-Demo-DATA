@@ -33,7 +33,7 @@ PUT notification_v1
       },
       "senderId": {
         "type": "keyword"
-      },
+      }
     }
   }
 }
