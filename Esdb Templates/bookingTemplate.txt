@@ -22,8 +22,19 @@ PUT _scripts/bookingTemplate
           }
         }
         {{/boolTermQuery}}
-          
-        
+        {{#boolRangeComma}}
+        ,
+        {{/boolRangeComma}}
+        {{#boolRangeQuery}}
+        {
+          "range": {
+            "{{rangeField}}": {
+              "gte": "{{gteValue}}",
+              "lte": "{{lteValue}}"
+            }
+          }
+        } 
+        {{/boolRangeQuery}}
       ]
       {{#boolFilter}} 
       , 
@@ -138,6 +149,19 @@ PUT _scripts/bookingTemplate
             "doctorId": "{{fieldValue}}" 
           }
         }
+        {{#boolRangeComma}}
+        ,
+        {{/boolRangeComma}}
+        {{#boolRangeQuery}}
+        {
+          "range": {
+            "{{rangeField}}": {
+              "gte": "{{gteValue}}",
+              "lte": "{{lteValue}}"
+            }
+          }
+        } 
+        {{/boolRangeQuery}}
       ]
       {{#boolFilter}} 
       , 
@@ -261,19 +285,22 @@ PUT _scripts/bookingTemplate
                    
                 }
                 
-            },"totalSlotsBookedOfTheDoc": {
+            },
+            "totalSlotsBookedOfTheDoc": {
                 "value_count": {
                     "field": "appointmentId"
                    
                 }
                 
-            },"totalSessionsOfTheDoc": {
-                "value_count": {
-                    "field": "appointmentId"
+            },
+            "totalSessionsOfTheDoc": {
+                "cardinality": {
+                    "field": "sessionId"
                    
                 }
                 
-            },"uniqueRegisteredUsersOfTheDoc": {
+            },
+            "uniqueRegisteredUsersOfTheDoc": {
                 "cardinality": {
                     "field": "userId"
                    
@@ -294,6 +321,35 @@ PUT _scripts/bookingTemplate
                 }
                 
             }
+        {{#boolRangeComma}}
+         ,
+        "results_by_date": {
+             "date_histogram": {
+                  "field": "{{rangeField}}",
+                  "calendar_interval": "day",
+                  "format": "yyyy-MM-dd"
+        },
+        "aggs": {
+        "unique_field_values": {
+            "terms": {
+            "field": "sessionId"
+          },
+          "aggs": {
+            "documents": {
+              "top_hits": {
+                "size": 100
+              }
+            }
+          }
+        },
+        "documents": {
+          "top_hits": {
+            "size": 100
+          }
+        }
+      }
+    }
+         {{/boolRangeComma}}
             }
             {{/doctorAggregation}}
             
@@ -308,6 +364,19 @@ PUT _scripts/bookingTemplate
             "sessionId": "{{fieldValue}}" 
           }
         }
+        {{#boolRangeComma}}
+        ,
+        {{/boolRangeComma}}
+        {{#boolRangeQuery}}
+        {
+          "range": {
+            "{{rangeField}}": {
+              "gte": "{{gteValue}}",
+              "lte": "{{lteValue}}"
+            }
+          }
+        } 
+        {{/boolRangeQuery}}
       ]
       {{#boolFilter}} 
       , 
@@ -463,6 +532,19 @@ PUT _scripts/bookingTemplate
             "appointmentDate": "{{fieldValue}}" 
           }
         }
+        {{#boolRangeComma}}
+        ,
+        {{/boolRangeComma}}
+        {{#boolRangeQuery}}
+        {
+          "range": {
+            "{{rangeField}}": {
+              "gte": "{{gteValue}}",
+              "lte": "{{lteValue}}"
+            }
+          }
+        } 
+        {{/boolRangeQuery}}
       ]
       {{#boolFilter}} 
       , 
@@ -641,6 +723,19 @@ PUT _scripts/bookingTemplate
             "userId": "{{fieldValue}}" 
           }
         }
+        {{#boolRangeComma}}
+        ,
+        {{/boolRangeComma}}
+        {{#boolRangeQuery}}
+        {
+          "range": {
+            "{{rangeField}}": {
+              "gte": "{{gteValue}}",
+              "lte": "{{lteValue}}"
+            }
+          }
+        } 
+        {{/boolRangeQuery}}
       ]
       {{#boolFilter}} 
       , 
