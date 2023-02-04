@@ -26,6 +26,21 @@ PUT booking_v1
       "symptoms": {
         "type": "keyword"
       },
+      "userName": {
+        "type": "keyword"
+      },
+      "gender": {
+        "type": "keyword"
+      },
+      "queueId": {
+        "type": "keyword"
+      },
+      "pin": {
+        "type": "keyword"
+      },
+      "dob": {
+        "type": "date"
+      },
       "diagnosis": {
         "type": "keyword"
       },
@@ -83,6 +98,16 @@ PUT booking_v1
         "type": "keyword"
       },
       "sessionEndTime": {
+        "type": "keyword"
+      },
+      "endTime": {
+        "type": "keyword"
+      },
+      "actualEndTime": {
+        "type": "date",
+        "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+      },
+      "predictedSlotTime": {
         "type": "keyword"
       },
       "bookingTimeStamp": {
