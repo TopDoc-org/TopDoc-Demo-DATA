@@ -5,6 +5,9 @@ PUT notification_v1
   },
   "mappings": {
     "properties": {
+      "notificationId": {
+        "type": "keyword"
+      },
       "priority": {
         "type": "keyword"
       },
@@ -30,7 +33,7 @@ PUT notification_v1
       },
       "senderId": {
         "type": "keyword"
-      },
+      }
     }
   }
 }
