@@ -20,6 +20,7 @@ PUT booking_v1/_doc/11:30125
   "endTime":"12:00",
   "predictedSlotTime":"11:30",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "11:30125",
   "nextApptDate":"2023-11-26",
   "diagnosis":["typhoid","malaria","coding"],
@@ -90,6 +91,7 @@ PUT booking_v1/_doc/12:00125
   "endTime":"12:30",
   "predictedSlotTime":"12:00",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "12:00125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
@@ -159,6 +161,7 @@ PUT booking_v1/_doc/12:30125
   "endTime":"13:00",
   "predictedSlotTime":"12:30",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "12:30125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
@@ -228,6 +231,7 @@ PUT booking_v1/_doc/13:00125
   "endTime":"13:30",
   "predictedSlotTime":"13:00",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "13:00125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
@@ -298,6 +302,7 @@ PUT booking_v1/_doc/13:30125
   "actualEndTime":"2022-07-22T18:00:00.000-0530",
   "predictedSlotTime":"",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "13:30125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
@@ -368,6 +373,7 @@ PUT booking_v1/_doc/14:00125
   "endTime":"14:30",
   "predictedSlotTime":"14:00",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "14:00125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
@@ -438,6 +444,7 @@ PUT booking_v1/_doc/14:30125
   "endTime":"15:00",
   "predictedSlotTime":"14:30",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "14:30125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
@@ -510,6 +517,7 @@ PUT booking_v1/_doc/15:00125
   "actualEndTime":"2022-07-22T18:00:00.000-0530",
   "predictedSlotTime":"",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "15:00125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
@@ -580,6 +588,7 @@ PUT booking_v1/_doc/15:30125
   "endTime":"16:00",
   "predictedSlotTime":"15:30",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "15:30125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
@@ -650,6 +659,7 @@ PUT booking_v1/_doc/16:00125
   "endTime":"16:30",
   "predictedSlotTime":"16:00",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "16:00125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
@@ -720,6 +730,7 @@ PUT booking_v1/_doc/16:30125
   "endTime":"17:00",
   "predictedSlotTime":"16:30",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "16:30125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
@@ -790,6 +801,7 @@ PUT booking_v1/_doc/17:00125
   "endTime":"17:30",
   "predictedSlotTime":"17:00",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "17:00125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
@@ -860,6 +872,7 @@ PUT booking_v1/_doc/17:30125
   "endTime":"18:00",
   "predictedSlotTime":"17:30",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "17:30125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
@@ -931,7 +944,8 @@ PUT booking_v1/_doc/18:00125
   "actualEndTime":"2022-07-22T18:00:00.000-0530",
   "predictedSlotTime":"",
   "slotDay": "Wednesday",
-  "slotId": "18:001255",
+  "paymentStatus":"default",
+  "slotId": "18:00125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
     "fever",
@@ -1001,6 +1015,7 @@ PUT booking_v1/_doc/18:30125
   "endTime":"19:00",
   "predictedSlotTime":"18:30",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "18:30125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
@@ -1072,6 +1087,7 @@ PUT booking_v1/_doc/19:00125
   "actualEndTime":"2022-07-22T18:00:00.000-0530",
   "predictedSlotTime":"19:00",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "19:00125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
@@ -1142,6 +1158,7 @@ PUT booking_v1/_doc/19:30125
   "endTime":"20:00",
   "predictedSlotTime":"19:30",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "19:30125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
@@ -1209,9 +1226,10 @@ PUT booking_v1/_doc/20:00125
   "rejoinTimeStamp": "2021-01-01T07:30:00.000-0530",
   "appointmentId": "6ec74887-79d0-445b-992b-132582b078de",
   "slotTime": "20:00",
-  "endTime":"20:30",//
-  "predictedSlotTime":"20:00",//
+  "endTime":"20:30",
+  "predictedSlotTime":"20:00",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "20:00125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [
@@ -1283,6 +1301,7 @@ PUT booking_v1/_doc/20:30125
   "actualEndTime":"2022-07-22T18:00:00.000-0530",
   "predictedSlotTime":"",
   "slotDay": "Wednesday",
+  "paymentStatus":"default",
   "slotId": "20:30125",
   "diagnosis":["typhoid","malaria","coding"],
   "symptoms": [

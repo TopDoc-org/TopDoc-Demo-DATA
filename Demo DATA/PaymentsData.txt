@@ -7,7 +7,7 @@ PUT payment_v1/_doc/sks5s4ss
   "userName" : "Nitish",
   "orderId" : "sks5s4ss",
   "amount" : "530",
-  "dateAndTime": "20221021T115513+0000",
+  "dateAndTime": "2021-01-01T07:30:00.000-0530",
   "paymentStatus":"Done"
 }
 
@@ -18,7 +18,7 @@ PUT payment_v1/_doc/sks5s4s5s5ss
   "doctorId": "1",
   "orderId" : "sks5s4s5s5ss",
   "amount" : "70000",
-  "dateAndTime": "20131021T115513+0000",
+  "dateAndTime": "2021-01-01T07:30:00.000-0530",
   "paymentStatus":"Done"
 }
 
@@ -32,7 +32,7 @@ PUT payment_v1/_doc/sks5s58lxk4ss
   "userName" : "Sai",
   "orderId" : "sks5s58lxk4ss",
   "amount" : "500",
-  "dateAndTime": "20211021T115513+0000",
+  "dateAndTime": "2021-01-01T07:30:00.000-0530",
   "paymentStatus":"Pending"
 }
 
@@ -46,7 +46,7 @@ PUT payment_v1/_doc/sks56xx1c45s4ss
   "userName" : "akash",
   "orderId" : "sks56xx1c45s4ss",
   "amount" : "999",
-  "dateAndTime": "20311021T115513+0000",
+  "dateAndTime": "2021-01-01T07:30:00.000-0530",
   "paymentStatus":"Failed"
 }
 
@@ -58,7 +58,7 @@ PUT payment_v1/_doc/skxhxnjs5s5s4ss
   "doctorId": "2",
   "orderId" : "skxhxnjs5s5s4ss",
   "amount" : "4587",
-  "dateAndTime": "20781021T115513+0000",
+  "dateAndTime": "2021-01-01T07:30:00.000-0530",
   "paymentStatus":"Failed"
 }
 
@@ -72,6 +72,6 @@ PUT payment_v1/_doc/sks5xxx65x8s4ss
   "userName" : "Ayush",
   "orderId" : "sks5xxx65x8s4ss",
   "amount" : "780",
-  "dateAndTime": "20321021T115513+0000",
+  "dateAndTime": "2021-01-01T07:30:00.000-0530",
   "paymentStatus":"Failed"
 }

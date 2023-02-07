@@ -34,7 +34,7 @@ PUT payment_v1
       },
       "dateAndTime": {
         "type": "date",
-        "format" : "basic_date_time_no_millis"
+        "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
       },
       "paymentStatus": {
         "type": "keyword"

@@ -14,6 +14,9 @@ PUT booking_v1
       "slotId": {
         "type": "keyword"
       },
+      "paymentStatus": {
+        "type": "keyword"
+      },
       "userId": {
         "type": "keyword"
       },
