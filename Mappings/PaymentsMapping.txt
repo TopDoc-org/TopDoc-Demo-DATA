@@ -11,6 +11,9 @@ PUT payment_v1
       "couponApplied": {
         "type": "keyword"
       },
+      "slotType": {
+        "type": "keyword"
+      },
       "doctorId": {
         "type": "keyword"
       },

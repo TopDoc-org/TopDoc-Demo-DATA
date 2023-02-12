@@ -11,6 +11,9 @@ PUT booking_v1
       "appointmentId": {
         "type": "keyword"
       },
+      "slotDuration": {
+        "type": "keyword"
+      },
       "slotId": {
         "type": "keyword"
       },
@@ -21,6 +24,12 @@ PUT booking_v1
         "type": "keyword"
       },
       "sessionId": {
+        "type": "keyword"
+      },
+      "mobile": {
+        "type": "keyword"
+      },
+      "email": {
         "type": "keyword"
       },
       "nextApptDate": {

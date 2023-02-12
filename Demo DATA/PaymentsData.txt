@@ -8,7 +8,8 @@ PUT payment_v1/_doc/sks5s4ss
   "orderId" : "sks5s4ss",
   "amount" : "530",
   "dateAndTime": "2021-01-01T07:30:00.000-0530",
-  "paymentStatus":"Done"
+  "paymentStatus":"Done",
+  "slotType":"normal"
 }
 
 PUT payment_v1/_doc/sks5s4s5s5ss
@@ -33,7 +34,8 @@ PUT payment_v1/_doc/sks5s58lxk4ss
   "orderId" : "sks5s58lxk4ss",
   "amount" : "500",
   "dateAndTime": "2021-01-01T07:30:00.000-0530",
-  "paymentStatus":"Pending"
+  "paymentStatus":"Pending",
+  "slotType":"normal"
 }
 
 
@@ -47,7 +49,8 @@ PUT payment_v1/_doc/sks56xx1c45s4ss
   "orderId" : "sks56xx1c45s4ss",
   "amount" : "999",
   "dateAndTime": "2021-01-01T07:30:00.000-0530",
-  "paymentStatus":"Failed"
+  "paymentStatus":"Failed",
+  "slotType":"priority"
 }
 
 
@@ -73,5 +76,6 @@ PUT payment_v1/_doc/sks5xxx65x8s4ss
   "orderId" : "sks5xxx65x8s4ss",
   "amount" : "780",
   "dateAndTime": "2021-01-01T07:30:00.000-0530",
-  "paymentStatus":"Failed"
+  "paymentStatus":"Failed",
+  "slotType":"priority"
 }

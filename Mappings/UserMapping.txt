@@ -8,6 +8,9 @@ PUT user_v1
             "DOB": {
                 "type": "date"
             },
+            "profImageUrl": {
+                "enabled": false
+            },
             "Zipcode": {
                 "type": "keyword"
             },

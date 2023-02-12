@@ -12,11 +12,11 @@ PUT doctor_v1/_doc/1
   "pin":"1234",
   "diagnosisKeywordList":["typhoid","malaria","coding"],
   "medicinesKeywordList":[
-    "Amoxicillin 500 mg"
-    "Vitamin D 50000 IU"
-    "Ibuprofen 800 mg"
-    "Cetirizine hydrochloride 10 mg"
-    "Azithromycin 250 mg"
+    "Amoxicillin 500 mg",
+    "Vitamin D 50000 IU",
+    "Ibuprofen 800 mg",
+    "Cetirizine hydrochloride 10 mg",
+    "Azithromycin 250 mg",
     "Amlodipine besylate 10 mg"
   ],
   "testsKeywordList":[
@@ -804,11 +804,11 @@ PUT doctor_v1/_doc/2
   "pin":"1484",
   "diagnosisKeywordList":["typhoid","malaria","coding"],
   "medicinesKeywordList":[
-    "Amoxicillin 500 mg"
-    "Vitamin D 50000 IU"
-    "Ibuprofen 800 mg"
-    "Cetirizine hydrochloride 10 mg"
-    "Azithromycin 250 mg"
+    "Amoxicillin 500 mg",
+    "Vitamin D 50000 IU",
+    "Ibuprofen 800 mg",
+    "Cetirizine hydrochloride 10 mg",
+    "Azithromycin 250 mg",
     "Amlodipine besylate 10 mg"
   ],
   "testsKeywordList":[
@@ -1592,11 +1592,11 @@ PUT doctor_v1/_doc/3
   "pin":"1256",
   "diagnosisKeywordList":["typhoid","malaria","coding"],
   "medicinesKeywordList":[
-    "Amoxicillin 500 mg"
-    "Vitamin D 50000 IU"
-    "Ibuprofen 800 mg"
-    "Cetirizine hydrochloride 10 mg"
-    "Azithromycin 250 mg"
+    "Amoxicillin 500 mg",
+    "Vitamin D 50000 IU",
+    "Ibuprofen 800 mg",
+    "Cetirizine hydrochloride 10 mg",
+    "Azithromycin 250 mg",
     "Amlodipine besylate 10 mg"
   ],
   "testsKeywordList":[
@@ -2382,11 +2382,11 @@ PUT doctor_v1/_doc/4
   "pin":"7834",
   "diagnosisKeywordList":["typhoid","malaria","coding"],
   "medicinesKeywordList":[
-    "Amoxicillin 500 mg"
-    "Vitamin D 50000 IU"
-    "Ibuprofen 800 mg"
-    "Cetirizine hydrochloride 10 mg"
-    "Azithromycin 250 mg"
+    "Amoxicillin 500 mg",
+    "Vitamin D 50000 IU",
+    "Ibuprofen 800 mg",
+    "Cetirizine hydrochloride 10 mg",
+    "Azithromycin 250 mg",
     "Amlodipine besylate 10 mg"
   ],
   "testsKeywordList":[
@@ -3175,11 +3175,11 @@ PUT doctor_v1/_doc/5
   "pin":"8644",
   "diagnosisKeywordList":["typhoid","malaria","coding"],
   "medicinesKeywordList":[
-    "Amoxicillin 500 mg"
-    "Vitamin D 50000 IU"
-    "Ibuprofen 800 mg"
-    "Cetirizine hydrochloride 10 mg"
-    "Azithromycin 250 mg"
+    "Amoxicillin 500 mg",
+    "Vitamin D 50000 IU",
+    "Ibuprofen 800 mg",
+    "Cetirizine hydrochloride 10 mg",
+    "Azithromycin 250 mg",
     "Amlodipine besylate 10 mg"
   ],
   "testsKeywordList":[
@@ -3943,11 +3943,11 @@ PUT doctor_v1/_doc/6
   "pin":"9634",
   "diagnosisKeywordList":["typhoid","malaria","coding"],
   "medicinesKeywordList":[
-    "Amoxicillin 500 mg"
-    "Vitamin D 50000 IU"
-    "Ibuprofen 800 mg"
-    "Cetirizine hydrochloride 10 mg"
-    "Azithromycin 250 mg"
+    "Amoxicillin 500 mg",
+    "Vitamin D 50000 IU",
+    "Ibuprofen 800 mg",
+    "Cetirizine hydrochloride 10 mg",
+    "Azithromycin 250 mg",
     "Amlodipine besylate 10 mg"
   ],
   "testsKeywordList":[
@@ -4735,11 +4735,11 @@ PUT doctor_v1/_doc/7
   "pin":"1211",
   "diagnosisKeywordList":["typhoid","malaria","coding"],
   "medicinesKeywordList":[
-    "Amoxicillin 500 mg"
-    "Vitamin D 50000 IU"
-    "Ibuprofen 800 mg"
-    "Cetirizine hydrochloride 10 mg"
-    "Azithromycin 250 mg"
+    "Amoxicillin 500 mg",
+    "Vitamin D 50000 IU",
+    "Ibuprofen 800 mg",
+    "Cetirizine hydrochloride 10 mg",
+    "Azithromycin 250 mg",
     "Amlodipine besylate 10 mg"
   ],
   "testsKeywordList":[
