@@ -16,7 +16,7 @@ PUT _scripts/doctorTemplate
          "must": [
         {
           {{#boolMustMatchAll}}
-          "multi_match": {}
+          "multi_all": {}
           {{/boolMustMatchAll}}
           {{#boolMustMultiMatch}}
           "multi_match": {
@@ -91,8 +91,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "averageRating": {
-              "gte": {{gteAverageRatingValue}},
-              "lte": {{lteAverageRatingValue}}
+              "gte": {{gteAverageRatingValue}}
             }
           }
         }{{/filterAverageRating}}
@@ -101,8 +100,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "yearsOfExperience": {
-              "gte": {{gteYearOfExperienceValue}},
-              "lte": {{lteYearOfExperienceValue}}
+              "gte": {{gteYearOfExperienceValue}}
             }
           }
         }{{/filterYearOfExperience}}
@@ -217,7 +215,7 @@ PUT _scripts/doctorTemplate
           {{/boolMustMultiMatch}}
         }
       ]
-{{#boolFilter}} 
+          {{#boolFilter}} 
       , 
            
       "filter": [
@@ -239,8 +237,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "averageRating": {
-              "gte": {{gteAverageRatingValue}},
-              "lte": {{lteAverageRatingValue}}
+              "gte": {{gteAverageRatingValue}}
             }
           }
         }{{/filterAverageRating}}
@@ -249,8 +246,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "yearsOfExperience": {
-              "gte": {{gteYearOfExperienceValue}},
-              "lte": {{lteYearOfExperienceValue}}
+              "gte": {{gteYearOfExperienceValue}}
             }
           }
         }{{/filterYearOfExperience}}
@@ -374,7 +370,7 @@ PUT _scripts/doctorTemplate
           {{/boolMustMultiMatch}}
         }
       ]
-{{#boolFilter}} 
+         {{#boolFilter}} 
       , 
            
       "filter": [
@@ -396,8 +392,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "averageRating": {
-              "gte": {{gteAverageRatingValue}},
-              "lte": {{lteAverageRatingValue}}
+              "gte": {{gteAverageRatingValue}}
             }
           }
         }{{/filterAverageRating}}
@@ -406,8 +401,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "yearsOfExperience": {
-              "gte": {{gteYearOfExperienceValue}},
-              "lte": {{lteYearOfExperienceValue}}
+              "gte": {{gteYearOfExperienceValue}}
             }
           }
         }{{/filterYearOfExperience}}
@@ -552,8 +546,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "averageRating": {
-              "gte": {{gteAverageRatingValue}},
-              "lte": {{lteAverageRatingValue}}
+              "gte": {{gteAverageRatingValue}}
             }
           }
         }{{/filterAverageRating}}
@@ -562,8 +555,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "yearsOfExperience": {
-              "gte": {{gteYearOfExperienceValue}},
-              "lte": {{lteYearOfExperienceValue}}
+              "gte": {{gteYearOfExperienceValue}}
             }
           }
         }{{/filterYearOfExperience}}
@@ -708,8 +700,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "averageRating": {
-              "gte": {{gteAverageRatingValue}},
-              "lte": {{lteAverageRatingValue}}
+              "gte": {{gteAverageRatingValue}}
             }
           }
         }{{/filterAverageRating}}
@@ -718,8 +709,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "yearsOfExperience": {
-              "gte": {{gteYearOfExperienceValue}},
-              "lte": {{lteYearOfExperienceValue}}
+              "gte": {{gteYearOfExperienceValue}}
             }
           }
         }{{/filterYearOfExperience}}
@@ -864,8 +854,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "averageRating": {
-              "gte": {{gteAverageRatingValue}},
-              "lte": {{lteAverageRatingValue}}
+              "gte": {{gteAverageRatingValue}}
             }
           }
         }{{/filterAverageRating}}
@@ -874,8 +863,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "yearsOfExperience": {
-              "gte": {{gteYearOfExperienceValue}},
-              "lte": {{lteYearOfExperienceValue}}
+              "gte": {{gteYearOfExperienceValue}}
             }
           }
         }{{/filterYearOfExperience}}
@@ -1020,8 +1008,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "averageRating": {
-              "gte": {{gteAverageRatingValue}},
-              "lte": {{lteAverageRatingValue}}
+              "gte": {{gteAverageRatingValue}}
             }
           }
         }{{/filterAverageRating}}
@@ -1030,8 +1017,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "yearsOfExperience": {
-              "gte": {{gteYearOfExperienceValue}},
-              "lte": {{lteYearOfExperienceValue}}
+              "gte": {{gteYearOfExperienceValue}}
             }
           }
         }{{/filterYearOfExperience}}
@@ -1177,8 +1163,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "averageRating": {
-              "gte": {{gteAverageRatingValue}},
-              "lte": {{lteAverageRatingValue}}
+              "gte": {{gteAverageRatingValue}}
             }
           }
         }{{/filterAverageRating}}
@@ -1187,8 +1172,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "yearsOfExperience": {
-              "gte": {{gteYearOfExperienceValue}},
-              "lte": {{lteYearOfExperienceValue}}
+              "gte": {{gteYearOfExperienceValue}}
             }
           }
         }{{/filterYearOfExperience}}
@@ -1333,8 +1317,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "averageRating": {
-              "gte": {{gteAverageRatingValue}},
-              "lte": {{lteAverageRatingValue}}
+              "gte": {{gteAverageRatingValue}}
             }
           }
         }{{/filterAverageRating}}
@@ -1343,8 +1326,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "yearsOfExperience": {
-              "gte": {{gteYearOfExperienceValue}},
-              "lte": {{lteYearOfExperienceValue}}
+              "gte": {{gteYearOfExperienceValue}}
             }
           }
         }{{/filterYearOfExperience}}
@@ -1490,8 +1472,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "averageRating": {
-              "gte": {{gteAverageRatingValue}},
-              "lte": {{lteAverageRatingValue}}
+              "gte": {{gteAverageRatingValue}}
             }
           }
         }{{/filterAverageRating}}
@@ -1500,8 +1481,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "yearsOfExperience": {
-              "gte": {{gteYearOfExperienceValue}},
-              "lte": {{lteYearOfExperienceValue}}
+              "gte": {{gteYearOfExperienceValue}}
             }
           }
         }{{/filterYearOfExperience}}
@@ -1679,8 +1659,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "averageRating": {
-              "gte": {{gteAverageRatingValue}},
-              "lte": {{lteAverageRatingValue}}
+              "gte": {{gteAverageRatingValue}}
             }
           }
         }{{/filterAverageRating}}
@@ -1689,8 +1668,7 @@ PUT _scripts/doctorTemplate
         {
           "range": {
             "yearsOfExperience": {
-              "gte": {{gteYearOfExperienceValue}},
-              "lte": {{lteYearOfExperienceValue}}
+              "gte": {{gteYearOfExperienceValue}}
             }
           }
         }{{/filterYearOfExperience}}
@@ -1812,5 +1790,3 @@ PUT _scripts/doctorTemplate
 } """
   }
 }
-
-
