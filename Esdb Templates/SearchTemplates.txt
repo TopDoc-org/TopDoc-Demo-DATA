@@ -16,7 +16,7 @@ PUT _scripts/doctorTemplate
          "must": [
         {
           {{#boolMustMatchAll}}
-          "multi_all": {}
+          "match_all": {}
           {{/boolMustMatchAll}}
           {{#boolMustMultiMatch}}
           "multi_match": {
@@ -188,7 +188,7 @@ PUT _scripts/doctorTemplate
          "must": [
         {
           {{#boolMustMatchAll}}
-          "multi_match": {}
+          "match_all": {}
           {{/boolMustMatchAll}}
           {{#boolMustMultiMatch}}
           "multi_match": {
@@ -343,7 +343,7 @@ PUT _scripts/doctorTemplate
          "must": [
         {
           {{#boolMustMatchAll}}
-          "multi_match": {}
+          "match_all": {}
           {{/boolMustMatchAll}}
           {{#boolMustMultiMatch}}
           "multi_match": {
@@ -497,7 +497,7 @@ PUT _scripts/doctorTemplate
          "must": [
         {
           {{#boolMustMatchAll}}
-          "multi_match": {}
+          "match_all": {}
           {{/boolMustMatchAll}}
           {{#boolMustMultiMatch}}
           "multi_match": {
@@ -651,7 +651,7 @@ PUT _scripts/doctorTemplate
          "must": [
         {
           {{#boolMustMatchAll}}
-          "multi_match": {}
+          "match_all": {}
           {{/boolMustMatchAll}}
           {{#boolMustMultiMatch}}
           "multi_match": {
@@ -805,7 +805,7 @@ PUT _scripts/doctorTemplate
          "must": [
         {
           {{#boolMustMatchAll}}
-          "multi_match": {}
+          "match_all": {}
           {{/boolMustMatchAll}}
           {{#boolMustMultiMatch}}
           "multi_match": {
@@ -959,7 +959,7 @@ PUT _scripts/doctorTemplate
          "must": [
         {
           {{#boolMustMatchAll}}
-          "multi_match": {}
+          "match_all": {}
           {{/boolMustMatchAll}}
           {{#boolMustMultiMatch}}
           "multi_match": {
@@ -1114,7 +1114,7 @@ PUT _scripts/doctorTemplate
          "must": [
         {
           {{#boolMustMatchAll}}
-          "multi_match": {}
+          "match_all": {}
           {{/boolMustMatchAll}}
           {{#boolMustMultiMatch}}
           "multi_match": {
@@ -1268,7 +1268,7 @@ PUT _scripts/doctorTemplate
          "must": [
         {
           {{#boolMustMatchAll}}
-          "multi_match": {}
+          "match_all": {}
           {{/boolMustMatchAll}}
           {{#boolMustMultiMatch}}
           "multi_match": {
@@ -1423,7 +1423,7 @@ PUT _scripts/doctorTemplate
          "must": [
         {
           {{#boolMustMatchAll}}
-          "multi_match": {}
+          "match_all": {}
           {{/boolMustMatchAll}}
           {{#boolMustMultiMatch}}
           "multi_match": {
@@ -1610,7 +1610,7 @@ PUT _scripts/doctorTemplate
          "must": [
         {
           {{#boolMustMatchAll}}
-          "multi_match": {}
+          "match_all": {}
           {{/boolMustMatchAll}}
           {{#boolMustMultiMatch}}
           "multi_match": {
