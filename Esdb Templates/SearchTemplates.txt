@@ -15,36 +15,60 @@ PUT _scripts/doctorTemplate
     "bool": {     
          "must": [
         {
+          {{#boolMustMatchAll}}
+          "multi_match": {}
+          {{/boolMustMatchAll}}
+          {{#boolMustMultiMatch}}
           "multi_match": {
             "query": "{{queryValue}}",
             "fields": [
-              "ailmentsTreated^2",
-              "*name^3",
-              "city",
-              "locality^10",
-              "specialization^1",
-              "address"
+              "state^4",
+              "ailmentsTreated^12",
+              "*name^14",
+              "city^6",
+              "locality^7",
+              "specialization^10",
+              "address^8",
+              "designation^9",
+              "diagnosisKeywordList^2",
+              "testsKeywordList",
+              "symptomsKeywordList^11",
+              "district^5",
+              "country^3",
+              "associatedClinics.clinicName^13"
             ],
               "fuzziness" : "AUTO",
               "prefix_length" : 2
           }
+          {{/boolMustMultiMatch}}
         }
-      ],  
+      ]
+      {{#boolShould}}
+      ,  
        "should": [
         {
           "multi_match": {
             "query": "{{queryValue}}",
             "fields": [
-              "ailmentsTreated^2",
-              "*name^3",
-              "city",
-              "locality^10",
-              "specialization^1",
-              "address"
+              "state^4",
+              "ailmentsTreated^12",
+              "*name^14",
+              "city^6",
+              "locality^7",
+              "specialization^10",
+              "address^8",
+              "designation^9",
+              "diagnosisKeywordList^2",
+              "testsKeywordList",
+              "symptomsKeywordList^11",
+              "district^5",
+              "country^3",
+              "associatedClinics.clinicName^13"
             ]
           }
         }
       ]
+      {{/boolShould}}
       {{#boolFilter}} 
       , 
            
@@ -82,6 +106,14 @@ PUT _scripts/doctorTemplate
             }
           }
         }{{/filterYearOfExperience}}
+        {{#filterAilmentsTreated}}
+        ,        
+        {
+          "term": {
+            "ailmentsTreated.keyword": "{{ailmentsTreatedValue}}"
+          }
+        }
+        {{/filterAilmentsTreated}}
         {{#filterCountry}}
         ,        
         {
@@ -89,7 +121,14 @@ PUT _scripts/doctorTemplate
             "country": "{{countryValue}}"
           }
         } {{/filterCountry}}
-         {{#filterCity}}
+        {{#filterState}}
+        ,        
+        {
+          "term": {
+            "state": "{{stateValue}}"
+          }
+        } {{/filterState}}
+        {{#filterCity}}
         ,        
         {
           "term": {
@@ -97,6 +136,14 @@ PUT _scripts/doctorTemplate
           }
         }
         {{/filterCity}}
+         {{#filterDistrict}}
+        ,        
+        {
+          "term": {
+            "district.keyword": "{{districtValue}}"
+          }
+        }
+        {{/filterDistrict}}
         {{#filterIsVideoAllowed}}
         ,        
         {
@@ -104,6 +151,13 @@ PUT _scripts/doctorTemplate
             "isVideoAllowed": "{{isVideoAllowedValue}}"
           }
         }{{/filterIsVideoAllowed}}
+         {{#filterIsPersonAllowed}}
+        ,        
+        {
+          "term": {
+            "isPersonAllowed": "{{isPersonAllowedValue}}"
+          }
+        }{{/filterIsPersonAllowed}}
         {{#filterSpecialization}}
         ,        
         {
@@ -135,20 +189,35 @@ PUT _scripts/doctorTemplate
                 "bool": {     
          "must": [
         {
+          {{#boolMustMatchAll}}
+          "multi_match": {}
+          {{/boolMustMatchAll}}
+          {{#boolMustMultiMatch}}
           "multi_match": {
             "query": "{{queryValue}}",
             "fields": [
-              "ailmentsTreated^2",
-              "*name^3",
-              "city",
-              "locality^10",
-              "specialization^1",
-              "address"
-            ]
+              "state^4",
+              "ailmentsTreated^12",
+              "*name^14",
+              "city^6",
+              "locality^7",
+              "specialization^10",
+              "address^8",
+              "designation^9",
+              "diagnosisKeywordList^2",
+              "testsKeywordList",
+              "symptomsKeywordList^11",
+              "district^5",
+              "country^3",
+              "associatedClinics.clinicName^13"
+            ],
+              "fuzziness" : "AUTO",
+              "prefix_length" : 2
           }
+          {{/boolMustMultiMatch}}
         }
       ]
-      {{#boolFilter}} 
+{{#boolFilter}} 
       , 
            
       "filter": [
@@ -185,6 +254,14 @@ PUT _scripts/doctorTemplate
             }
           }
         }{{/filterYearOfExperience}}
+        {{#filterAilmentsTreated}}
+        ,        
+        {
+          "term": {
+            "ailmentsTreated.keyword": "{{ailmentsTreatedValue}}"
+          }
+        }
+        {{/filterAilmentsTreated}}
         {{#filterCountry}}
         ,        
         {
@@ -192,7 +269,14 @@ PUT _scripts/doctorTemplate
             "country": "{{countryValue}}"
           }
         } {{/filterCountry}}
-         {{#filterCity}}
+        {{#filterState}}
+        ,        
+        {
+          "term": {
+            "state": "{{stateValue}}"
+          }
+        } {{/filterState}}
+        {{#filterCity}}
         ,        
         {
           "term": {
@@ -200,6 +284,14 @@ PUT _scripts/doctorTemplate
           }
         }
         {{/filterCity}}
+         {{#filterDistrict}}
+        ,        
+        {
+          "term": {
+            "district.keyword": "{{districtValue}}"
+          }
+        }
+        {{/filterDistrict}}
         {{#filterIsVideoAllowed}}
         ,        
         {
@@ -207,6 +299,13 @@ PUT _scripts/doctorTemplate
             "isVideoAllowed": "{{isVideoAllowedValue}}"
           }
         }{{/filterIsVideoAllowed}}
+         {{#filterIsPersonAllowed}}
+        ,        
+        {
+          "term": {
+            "isPersonAllowed": "{{isPersonAllowedValue}}"
+          }
+        }{{/filterIsPersonAllowed}}
         {{#filterSpecialization}}
         ,        
         {
@@ -247,20 +346,35 @@ PUT _scripts/doctorTemplate
                 "bool": {     
          "must": [
         {
+          {{#boolMustMatchAll}}
+          "multi_match": {}
+          {{/boolMustMatchAll}}
+          {{#boolMustMultiMatch}}
           "multi_match": {
             "query": "{{queryValue}}",
             "fields": [
-              "ailmentsTreated^2",
-              "*name^3",
-              "city",
-              "locality^10",
-              "specialization^1",
-              "address"
-            ]
+              "state^4",
+              "ailmentsTreated^12",
+              "*name^14",
+              "city^6",
+              "locality^7",
+              "specialization^10",
+              "address^8",
+              "designation^9",
+              "diagnosisKeywordList^2",
+              "testsKeywordList",
+              "symptomsKeywordList^11",
+              "district^5",
+              "country^3",
+              "associatedClinics.clinicName^13"
+            ],
+              "fuzziness" : "AUTO",
+              "prefix_length" : 2
           }
+          {{/boolMustMultiMatch}}
         }
       ]
-      {{#boolFilter}} 
+{{#boolFilter}} 
       , 
            
       "filter": [
@@ -297,6 +411,14 @@ PUT _scripts/doctorTemplate
             }
           }
         }{{/filterYearOfExperience}}
+        {{#filterAilmentsTreated}}
+        ,        
+        {
+          "term": {
+            "ailmentsTreated.keyword": "{{ailmentsTreatedValue}}"
+          }
+        }
+        {{/filterAilmentsTreated}}
         {{#filterCountry}}
         ,        
         {
@@ -304,7 +426,14 @@ PUT _scripts/doctorTemplate
             "country": "{{countryValue}}"
           }
         } {{/filterCountry}}
-         {{#filterCity}}
+        {{#filterState}}
+        ,        
+        {
+          "term": {
+            "state": "{{stateValue}}"
+          }
+        } {{/filterState}}
+        {{#filterCity}}
         ,        
         {
           "term": {
@@ -312,6 +441,14 @@ PUT _scripts/doctorTemplate
           }
         }
         {{/filterCity}}
+         {{#filterDistrict}}
+        ,        
+        {
+          "term": {
+            "district.keyword": "{{districtValue}}"
+          }
+        }
+        {{/filterDistrict}}
         {{#filterIsVideoAllowed}}
         ,        
         {
@@ -319,6 +456,13 @@ PUT _scripts/doctorTemplate
             "isVideoAllowed": "{{isVideoAllowedValue}}"
           }
         }{{/filterIsVideoAllowed}}
+         {{#filterIsPersonAllowed}}
+        ,        
+        {
+          "term": {
+            "isPersonAllowed": "{{isPersonAllowedValue}}"
+          }
+        }{{/filterIsPersonAllowed}}
         {{#filterSpecialization}}
         ,        
         {
@@ -351,28 +495,42 @@ PUT _scripts/doctorTemplate
             }
             }
             {{/cityAggregation}}
-            
-            {{#countryAggregation}}
-            {{#countryAggregationComma}},{{/countryAggregationComma}}
-            "countryAggs": {
+            {{#districtAggregation}}
+            {{#districtAggregationComma}},{{/districtAggregationComma}}
+            "districtAggs": {
             "filter": {
                 "bool": {     
          "must": [
         {
+          {{#boolMustMatchAll}}
+          "multi_match": {}
+          {{/boolMustMatchAll}}
+          {{#boolMustMultiMatch}}
           "multi_match": {
             "query": "{{queryValue}}",
             "fields": [
-              "ailmentsTreated^2",
-              "*name^3",
-              "city",
-              "locality^10",
-              "specialization^1",
-              "address"
-            ]
+              "state^4",
+              "ailmentsTreated^12",
+              "*name^14",
+              "city^6",
+              "locality^7",
+              "specialization^10",
+              "address^8",
+              "designation^9",
+              "diagnosisKeywordList^2",
+              "testsKeywordList",
+              "symptomsKeywordList^11",
+              "district^5",
+              "country^3",
+              "associatedClinics.clinicName^13"
+            ],
+              "fuzziness" : "AUTO",
+              "prefix_length" : 2
           }
+          {{/boolMustMultiMatch}}
         }
       ]
-      {{#boolFilter}} 
+{{#boolFilter}} 
       , 
            
       "filter": [
@@ -409,6 +567,14 @@ PUT _scripts/doctorTemplate
             }
           }
         }{{/filterYearOfExperience}}
+        {{#filterAilmentsTreated}}
+        ,        
+        {
+          "term": {
+            "ailmentsTreated.keyword": "{{ailmentsTreatedValue}}"
+          }
+        }
+        {{/filterAilmentsTreated}}
         {{#filterCountry}}
         ,        
         {
@@ -416,7 +582,14 @@ PUT _scripts/doctorTemplate
             "country": "{{countryValue}}"
           }
         } {{/filterCountry}}
-         {{#filterCity}}
+        {{#filterState}}
+        ,        
+        {
+          "term": {
+            "state": "{{stateValue}}"
+          }
+        } {{/filterState}}
+        {{#filterCity}}
         ,        
         {
           "term": {
@@ -424,6 +597,14 @@ PUT _scripts/doctorTemplate
           }
         }
         {{/filterCity}}
+         {{#filterDistrict}}
+        ,        
+        {
+          "term": {
+            "district.keyword": "{{districtValue}}"
+          }
+        }
+        {{/filterDistrict}}
         {{#filterIsVideoAllowed}}
         ,        
         {
@@ -431,6 +612,169 @@ PUT _scripts/doctorTemplate
             "isVideoAllowed": "{{isVideoAllowedValue}}"
           }
         }{{/filterIsVideoAllowed}}
+         {{#filterIsPersonAllowed}}
+        ,        
+        {
+          "term": {
+            "isPersonAllowed": "{{isPersonAllowedValue}}"
+          }
+        }{{/filterIsPersonAllowed}}
+        {{#filterSpecialization}}
+        ,        
+        {
+          "term": {
+            "specialization.keyword": "{{specializationValue}}"
+          }
+        }{{/filterSpecialization}}
+        {{#filterLanguage}}
+        ,       
+        {
+          "terms": {
+            "languages": [
+              "{{languagesValue}}"
+            ]
+          }
+        }
+        {{/filterLanguage}}
+      ]
+      {{/boolFilter}}
+    }
+            }
+            ,
+             "aggs": {
+                "districtAggs": {
+                "terms": {
+                    "field": "district.keyword"
+                    //"size": 10
+                }
+                }
+            }
+            }
+            {{/districtAggregation}}
+            {{#countryAggregation}}
+            {{#countryAggregationComma}},{{/countryAggregationComma}}
+            "countryAggs": {
+            "filter": {
+                "bool": {     
+         "must": [
+        {
+          {{#boolMustMatchAll}}
+          "multi_match": {}
+          {{/boolMustMatchAll}}
+          {{#boolMustMultiMatch}}
+          "multi_match": {
+            "query": "{{queryValue}}",
+            "fields": [
+              "state^4",
+              "ailmentsTreated^12",
+              "*name^14",
+              "city^6",
+              "locality^7",
+              "specialization^10",
+              "address^8",
+              "designation^9",
+              "diagnosisKeywordList^2",
+              "testsKeywordList",
+              "symptomsKeywordList^11",
+              "district^5",
+              "country^3",
+              "associatedClinics.clinicName^13"
+            ],
+              "fuzziness" : "AUTO",
+              "prefix_length" : 2
+          }
+          {{/boolMustMultiMatch}}
+        }
+      ]
+{{#boolFilter}} 
+      , 
+           
+      "filter": [
+         {
+          "exists": {
+            "field": "name"
+          }
+        } 
+        {{#filterGender}}
+        ,
+        {
+          "term": {
+            "gender": "{{genderValue}}"
+          }
+        }
+        {{/filterGender}}
+        {{#filterAverageRating}}
+        ,       
+        {
+          "range": {
+            "averageRating": {
+              "gte": {{gteAverageRatingValue}},
+              "lte": {{lteAverageRatingValue}}
+            }
+          }
+        }{{/filterAverageRating}}
+        {{#filterYearOfExperience}}
+        ,       
+        {
+          "range": {
+            "yearsOfExperience": {
+              "gte": {{gteYearOfExperienceValue}},
+              "lte": {{lteYearOfExperienceValue}}
+            }
+          }
+        }{{/filterYearOfExperience}}
+        {{#filterAilmentsTreated}}
+        ,        
+        {
+          "term": {
+            "ailmentsTreated.keyword": "{{ailmentsTreatedValue}}"
+          }
+        }
+        {{/filterAilmentsTreated}}
+        {{#filterCountry}}
+        ,        
+        {
+          "term": {
+            "country": "{{countryValue}}"
+          }
+        } {{/filterCountry}}
+        {{#filterState}}
+        ,        
+        {
+          "term": {
+            "state": "{{stateValue}}"
+          }
+        } {{/filterState}}
+        {{#filterCity}}
+        ,        
+        {
+          "term": {
+            "city.keyword": "{{cityValue}}"
+          }
+        }
+        {{/filterCity}}
+         {{#filterDistrict}}
+        ,        
+        {
+          "term": {
+            "district.keyword": "{{districtValue}}"
+          }
+        }
+        {{/filterDistrict}}
+        {{#filterIsVideoAllowed}}
+        ,        
+        {
+          "term": {
+            "isVideoAllowed": "{{isVideoAllowedValue}}"
+          }
+        }{{/filterIsVideoAllowed}}
+         {{#filterIsPersonAllowed}}
+        ,        
+        {
+          "term": {
+            "isPersonAllowed": "{{isPersonAllowedValue}}"
+          }
+        }{{/filterIsPersonAllowed}}
         {{#filterSpecialization}}
         ,        
         {
@@ -456,35 +800,49 @@ PUT _scripts/doctorTemplate
             "aggs": {
                 "countryAggs": {
                 "terms": {
-                    "field": "country.keyword"
+                    "field": "country"
                     //"size": 10
                 }
                 }
             }
             }
             {{/countryAggregation}}
-            
-            {{#specializationAggregation}}
-            {{#specializationAggregationComma}},{{/specializationAggregationComma}}
-            "specializationAggs": {
+            {{#stateAggregation}}
+            {{#stateAggregationComma}},{{/stateAggregationComma}}
+            "stateAggs": {
             "filter": {
                 "bool": {     
          "must": [
         {
+          {{#boolMustMatchAll}}
+          "multi_match": {}
+          {{/boolMustMatchAll}}
+          {{#boolMustMultiMatch}}
           "multi_match": {
             "query": "{{queryValue}}",
             "fields": [
-              "ailmentsTreated^2",
-              "*name^3",
-              "city",
-              "locality^10",
-              "specialization^1",
-              "address"
-            ]
+              "state^4",
+              "ailmentsTreated^12",
+              "*name^14",
+              "city^6",
+              "locality^7",
+              "specialization^10",
+              "address^8",
+              "designation^9",
+              "diagnosisKeywordList^2",
+              "testsKeywordList",
+              "symptomsKeywordList^11",
+              "district^5",
+              "country^3",
+              "associatedClinics.clinicName^13"
+            ],
+              "fuzziness" : "AUTO",
+              "prefix_length" : 2
           }
+          {{/boolMustMultiMatch}}
         }
       ]
-      {{#boolFilter}} 
+{{#boolFilter}} 
       , 
            
       "filter": [
@@ -521,6 +879,14 @@ PUT _scripts/doctorTemplate
             }
           }
         }{{/filterYearOfExperience}}
+        {{#filterAilmentsTreated}}
+        ,        
+        {
+          "term": {
+            "ailmentsTreated.keyword": "{{ailmentsTreatedValue}}"
+          }
+        }
+        {{/filterAilmentsTreated}}
         {{#filterCountry}}
         ,        
         {
@@ -528,7 +894,14 @@ PUT _scripts/doctorTemplate
             "country": "{{countryValue}}"
           }
         } {{/filterCountry}}
-         {{#filterCity}}
+        {{#filterState}}
+        ,        
+        {
+          "term": {
+            "state": "{{stateValue}}"
+          }
+        } {{/filterState}}
+        {{#filterCity}}
         ,        
         {
           "term": {
@@ -536,6 +909,14 @@ PUT _scripts/doctorTemplate
           }
         }
         {{/filterCity}}
+         {{#filterDistrict}}
+        ,        
+        {
+          "term": {
+            "district.keyword": "{{districtValue}}"
+          }
+        }
+        {{/filterDistrict}}
         {{#filterIsVideoAllowed}}
         ,        
         {
@@ -543,6 +924,169 @@ PUT _scripts/doctorTemplate
             "isVideoAllowed": "{{isVideoAllowedValue}}"
           }
         }{{/filterIsVideoAllowed}}
+         {{#filterIsPersonAllowed}}
+        ,        
+        {
+          "term": {
+            "isPersonAllowed": "{{isPersonAllowedValue}}"
+          }
+        }{{/filterIsPersonAllowed}}
+        {{#filterSpecialization}}
+        ,        
+        {
+          "term": {
+            "specialization.keyword": "{{specializationValue}}"
+          }
+        }{{/filterSpecialization}}
+        {{#filterLanguage}}
+        ,       
+        {
+          "terms": {
+            "languages": [
+              "{{languagesValue}}"
+            ]
+          }
+        }
+        {{/filterLanguage}}
+      ]
+      {{/boolFilter}}
+    }
+            }
+            ,
+            "aggs": {
+                "stateAggs": {
+                "terms": {
+                    "field": "state"
+                    //"size": 10
+                }
+                }
+            }
+            }
+            {{/stateAggregation}}
+            {{#specializationAggregation}}
+            {{#specializationAggregationComma}},{{/specializationAggregationComma}}
+            "specializationAggs": {
+            "filter": {
+                "bool": {     
+         "must": [
+        {
+          {{#boolMustMatchAll}}
+          "multi_match": {}
+          {{/boolMustMatchAll}}
+          {{#boolMustMultiMatch}}
+          "multi_match": {
+            "query": "{{queryValue}}",
+            "fields": [
+              "state^4",
+              "ailmentsTreated^12",
+              "*name^14",
+              "city^6",
+              "locality^7",
+              "specialization^10",
+              "address^8",
+              "designation^9",
+              "diagnosisKeywordList^2",
+              "testsKeywordList",
+              "symptomsKeywordList^11",
+              "district^5",
+              "country^3",
+              "associatedClinics.clinicName^13"
+            ],
+              "fuzziness" : "AUTO",
+              "prefix_length" : 2
+          }
+          {{/boolMustMultiMatch}}
+        }
+      ]
+{{#boolFilter}} 
+      , 
+           
+      "filter": [
+         {
+          "exists": {
+            "field": "name"
+          }
+        } 
+        {{#filterGender}}
+        ,
+        {
+          "term": {
+            "gender": "{{genderValue}}"
+          }
+        }
+        {{/filterGender}}
+        {{#filterAverageRating}}
+        ,       
+        {
+          "range": {
+            "averageRating": {
+              "gte": {{gteAverageRatingValue}},
+              "lte": {{lteAverageRatingValue}}
+            }
+          }
+        }{{/filterAverageRating}}
+        {{#filterYearOfExperience}}
+        ,       
+        {
+          "range": {
+            "yearsOfExperience": {
+              "gte": {{gteYearOfExperienceValue}},
+              "lte": {{lteYearOfExperienceValue}}
+            }
+          }
+        }{{/filterYearOfExperience}}
+        {{#filterAilmentsTreated}}
+        ,        
+        {
+          "term": {
+            "ailmentsTreated.keyword": "{{ailmentsTreatedValue}}"
+          }
+        }
+        {{/filterAilmentsTreated}}
+        {{#filterCountry}}
+        ,        
+        {
+          "term": {
+            "country": "{{countryValue}}"
+          }
+        } {{/filterCountry}}
+        {{#filterState}}
+        ,        
+        {
+          "term": {
+            "state": "{{stateValue}}"
+          }
+        } {{/filterState}}
+        {{#filterCity}}
+        ,        
+        {
+          "term": {
+            "city.keyword": "{{cityValue}}"
+          }
+        }
+        {{/filterCity}}
+         {{#filterDistrict}}
+        ,        
+        {
+          "term": {
+            "district.keyword": "{{districtValue}}"
+          }
+        }
+        {{/filterDistrict}}
+        {{#filterIsVideoAllowed}}
+        ,        
+        {
+          "term": {
+            "isVideoAllowed": "{{isVideoAllowedValue}}"
+          }
+        }{{/filterIsVideoAllowed}}
+         {{#filterIsPersonAllowed}}
+        ,        
+        {
+          "term": {
+            "isPersonAllowed": "{{isPersonAllowedValue}}"
+          }
+        }{{/filterIsPersonAllowed}}
         {{#filterSpecialization}}
         ,        
         {
@@ -583,20 +1127,35 @@ PUT _scripts/doctorTemplate
                 "bool": {     
          "must": [
         {
+          {{#boolMustMatchAll}}
+          "multi_match": {}
+          {{/boolMustMatchAll}}
+          {{#boolMustMultiMatch}}
           "multi_match": {
             "query": "{{queryValue}}",
             "fields": [
-              "ailmentsTreated^2",
-              "*name^3",
-              "city",
-              "locality^10",
-              "specialization^1",
-              "address"
-            ]
+              "state^4",
+              "ailmentsTreated^12",
+              "*name^14",
+              "city^6",
+              "locality^7",
+              "specialization^10",
+              "address^8",
+              "designation^9",
+              "diagnosisKeywordList^2",
+              "testsKeywordList",
+              "symptomsKeywordList^11",
+              "district^5",
+              "country^3",
+              "associatedClinics.clinicName^13"
+            ],
+              "fuzziness" : "AUTO",
+              "prefix_length" : 2
           }
+          {{/boolMustMultiMatch}}
         }
       ]
-      {{#boolFilter}} 
+{{#boolFilter}} 
       , 
            
       "filter": [
@@ -633,6 +1192,14 @@ PUT _scripts/doctorTemplate
             }
           }
         }{{/filterYearOfExperience}}
+        {{#filterAilmentsTreated}}
+        ,        
+        {
+          "term": {
+            "ailmentsTreated.keyword": "{{ailmentsTreatedValue}}"
+          }
+        }
+        {{/filterAilmentsTreated}}
         {{#filterCountry}}
         ,        
         {
@@ -640,7 +1207,14 @@ PUT _scripts/doctorTemplate
             "country": "{{countryValue}}"
           }
         } {{/filterCountry}}
-         {{#filterCity}}
+        {{#filterState}}
+        ,        
+        {
+          "term": {
+            "state": "{{stateValue}}"
+          }
+        } {{/filterState}}
+        {{#filterCity}}
         ,        
         {
           "term": {
@@ -648,6 +1222,14 @@ PUT _scripts/doctorTemplate
           }
         }
         {{/filterCity}}
+         {{#filterDistrict}}
+        ,        
+        {
+          "term": {
+            "district.keyword": "{{districtValue}}"
+          }
+        }
+        {{/filterDistrict}}
         {{#filterIsVideoAllowed}}
         ,        
         {
@@ -655,6 +1237,13 @@ PUT _scripts/doctorTemplate
             "isVideoAllowed": "{{isVideoAllowedValue}}"
           }
         }{{/filterIsVideoAllowed}}
+         {{#filterIsPersonAllowed}}
+        ,        
+        {
+          "term": {
+            "isPersonAllowed": "{{isPersonAllowedValue}}"
+          }
+        }{{/filterIsPersonAllowed}}
         {{#filterSpecialization}}
         ,        
         {
@@ -687,28 +1276,42 @@ PUT _scripts/doctorTemplate
             }
             }
             {{/languagesAggregation}}
-            
-             {{#averageRatingAggregation}}
-            {{#averageRatingAggregationComma}},{{/averageRatingAggregationComma}}
-            "averageRatingAggs": {
+            {{#ailmentsTreatedAggregation}}
+            {{#ailmentsTreatedAggregationComma}},{{/ailmentsTreatedAggregationComma}}
+            "ailmentsTreatedAggs": {
             "filter": {
                 "bool": {     
          "must": [
         {
+          {{#boolMustMatchAll}}
+          "multi_match": {}
+          {{/boolMustMatchAll}}
+          {{#boolMustMultiMatch}}
           "multi_match": {
             "query": "{{queryValue}}",
             "fields": [
-              "ailmentsTreated^2",
-              "*name^3",
-              "city",
-              "locality^10",
-              "specialization^1",
-              "address"
-            ]
+              "state^4",
+              "ailmentsTreated^12",
+              "*name^14",
+              "city^6",
+              "locality^7",
+              "specialization^10",
+              "address^8",
+              "designation^9",
+              "diagnosisKeywordList^2",
+              "testsKeywordList",
+              "symptomsKeywordList^11",
+              "district^5",
+              "country^3",
+              "associatedClinics.clinicName^13"
+            ],
+              "fuzziness" : "AUTO",
+              "prefix_length" : 2
           }
+          {{/boolMustMultiMatch}}
         }
       ]
-      {{#boolFilter}} 
+{{#boolFilter}} 
       , 
            
       "filter": [
@@ -745,6 +1348,14 @@ PUT _scripts/doctorTemplate
             }
           }
         }{{/filterYearOfExperience}}
+        {{#filterAilmentsTreated}}
+        ,        
+        {
+          "term": {
+            "ailmentsTreated.keyword": "{{ailmentsTreatedValue}}"
+          }
+        }
+        {{/filterAilmentsTreated}}
         {{#filterCountry}}
         ,        
         {
@@ -752,7 +1363,14 @@ PUT _scripts/doctorTemplate
             "country": "{{countryValue}}"
           }
         } {{/filterCountry}}
-         {{#filterCity}}
+        {{#filterState}}
+        ,        
+        {
+          "term": {
+            "state": "{{stateValue}}"
+          }
+        } {{/filterState}}
+        {{#filterCity}}
         ,        
         {
           "term": {
@@ -760,6 +1378,14 @@ PUT _scripts/doctorTemplate
           }
         }
         {{/filterCity}}
+         {{#filterDistrict}}
+        ,        
+        {
+          "term": {
+            "district.keyword": "{{districtValue}}"
+          }
+        }
+        {{/filterDistrict}}
         {{#filterIsVideoAllowed}}
         ,        
         {
@@ -767,6 +1393,170 @@ PUT _scripts/doctorTemplate
             "isVideoAllowed": "{{isVideoAllowedValue}}"
           }
         }{{/filterIsVideoAllowed}}
+         {{#filterIsPersonAllowed}}
+        ,        
+        {
+          "term": {
+            "isPersonAllowed": "{{isPersonAllowedValue}}"
+          }
+        }{{/filterIsPersonAllowed}}
+        {{#filterSpecialization}}
+        ,        
+        {
+          "term": {
+            "specialization.keyword": "{{specializationValue}}"
+          }
+        }{{/filterSpecialization}}
+        {{#filterLanguage}}
+        ,       
+        {
+          "terms": {
+            "languages": [
+              "{{languagesValue}}"
+            ]
+          }
+        }
+        {{/filterLanguage}}
+      ]
+      {{/boolFilter}}
+    }
+            }
+            ,
+            "aggs": {
+                "ailmentsTreatedAggs": {
+                "terms": {
+                    "field": "ailmentsTreated.keyword"
+                    //"size": 10
+                }
+                }
+            }
+            }
+            {{/ailmentsTreatedAggregation}}
+            
+             {{#averageRatingAggregation}}
+            {{#averageRatingAggregationComma}},{{/averageRatingAggregationComma}}
+            "averageRatingAggs": {
+            "filter": {
+                "bool": {     
+         "must": [
+        {
+          {{#boolMustMatchAll}}
+          "multi_match": {}
+          {{/boolMustMatchAll}}
+          {{#boolMustMultiMatch}}
+          "multi_match": {
+            "query": "{{queryValue}}",
+            "fields": [
+              "state^4",
+              "ailmentsTreated^12",
+              "*name^14",
+              "city^6",
+              "locality^7",
+              "specialization^10",
+              "address^8",
+              "designation^9",
+              "diagnosisKeywordList^2",
+              "testsKeywordList",
+              "symptomsKeywordList^11",
+              "district^5",
+              "country^3",
+              "associatedClinics.clinicName^13"
+            ],
+              "fuzziness" : "AUTO",
+              "prefix_length" : 2
+          }
+          {{/boolMustMultiMatch}}
+        }
+      ]
+{{#boolFilter}} 
+      , 
+           
+      "filter": [
+         {
+          "exists": {
+            "field": "name"
+          }
+        } 
+        {{#filterGender}}
+        ,
+        {
+          "term": {
+            "gender": "{{genderValue}}"
+          }
+        }
+        {{/filterGender}}
+        {{#filterAverageRating}}
+        ,       
+        {
+          "range": {
+            "averageRating": {
+              "gte": {{gteAverageRatingValue}},
+              "lte": {{lteAverageRatingValue}}
+            }
+          }
+        }{{/filterAverageRating}}
+        {{#filterYearOfExperience}}
+        ,       
+        {
+          "range": {
+            "yearsOfExperience": {
+              "gte": {{gteYearOfExperienceValue}},
+              "lte": {{lteYearOfExperienceValue}}
+            }
+          }
+        }{{/filterYearOfExperience}}
+        {{#filterAilmentsTreated}}
+        ,        
+        {
+          "term": {
+            "ailmentsTreated.keyword": "{{ailmentsTreatedValue}}"
+          }
+        }
+        {{/filterAilmentsTreated}}
+        {{#filterCountry}}
+        ,        
+        {
+          "term": {
+            "country": "{{countryValue}}"
+          }
+        } {{/filterCountry}}
+        {{#filterState}}
+        ,        
+        {
+          "term": {
+            "state": "{{stateValue}}"
+          }
+        } {{/filterState}}
+        {{#filterCity}}
+        ,        
+        {
+          "term": {
+            "city.keyword": "{{cityValue}}"
+          }
+        }
+        {{/filterCity}}
+         {{#filterDistrict}}
+        ,        
+        {
+          "term": {
+            "district.keyword": "{{districtValue}}"
+          }
+        }
+        {{/filterDistrict}}
+        {{#filterIsVideoAllowed}}
+        ,        
+        {
+          "term": {
+            "isVideoAllowed": "{{isVideoAllowedValue}}"
+          }
+        }{{/filterIsVideoAllowed}}
+         {{#filterIsPersonAllowed}}
+        ,        
+        {
+          "term": {
+            "isPersonAllowed": "{{isPersonAllowedValue}}"
+          }
+        }{{/filterIsPersonAllowed}}
         {{#filterSpecialization}}
         ,        
         {
@@ -839,20 +1629,35 @@ PUT _scripts/doctorTemplate
                 "bool": {     
          "must": [
         {
+          {{#boolMustMatchAll}}
+          "multi_match": {}
+          {{/boolMustMatchAll}}
+          {{#boolMustMultiMatch}}
           "multi_match": {
             "query": "{{queryValue}}",
             "fields": [
-              "ailmentsTreated^2",
-              "*name^3",
-              "city",
-              "locality^10",
-              "specialization^1",
-              "address"
-            ]
+              "state^4",
+              "ailmentsTreated^12",
+              "*name^14",
+              "city^6",
+              "locality^7",
+              "specialization^10",
+              "address^8",
+              "designation^9",
+              "diagnosisKeywordList^2",
+              "testsKeywordList",
+              "symptomsKeywordList^11",
+              "district^5",
+              "country^3",
+              "associatedClinics.clinicName^13"
+            ],
+              "fuzziness" : "AUTO",
+              "prefix_length" : 2
           }
+          {{/boolMustMultiMatch}}
         }
       ]
-      {{#boolFilter}} 
+{{#boolFilter}} 
       , 
            
       "filter": [
@@ -889,6 +1694,14 @@ PUT _scripts/doctorTemplate
             }
           }
         }{{/filterYearOfExperience}}
+        {{#filterAilmentsTreated}}
+        ,        
+        {
+          "term": {
+            "ailmentsTreated.keyword": "{{ailmentsTreatedValue}}"
+          }
+        }
+        {{/filterAilmentsTreated}}
         {{#filterCountry}}
         ,        
         {
@@ -896,7 +1709,14 @@ PUT _scripts/doctorTemplate
             "country": "{{countryValue}}"
           }
         } {{/filterCountry}}
-         {{#filterCity}}
+        {{#filterState}}
+        ,        
+        {
+          "term": {
+            "state": "{{stateValue}}"
+          }
+        } {{/filterState}}
+        {{#filterCity}}
         ,        
         {
           "term": {
@@ -904,6 +1724,14 @@ PUT _scripts/doctorTemplate
           }
         }
         {{/filterCity}}
+         {{#filterDistrict}}
+        ,        
+        {
+          "term": {
+            "district.keyword": "{{districtValue}}"
+          }
+        }
+        {{/filterDistrict}}
         {{#filterIsVideoAllowed}}
         ,        
         {
@@ -911,6 +1739,13 @@ PUT _scripts/doctorTemplate
             "isVideoAllowed": "{{isVideoAllowedValue}}"
           }
         }{{/filterIsVideoAllowed}}
+         {{#filterIsPersonAllowed}}
+        ,        
+        {
+          "term": {
+            "isPersonAllowed": "{{isPersonAllowedValue}}"
+          }
+        }{{/filterIsPersonAllowed}}
         {{#filterSpecialization}}
         ,        
         {
