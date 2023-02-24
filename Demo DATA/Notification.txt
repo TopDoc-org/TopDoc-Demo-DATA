@@ -44,7 +44,7 @@ PUT notification_v1/_doc/4
     "medium": ["app","sms"],
     "id": 7,
     "senderId": ["application",7999411516]
-
+}
 PUT notification_v1/_doc/5
 {
     "notificationId":"5",
