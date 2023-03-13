@@ -1,6 +1,7 @@
 PUT booking_v1/_doc/11:30125
 {
   "doctorId": "1",
+  "doctorName":"hello me",
   "appointmentType": "video",
   "slotType": "normal",
   "status": "booked",
@@ -75,6 +76,7 @@ PUT booking_v1/_doc/11:30125
 PUT booking_v1/_doc/13:30123
 {
   "doctorId": "1",
+  "doctorName":"hello you",
   "appointmentType": "video",
   "slotType": "priority",
   "status": "notBooked",
@@ -149,6 +151,7 @@ PUT booking_v1/_doc/13:30123
 PUT booking_v1/_doc/15:30125
 {
   "doctorId": "1",
+  "doctorName":"hello they",
   "appointmentType": "inPerson",
   "slotType": "normal",
   "status": "booked",
@@ -223,6 +226,7 @@ PUT booking_v1/_doc/15:30125
 PUT booking_v1/_doc/15:30195
 {
   "doctorId": "2",
+  "doctorName":"hello them",
   "appointmentType": "inPerson",
   "slotType": "priority",
   "status": "booked",
@@ -297,6 +301,7 @@ PUT booking_v1/_doc/15:30195
 PUT booking_v1/_doc/15:35195
 {
   "doctorId": "2",
+  "doctorName":"hello he",
   "appointmentType": "inPerson",
   "slotType": "normal",
   "status": "booked",
@@ -371,6 +376,7 @@ PUT booking_v1/_doc/15:35195
 PUT booking_v1/_doc/15:40195
 {
   "doctorId": "2",
+  "doctorName":"hello she",
   "appointmentType": "inPerson",
   "slotType": "normal",
   "status": "rejoined",

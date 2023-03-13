@@ -1,6 +1,7 @@
 PUT booking_v1/_doc/11:30125
 {
   "doctorId": "1",
+  "doctorName":"hello me",
   "appointmentType": "video",
   "slotType": "normal",
   "status": "booked",
@@ -74,6 +75,7 @@ PUT booking_v1/_doc/11:30125
 PUT booking_v1/_doc/12:00125
 {
   "doctorId": "1",
+  "doctorName":"hello you",
   "appointmentType": "video",
   "slotType": "priority",
   "status": "rejoined",
@@ -147,6 +149,7 @@ PUT booking_v1/_doc/12:00125
 PUT booking_v1/_doc/12:30125
 {
   "doctorId": "1",
+  "doctorName":"hello they",
   "appointmentType": "inPerson",
   "slotType": "normal",
   "status": "pinGenerated",
@@ -220,6 +223,7 @@ PUT booking_v1/_doc/12:30125
 PUT booking_v1/_doc/13:00125
 {
   "doctorId": "1",
+  "doctorName":"hello she",
   "appointmentType": "inPerson",
   "slotType": "priority",
   "status": "started",
@@ -293,6 +297,7 @@ PUT booking_v1/_doc/13:00125
 PUT booking_v1/_doc/13:30125
 {
   "doctorId": "1",
+  "doctorName":"hello he",
   "appointmentType": "inPerson",
   "slotType": "normal",
   "status": "paused",
@@ -367,6 +372,7 @@ PUT booking_v1/_doc/13:30125
 PUT booking_v1/_doc/14:00125
 {
   "doctorId": "1",
+  "doctorName":"hello they",
   "appointmentType": "inPerson",
   "slotType": "normal",
   "status": "rejoined",
@@ -441,6 +447,7 @@ PUT booking_v1/_doc/14:00125
 PUT booking_v1/_doc/14:30125
 {
   "doctorId": "1",
+  "doctorName":"hello them",
   "appointmentType": "inPerson",
   "slotType": "normal",
   "status": "skipped",
@@ -516,6 +523,7 @@ PUT booking_v1/_doc/14:30125
 PUT booking_v1/_doc/15:00125
 {
   "doctorId": "1",
+  "doctorName":"hello it",
   "appointmentType": "inPerson",
   "slotType": "normal",
   "status": "ended",
@@ -591,6 +599,7 @@ PUT booking_v1/_doc/15:00125
 PUT booking_v1/_doc/15:30125
 {
   "doctorId": "1",
+  "doctorName":"hello will",
   "appointmentType": "inPerson",
   "slotType": "normal",
   "status": "upNext",
@@ -665,6 +674,7 @@ PUT booking_v1/_doc/15:30125
 PUT booking_v1/_doc/16:00125
 {
   "doctorId": "1",
+  "doctorName":"hello was",
   "appointmentType": "inPerson",
   "slotType": "priority",
   "status": "booked",
@@ -739,6 +749,7 @@ PUT booking_v1/_doc/16:00125
 PUT booking_v1/_doc/16:30125
 {
   "doctorId": "1",
+  "doctorName":"hello is",
   "appointmentType": "inPerson",
   "slotType": "priority",
   "status": "pinGenerated",
@@ -813,6 +824,7 @@ PUT booking_v1/_doc/16:30125
 PUT booking_v1/_doc/17:00125
 {
   "doctorId": "1",
+  "doctorName":"hello have",
   "appointmentType": "inPerson",
   "slotType": "normal",
   "status": "pinGenerated",
@@ -887,6 +899,7 @@ PUT booking_v1/_doc/17:00125
 PUT booking_v1/_doc/17:30125
 {
   "doctorId": "1",
+  "doctorName":"hello had",
   "appointmentType": "inPerson",
   "slotType": "normal",
   "status": "pinGenerated",
@@ -961,6 +974,7 @@ PUT booking_v1/_doc/17:30125
 PUT booking_v1/_doc/18:00125
 {
   "doctorId": "1",
+  "doctorName":"hello been",
   "appointmentType": "inPerson",
   "slotType": "priority",
   "status": "paused",
@@ -1036,6 +1050,7 @@ PUT booking_v1/_doc/18:00125
 PUT booking_v1/_doc/18:30125
 {
   "doctorId": "1",
+  "doctorName":"hello shall",
   "appointmentType": "inPerson",
   "slotType": "normal",
   "status": "booked",
@@ -1110,6 +1125,7 @@ PUT booking_v1/_doc/18:30125
 PUT booking_v1/_doc/19:00125
 {
   "doctorId": "1",
+  "doctorName":"hello could",
   "appointmentType": "inPerson",
   "slotType": "normal",
   "status": "skipped",
@@ -1185,6 +1201,7 @@ PUT booking_v1/_doc/19:00125
 PUT booking_v1/_doc/19:30125
 {
   "doctorId": "1",
+  "doctorName":"hello should",
   "appointmentType": "inPerson",
   "slotType": "normal",
   "status": "skipped",
@@ -1259,6 +1276,7 @@ PUT booking_v1/_doc/19:30125
 PUT booking_v1/_doc/20:00125
 {
   "doctorId": "1",
+  "doctorName":"hello would",
   "appointmentType": "inPerson",
   "slotType": "normal",
   "status": "pinGenerated",
@@ -1333,6 +1351,7 @@ PUT booking_v1/_doc/20:00125
 PUT booking_v1/_doc/20:30125
 {
   "doctorId": "1",
+  "doctorName":"hello may",
   "appointmentType": "inPerson",
   "slotType": "normal",
   "status": "ended",

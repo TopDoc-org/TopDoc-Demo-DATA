@@ -8,6 +8,14 @@ PUT booking_v1
       "doctorId": {
         "type": "keyword"
       },
+      "doctorName": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
       "appointmentId": {
         "type": "keyword"
       },
