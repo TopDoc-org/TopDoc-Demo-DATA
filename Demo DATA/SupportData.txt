@@ -1,0 +1,392 @@
+PUT support_v1/_doc/1
+{
+  "ticketNumber": 1,
+  "role": "doctor",
+  "reporterID": "5",
+  "priority": "high",
+  "fullName": "doctor5",
+  "email": "doctor5@gmail.com",
+  "mobile": "1234567890",
+  "subject": "technical issue",
+  "description": "unable to open my account",
+  "supportingDocuments": [
+    "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+    "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+  ],
+  "raisedOn": "2021-01-02T07:30:00.000-0530",
+  "resolvedOn": "2021-01-03T07:30:00.000-0530",
+  "assignedTo": "sai sarthak",
+  "remarks": "resolved it",
+  "status": "resolved",
+  "chat": [
+    {
+      "sender": "user1",
+      "recipient": "TopDoc",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "can you please resolve my query fast ?",
+      "additionalDocuments": [
+        "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+        "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+      ]
+    },
+    {
+      "sender": "TopDoc",
+      "recipient": "Alice",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "please provide booking details.."
+    }
+  ]
+}
+
+PUT support_v1/_doc/2
+{
+  "ticketNumber": 2,
+  "role": "doctor",
+  "reporterID": "4",
+  "priority": "medium",
+  "fullName": "doctor4",
+  "email": "doctor4@gmail.com",
+  "mobile": "1234567890",
+  "subject": "technical issue",
+  "description": "unable to open my account",
+  "supportingDocuments": [
+    "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+    "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+  ],
+  "raisedOn": "2021-01-04T07:30:00.000-0530",
+  "assignedTo": "akash neekhara",
+  "status": "waitingForSupport",
+  "chat": [
+    {
+      "sender": "user1",
+      "recipient": "TopDoc",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "can you please resolve my query fast ?",
+      "additionalDocuments": [
+        "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+        "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+      ]
+    },
+    {
+      "sender": "TopDoc",
+      "recipient": "Alice",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "please provide booking details.."
+    }
+  ]
+}
+
+PUT support_v1/_doc/3
+{
+  "ticketNumber": 3,
+  "role": "doctor",
+  "reporterID": "3",
+  "priority": "low",
+  "fullName": "doctor3",
+  "email": "doctor3@gmail.com",
+  "mobile": "1234567890",
+  "subject": "technical issue",
+  "description": "unable to open my account",
+  "supportingDocuments": [
+    "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+    "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+  ],
+  "raisedOn": "2021-01-06T07:30:00.000-0530",
+  "assignedTo": "Akash Gaikwad",
+  "remarks": "",
+  "status": "inProgress",
+  "chat": [
+    {
+      "sender": "user1",
+      "recipient": "TopDoc",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "can you please resolve my query fast ?",
+      "additionalDocuments": [
+        "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+        "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+      ]
+    },
+    {
+      "sender": "TopDoc",
+      "recipient": "Alice",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "please provide booking details.."
+    }
+  ]
+}
+
+PUT support_v1/_doc/4
+{
+  "ticketNumber": 4,
+  "role": "doctor",
+  "reporterID": "2",
+  "priority": "critical",
+  "fullName": "doctor2",
+  "email": "doctor2@gmail.com",
+  "mobile": "1234567890",
+  "subject": "technical issue",
+  "description": "unable to open my account",
+  "supportingDocuments": [
+    "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+    "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+  ],
+  "raisedOn": "2021-01-08T07:30:00.000-0530",
+  "cancelledOn": "2021-01-09T07:30:00.000-0530",
+  "assignedTo": "Sai sarthak",
+  "status": "cancelled",
+  "chat": [
+    {
+      "sender": "user1",
+      "recipient": "TopDoc",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "can you please resolve my query fast ?",
+      "additionalDocuments": [
+        "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+        "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+      ]
+    },
+    {
+      "sender": "TopDoc",
+      "recipient": "Alice",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "please provide booking details.."
+    }
+  ]
+}
+
+PUT support_v1/_doc/5
+{
+  "ticketNumber": 5,
+  "role": "doctor",
+  "reporterID": "1",
+  "priority": "high",
+  "fullName": "doctor1",
+  "email": "doctor1@gmail.com",
+  "mobile": "1234567890",
+  "subject": "technical issue",
+  "description": "unable to open my account",
+  "supportingDocuments": [
+    "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+    "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+  ],
+  "raisedOn": "2021-02-01T07:30:00.000-0530",
+  "resolvedOn": "2021-03-01T07:30:00.000-0530",
+  "assignedTo": "sai sarthak",
+  "remarks": "escalated to central team",
+  "status": "escalated",
+  "escalatedTo": "Ayush Kataria",
+  "escalationRemark":"Fixed the issue",
+  "chat": [
+    {
+      "sender": "user1",
+      "recipient": "TopDoc",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "can you please resolve my query fast ?",
+      "additionalDocuments": [
+        "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+        "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+      ]
+    },
+    {
+      "sender": "TopDoc",
+      "recipient": "Alice",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "please provide booking details.."
+    }
+  ]
+}
+
+PUT support_v1/_doc/6
+{
+  "ticketNumber": 6,
+  "role": "user",
+  "reporterID": "5",
+  "priority": "medium",
+  "fullName": "user5",
+  "email": "user5@gmail.com",
+  "mobile": "1234567890",
+  "subject": "technical issue",
+  "description": "unable to open my account",
+  "supportingDocuments": [
+    "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+    "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+  ],
+  "raisedOn": "2021-04-01T07:30:00.000-0530",
+  "resolvedOn": "2021-04-02T07:30:00.000-0530",
+  "assignedTo": "Nitish Kumar",
+  "remarks": "resolved it",
+  "status": "closed",
+  "chat": [
+    {
+      "sender": "user1",
+      "recipient": "TopDoc",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "can you please resolve my query fast ?",
+      "additionalDocuments": [
+        "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+        "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+      ]
+    },
+    {
+      "sender": "TopDoc",
+      "recipient": "Alice",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "please provide booking details.."
+    }
+  ]
+}
+
+PUT support_v1/_doc/7
+{
+  "ticketNumber": 7,
+  "role": "user",
+  "reporterID": "4",
+  "priority": "low",
+  "fullName": "user4",
+  "email": "user4@gmail.com",
+  "mobile": "1234567890",
+  "subject": "technical issue",
+  "description": "unable to open my account",
+  "supportingDocuments": [
+    "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+    "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+  ],
+  "raisedOn": "2021-01-14T07:30:00.000-0530",
+  "assignedTo": "sai sarthak",
+  "remarks": "need futher info",
+  "status": "waitingForCustomer",
+  "chat": [
+    {
+      "sender": "user1",
+      "recipient": "TopDoc",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "can you please resolve my query fast ?",
+      "additionalDocuments": [
+        "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+        "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+      ]
+    },
+    {
+      "sender": "TopDoc",
+      "recipient": "Alice",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "please provide booking details.."
+    }
+  ]
+}
+
+PUT support_v1/_doc/8
+{
+  "ticketNumber": 8,
+  "role": "user",
+  "reporterID": "3",
+  "priority": "critical",
+  "fullName": "user3",
+  "email": "user3@gmail.com",
+  "mobile": "1234567890",
+  "subject": "technical issue",
+  "description": "unable to open my account",
+  "supportingDocuments": [
+    "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+    "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+  ],
+  "raisedOn": "2021-01-16T07:30:00.000-0530",
+  "assignedTo": "Sachin Shukla",
+  "status": "waitingForSupport",
+  "chat": [
+    {
+      "sender": "user1",
+      "recipient": "TopDoc",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "can you please resolve my query fast ?",
+      "additionalDocuments": [
+        "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+        "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+      ]
+    },
+    {
+      "sender": "TopDoc",
+      "recipient": "Alice",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "please provide booking details.."
+    }
+  ]
+}
+
+PUT support_v1/_doc/9
+{
+  "ticketNumber": 9,
+  "role": "user",
+  "reporterID": "2",
+  "priority": "high",
+  "fullName": "user2",
+  "email": "user2@gmail.com",
+  "mobile": "1234567890",
+  "subject": "technical issue",
+  "description": "unable to open my account",
+  "supportingDocuments": [
+    "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+    "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+  ],
+  "raisedOn": "2021-01-19T07:30:00.000-0530",
+  "assignedTo": "sai sarthak",
+  "status": "inProgress",
+  "chat": [
+    {
+      "sender": "user1",
+      "recipient": "TopDoc",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "can you please resolve my query fast ?",
+      "additionalDocuments": [
+        "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+        "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+      ]
+    },
+    {
+      "sender": "TopDoc",
+      "recipient": "Alice",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "please provide booking details.."
+    }
+  ]
+}
+
+PUT support_v1/_doc/10
+{
+  "ticketNumber": 10,
+  "role": "user",
+  "reporterID": "1",
+  "priority": "medium",
+  "fullName": "user1",
+  "email": "user1@gmail.com",
+  "mobile": "1234567890",
+  "subject": "technical issue",
+  "description": "unable to open my account",
+  "supportingDocuments": [
+    "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+    "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+  ],
+  "raisedOn": "2021-01-22T07:30:00.000-0530",
+  "resolvedOn": "2021-01-26T07:30:00.000-0530",
+  "assignedTo": "sai sarthak",
+  "remarks": "resolved it",
+  "status": "resolved",
+  "chat": [
+    {
+      "sender": "user1",
+      "recipient": "TopDoc",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "can you please resolve my query fast ?",
+      "additionalDocuments": [
+        "https://img.freepik.com/premium-vector/open-folder-folder-with-documents-document-protection-concept_183665-104.jpg?w=2000",
+        "https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg"
+      ]
+    },
+    {
+      "sender": "TopDoc",
+      "recipient": "Alice",
+      "timestamp": "2021-01-01T07:30:00.000-0530",
+      "message": "please provide booking details.."
+    }
+  ]
+}
