@@ -11,9 +11,12 @@ PUT review_v1
             "reviewMessage": {
                 "type": "text"
             },
+            "reviewTags": {
+                "type": "keyword"
+            },
             "reviewDate" : {
             "type" : "date",
-            "format" : "basic_date_time_no_millis"
+            "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
             },
             "userId" : {
             "type" : "keyword"
@@ -35,26 +38,11 @@ PUT review_v1
             },
             "reviewlastEditedOn" : {
             "type" : "date",
-            "format" : "basic_date_time_no_millis"
+            "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
             },
              "userScheduleId": {
                 "type": "keyword"
             },
-            "accurateDiagnosisRating": {
-                "type": "double"
-            },
-            "friendlinessAndWaitTimeRating": {
-                "type": "double"
-            },
-            "bedsideMannerismRating": {
-                "type": "double"
-            },
-            "staffCourteousnessRating": {
-                "type": "double"
-            },
-            "patientEducationRating": {
-                "type": "double"
-            }
         }
     }
 }

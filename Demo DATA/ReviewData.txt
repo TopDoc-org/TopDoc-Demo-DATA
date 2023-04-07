@@ -9,11 +9,14 @@ PUT review_v1/_doc/1
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20221021T115513+0000",
   "userScheduleId": 12345,
-  "accurateDiagnosisRating": 4,
-  "friendlinessAndWaitTimeRating": 2,
-  "bedsideMannerismRating": 3,
-  "staffCourteousnessRating": 5,
-  "patientEducationRating": 1
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
 
 PUT review_v1/_doc/2
@@ -27,11 +30,14 @@ PUT review_v1/_doc/2
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20180513T123456+0000",
   "userScheduleId": 12345,
-  "accurateDiagnosisRating": 1,
-  "friendlinessAndWaitTimeRating": 2,
-  "bedsideMannerismRating": 3,
-  "staffCourteousnessRating": 5,
-  "patientEducationRating": 4
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
 
 PUT review_v1/_doc/3
@@ -45,11 +51,14 @@ PUT review_v1/_doc/3
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20221021T115513+0000",
   "userScheduleId": 12348,
-  "accurateDiagnosisRating": 2,
-  "friendlinessAndWaitTimeRating": 3,
-  "bedsideMannerismRating": 4,
-  "staffCourteousnessRating": 5,
-  "patientEducationRating": 1
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
 PUT review_v1/_doc/4
 {
@@ -62,11 +71,14 @@ PUT review_v1/_doc/4
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20221021T115513+0000",
   "userScheduleId": 12345,
-  "accurateDiagnosisRating": 3,
-  "friendlinessAndWaitTimeRating": 4,
-  "bedsideMannerismRating": 5,
-  "staffCourteousnessRating": 1,
-  "patientEducationRating": 2
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
 PUT review_v1/_doc/5
 {
@@ -79,11 +91,14 @@ PUT review_v1/_doc/5
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20221021T115513+0000",
   "userScheduleId": 45655,
-  "accurateDiagnosisRating": 4,
-  "friendlinessAndWaitTimeRating": 5,
-  "bedsideMannerismRating": 1,
-  "staffCourteousnessRating": 2,
-  "patientEducationRating": 3
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
 PUT review_v1/_doc/6
 {
@@ -96,11 +111,14 @@ PUT review_v1/_doc/6
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20221021T115513+0000",
   "userScheduleId": 123445,
-  "accurateDiagnosisRating": 5,
-  "friendlinessAndWaitTimeRating": 1,
-  "bedsideMannerismRating": 2,
-  "staffCourteousnessRating": 3,
-  "patientEducationRating": 4
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
 
 PUT review_v1/_doc/7
@@ -114,11 +132,14 @@ PUT review_v1/_doc/7
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20221021T115513+0000",
   "userScheduleId": 12345,
-  "accurateDiagnosisRating": 1,
-  "friendlinessAndWaitTimeRating": 2,
-  "bedsideMannerismRating": 3,
-  "staffCourteousnessRating": 5,
-  "patientEducationRating": 4
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
 
 PUT review_v1/_doc/8
@@ -132,11 +153,14 @@ PUT review_v1/_doc/8
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20221021T115513+0000",
   "userScheduleId": 12345,
-  "accurateDiagnosisRating": 2,
-  "friendlinessAndWaitTimeRating": 3,
-  "bedsideMannerismRating": 4,
-  "staffCourteousnessRating": 5,
-  "patientEducationRating": 1
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
 
 PUT review_v1/_doc/9
@@ -150,11 +174,14 @@ PUT review_v1/_doc/9
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20221021T115513+0000",
   "userScheduleId": 12348,
-  "accurateDiagnosisRating": 3,
-  "friendlinessAndWaitTimeRating": 4,
-  "bedsideMannerismRating": 5,
-  "staffCourteousnessRating": 1,
-  "patientEducationRating": 2
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
 PUT review_v1/_doc/10
 {
@@ -167,11 +194,14 @@ PUT review_v1/_doc/10
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20221021T115513+0000",
   "userScheduleId": 12345,
-  "accurateDiagnosisRating": 4,
-  "friendlinessAndWaitTimeRating": 5,
-  "bedsideMannerismRating": 1,
-  "staffCourteousnessRating": 2,
-  "patientEducationRating": 3
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
 PUT review_v1/_doc/11
 {
@@ -184,11 +214,14 @@ PUT review_v1/_doc/11
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20221021T115513+0000",
   "userScheduleId": 45655,
-  "accurateDiagnosisRating": 5,
-  "friendlinessAndWaitTimeRating": 1,
-  "bedsideMannerismRating": 2,
-  "staffCourteousnessRating": 3,
-  "patientEducationRating": 4
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
 PUT review_v1/_doc/12
 {
@@ -201,11 +234,14 @@ PUT review_v1/_doc/12
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20221021T115513+0000",
   "userScheduleId": 123445,
-  "accurateDiagnosisRating": 1,
-  "friendlinessAndWaitTimeRating": 2,
-  "bedsideMannerismRating": 3,
-  "staffCourteousnessRating": 5,
-  "patientEducationRating": 4
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
 
 PUT review_v1/_doc/13
@@ -219,11 +255,14 @@ PUT review_v1/_doc/13
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20221021T115513+0000",
   "userScheduleId": 12345,
-  "accurateDiagnosisRating": 2,
-  "friendlinessAndWaitTimeRating": 3,
-  "bedsideMannerismRating": 4,
-  "staffCourteousnessRating": 5,
-  "patientEducationRating": 1
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
 
 PUT review_v1/_doc/14
@@ -237,11 +276,14 @@ PUT review_v1/_doc/14
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20221021T115513+0000",
   "userScheduleId": 12345,
-  "accurateDiagnosisRating": 3,
-  "friendlinessAndWaitTimeRating": 4,
-  "bedsideMannerismRating": 5,
-  "staffCourteousnessRating": 1,
-  "patientEducationRating": 2
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
 
 PUT review_v1/_doc/15
@@ -255,11 +297,14 @@ PUT review_v1/_doc/15
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20221021T115513+0000",
   "userScheduleId": 12348,
-  "accurateDiagnosisRating": 4,
-  "friendlinessAndWaitTimeRating": 5,
-  "bedsideMannerismRating": 1,
-  "staffCourteousnessRating": 2,
-  "patientEducationRating": 3
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
 PUT review_v1/_doc/16
 {
@@ -272,11 +317,14 @@ PUT review_v1/_doc/16
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20221021T115513+0000",
   "userScheduleId": 12345,
-  "accurateDiagnosisRating": 5,
-  "friendlinessAndWaitTimeRating": 1,
-  "bedsideMannerismRating": 2,
-  "staffCourteousnessRating": 3,
-  "patientEducationRating": 4
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
 PUT review_v1/_doc/17
 {
@@ -289,11 +337,14 @@ PUT review_v1/_doc/17
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20221021T115513+0000",
   "userScheduleId": 45655,
-  "accurateDiagnosisRating": 1,
-  "friendlinessAndWaitTimeRating": 2,
-  "bedsideMannerismRating": 3,
-  "staffCourteousnessRating": 5,
-  "patientEducationRating": 4
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
 PUT review_v1/_doc/18
 {
@@ -306,9 +357,12 @@ PUT review_v1/_doc/18
   "isVerifiedUser": true,
   "reviewlastEditedOn": "20221021T115513+0000",
   "userScheduleId": 123445,
-  "accurateDiagnosisRating": 2,
-  "friendlinessAndWaitTimeRating": 3,
-  "bedsideMannerismRating": 4,
-  "staffCourteousnessRating": 5,
-  "patientEducationRating": 1
+  "reviewTags": [
+        "On Time",
+        "well-mannered",
+        "Explains lucidly",
+        "Great Staff",
+        "Accurate Diagnosis",
+        "Clean and Hygenic"
+    ]
 }
