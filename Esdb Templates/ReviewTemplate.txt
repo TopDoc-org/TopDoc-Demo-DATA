@@ -6,10 +6,10 @@ PUT _scripts/reviewTemplate
     {
     "size": {{sizeValue}}, 
      "from": {{fromValue}},
-     {{#boolSort}}
-     "sort":[
-       {"{{sortField}}":{"order":"{{sortOrder}}"}}
-    ],
+      {{#boolSort}}
+     "sort":
+       {{#toJson}}sortVal{{/toJson}}
+    ,
      {{/boolSort}}
     "query": {
     "bool": {     
@@ -68,37 +68,11 @@ PUT _scripts/reviewTemplate
             }
             {{/avgReviewRatingAggregation}}
             
-            {{#avgAccurateDiagnosisRatingAggregation}}
-            {{#avgAccurateDiagnosisRatingAggregationComma}},{{/avgAccurateDiagnosisRatingAggregationComma}}
-            "avgAccurateDiagnosisRatingAggs": {
-            "filter": {
-                 "bool": {     
-         "must": [
-        
-        {
-          "term": {
-            "doctorId": {{doctorIdValue}}
-          }
-        }
-        
-      ]
-      
-    }
-            }
-            ,
-            "aggs": {
-                "avgAccurateDiagnosisRatingAggs": {
-                "avg": {
-                    "field": "accurateDiagnosisRating"
-                }
-                }
-            }
-            }
-            {{/avgAccurateDiagnosisRatingAggregation}}
+           
             
-            {{#avgFriendlinessAndWaitTimeRatingAggregation}}
-            {{#avgFriendlinessAndWaitTimeRatingAggregationComma}},{{/avgFriendlinessAndWaitTimeRatingAggregationComma}}
-            "avgFriendlinessAndWaitTimeRatingAggs": {
+            {{#reviewTagsAggregation}}
+            {{#reviewTagsAggregationComma}},{{/reviewTagsAggregationComma}}
+            "reviewTagsAggs": {
             "filter": {
                  "bool": {     
          "must": [
@@ -111,102 +85,19 @@ PUT _scripts/reviewTemplate
         
       ]
       
-    }
-            }
-            ,
-            "aggs": {
-                "avgFriendlinessAndWaitTimeRatingAggs": {
-                "avg": {
-                    "field": "friendlinessAndWaitTimeRating"
-                }
-                }
-            }
-            }
-            {{/avgFriendlinessAndWaitTimeRatingAggregation}}
-            
-            {{#avgBedsideMannerismRatingAggregation}}
-            {{#avgBedsideMannerismRatingAggregationComma}},{{/avgBedsideMannerismRatingAggregationComma}}
-            "avgBedsideMannerismRatingAggs": {
-            "filter": {
-                 "bool": {     
-         "must": [
-        
-        {
-          "term": {
-            "doctorId": {{doctorIdValue}}
-          }
-        }
-        
-      ]
       
     }
             }
             ,
             "aggs": {
-                "avgBedsideMannerismRatingAggs": {
-                "avg": {
-                    "field": "bedsideMannerismRating"
+                "reviewTagsAggs": {
+                "terms": {
+                    "field": "reviewTags.keyword"
                 }
                 }
             }
             }
-            {{/avgBedsideMannerismRatingAggregation}}
-            
-            {{#avgStaffCourteousnessRatingAggregation}}
-            {{#avgStaffCourteousnessRatingAggregationComma}},{{/avgStaffCourteousnessRatingAggregationComma}}
-            "avgStaffCourteousnessRatingAggs": {
-            "filter": {
-                 "bool": {     
-         "must": [
-        
-        {
-          "term": {
-            "doctorId": {{doctorIdValue}}
-          }
-        }
-        
-      ]
-      
-    }
-            }
-            ,
-            "aggs": {
-                "avgStaffCourteousnessRatingAggs": {
-                "avg": {
-                    "field": "staffCourteousnessRating"
-                }
-                }
-            }
-            }
-            {{/avgStaffCourteousnessRatingAggregation}}
-            
-            {{#avgPatientEducationRatingAggregation}}
-            {{#avgPatientEducationRatingAggregationComma}},{{/avgPatientEducationRatingAggregationComma}}
-            "avgPatientEducationRatingAggs": {
-            "filter": {
-                 "bool": {     
-         "must": [
-        
-        {
-          "term": {
-            "doctorId": {{doctorIdValue}}
-          }
-        }
-        
-      ]
-      
-    }
-            }
-            ,
-            "aggs": {
-                "avgPatientEducationRatingAggs": {
-                "avg": {
-                    "field": "patientEducationRating"
-                }
-                }
-            }
-            }
-            {{/avgPatientEducationRatingAggregation}}
+            {{/reviewTagsAggregation}}
 
              {{#rangeReviewRatingAggregation}}
             {{#rangeReviewRatingAggregationComma}},{{/rangeReviewRatingAggregationComma}}
