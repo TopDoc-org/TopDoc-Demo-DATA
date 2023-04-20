@@ -5,6 +5,10 @@ PUT staff_v1
   },
   "mappings": {
     "properties": {
+       "profileCreationDate": {
+                "type": "date",
+                "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+            },
       "firstName": {
         "type": "text",
         "fields": {

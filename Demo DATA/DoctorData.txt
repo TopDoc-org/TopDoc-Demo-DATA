@@ -1,6 +1,7 @@
 PUT doctor_v1/_doc/1
 {
   "address": "MasterCanteen,unit-3,Odisha,756401",
+  "profileCreationDate": "2021-02-01T07:30:00.000-0530",
   "ailmentsTreated": [
     "Cancer",
     "Skin Disease",
@@ -685,16 +686,13 @@ PUT doctor_v1/_doc/1
       }
     ],
   "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
-  "reviewTags": [
-    {
-      "tagName": "tag1_doc1",
-      "description": "tag1 description here"
-    },
-    {
-      "tagName": "tag2_doc1",
-      "description": "tag2 description here"
-    }
-  ],
+  "reviewTags": { 
+      "well-mannered":6,
+      "Explains lucidly":1,
+      "Great Staff":3,
+      "Accurate Diagnosis":45,
+      "Clean and Hygenic":1
+},
   "noOfReviews": 77,
   "consultations": 145,
   "satisfiedPatients": 34,
@@ -792,6 +790,7 @@ PUT doctor_v1/_doc/1
 PUT doctor_v1/_doc/2
 {
   "address": "Veerana Palya, Outer Ring Road, Landmark : Near Manyata Tech Park, Bangalore",
+  "profileCreationDate": "2022-02-01T07:30:00.000-0530",
   "ailmentsTreated": [
     "Cancer",
     "Skin Disease",
@@ -1476,16 +1475,14 @@ PUT doctor_v1/_doc/2
       }
     ],
   "profImageUrl": "https://images.theconversation.com/files/304957/original/file-20191203-66986-im7o5.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop",
-  "reviewTags": [
-    {
-      "tagName": "tag1_doc2",
-      "description": "tag1 description here"
-    },
-    {
-      "tagName": "tag2_doc2",
-      "description": "tag2 description here"
-    }
-  ],
+  "reviewTags": { 
+      "On Time":2,
+      "well-mannered":6,
+      "Explains lucidly":1,
+      "Great Staff":3,
+      "Accurate Diagnosis":45,
+      "Clean and Hygenic":1
+},
   "noOfReviews": 5,
   "consultations": 55,
   "satisfiedPatients": 9,
@@ -1582,6 +1579,7 @@ PUT doctor_v1/_doc/2
 PUT doctor_v1/_doc/3
 {
   "address": "MasterCanteen,unit-3,Odisha,756401",
+  "profileCreationDate": "2023-02-01T07:30:00.000-0530",
   "ailmentsTreated": [
     "Tooth cleaning",
     "tooth repairing"
@@ -2267,16 +2265,13 @@ PUT doctor_v1/_doc/3
       }
     ],
   "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
-  "reviewTags": [
-    {
-      "tagName": "tag1_doc1",
-      "description": "tag1 description here"
-    },
-    {
-      "tagName": "tag2_doc1",
-      "description": "tag2 description here"
-    }
-  ],
+  "reviewTags":{ 
+      "On Time":2,
+      "well-mannered":6,
+      "Explains lucidly":1,
+      "Great Staff":3,
+      "Clean and Hygenic":1
+},
   "noOfReviews": 77,
   "consultations": 145,
   "satisfiedPatients": 34,
@@ -2372,6 +2367,7 @@ PUT doctor_v1/_doc/3
 PUT doctor_v1/_doc/4
 {
   "address": "Veerana Palya, Outer Ring Road, Landmark : Near Manyata Tech Park, Bangalore",
+  "profileCreationDate": "2024-02-01T07:30:00.000-0530",
   "ailmentsTreated": [
     "Cancer",
     "Skin Disease",
@@ -3058,16 +3054,9 @@ PUT doctor_v1/_doc/4
       }
     ],
   "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
-  "reviewTags": [
-    {
-      "tagName": "tag1_doc1",
-      "description": "tag1 description here"
-    },
-    {
-      "tagName": "tag2_doc1",
-      "description": "tag2 description here"
-    }
-  ],
+  "reviewTags": { 
+      "Clean and Hygenic":1
+},
   "noOfReviews": 77,
   "consultations": 145,
   "satisfiedPatients": 34,
@@ -3163,6 +3152,7 @@ PUT doctor_v1/_doc/4
 PUT doctor_v1/_doc/5 
 {
   "address": "MasterCanteen,unit-3,Odisha,756401",
+  "profileCreationDate": "2025-02-01T07:30:00.000-0530",
   "ailmentsTreated": [
     "Cancer",
     "Skin Disease",
@@ -3849,16 +3839,11 @@ PUT doctor_v1/_doc/5
       }
     ],
   "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
-  "reviewTags": [
-    {
-      "tagName": "tag1_doc1",
-      "description": "tag1 description here"
-    },
-    {
-      "tagName": "tag2_doc1",
-      "description": "tag2 description here"
-    }
-  ],
+  "reviewTags": { 
+      "On Time":2,
+      "well-mannered":6,
+      "Clean and Hygenic":1
+},
   "noOfReviews": 77,
   "consultations": 145,
   "satisfiedPatients": 34,
@@ -3931,6 +3916,7 @@ PUT doctor_v1/_doc/5
 PUT doctor_v1/_doc/6
 {
   "address": "MasterCanteen,unit-3,Odisha,756401",
+  "profileCreationDate": "2026-02-01T07:30:00.000-0530",
   "ailmentsTreated": [
     "Cancer",
     "Skin Disease",
@@ -4619,16 +4605,14 @@ PUT doctor_v1/_doc/6
       }
     ],
   "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
-  "reviewTags": [
-    {
-      "tagName": "tag1_doc1",
-      "description": "tag1 description here"
-    },
-    {
-      "tagName": "tag2_doc1",
-      "description": "tag2 description here"
-    }
-  ],
+  "reviewTags": { 
+      "On Time":2,
+      "well-mannered":6,
+      "Explains lucidly":1,
+      "Great Staff":3,
+      "Accurate Diagnosis":45,
+      "Clean and Hygenic":1
+},
   "noOfReviews": 77,
   "consultations": 145,
   "satisfiedPatients": 34,
@@ -4724,6 +4708,7 @@ PUT doctor_v1/_doc/6
 PUT doctor_v1/_doc/7
 {
   "address": "MasterCanteen,unit-3,Odisha,756401",
+  "profileCreationDate": "2020-02-01T07:30:00.000-0530",
   "ailmentsTreated": [
     "Cancer",
     "Skin Disease",
@@ -5410,16 +5395,14 @@ PUT doctor_v1/_doc/7
       }
     ],
   "profImageUrl": "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
-  "reviewTags": [
-    {
-      "tagName": "tag1_doc1",
-      "description": "tag1 description here"
-    },
-    {
-      "tagName": "tag2_doc1",
-      "description": "tag2 description here"
-    }
-  ],
+  "reviewTags": { 
+      "On Time":2,
+      "well-mannered":6,
+      "Explains lucidly":1,
+      "Great Staff":3,
+      "Accurate Diagnosis":45,
+      "Clean and Hygenic":1
+},
   "noOfReviews": 77,
   "consultations": 145,
   "satisfiedPatients": 34,

@@ -18,7 +18,7 @@ PUT _scripts/reviewTemplate
            {{#boolUserId}}
           {
           "term": {
-            "userId": {{userIdValue}}
+            "userId": "{{userIdValue}}"
           }
         }
         {{/boolUserId}}
@@ -27,7 +27,7 @@ PUT _scripts/reviewTemplate
         {{#boolDoctorIdComma}}, {{/boolDoctorIdComma}}
         {
           "term": {
-            "doctorId": {{doctorIdValue}}
+            "doctorId": "{{doctorIdValue}}"
           }
         }
         {{/boolDoctorId}}
@@ -49,7 +49,7 @@ PUT _scripts/reviewTemplate
         
         {
           "term": {
-            "doctorId": {{doctorIdValue}}
+            "doctorId": "{{doctorIdValue}}"
           }
         }
         
@@ -79,7 +79,7 @@ PUT _scripts/reviewTemplate
         
         {
           "term": {
-            "doctorId": {{doctorIdValue}}
+            "doctorId": "{{doctorIdValue}}"
           }
         }
         
@@ -108,7 +108,7 @@ PUT _scripts/reviewTemplate
         {
         
           "term": {
-            "doctorId": {{doctorIdValue}}
+            "doctorId": "{{doctorIdValue}}"
           }
         
         }

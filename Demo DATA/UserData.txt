@@ -1,6 +1,7 @@
 PUT user_v1/_doc/1
 {
     "name": "Amit kumar Jha",
+    "profileCreationDate": "2021-02-01T07:30:00.000-0530",
     "first_name": "Amit",
     "userType" : "registered",
     "profImageUrl":"https://cdn5.vectorstock.com/i/1000x1000/78/14/tiny-cute-cartoon-patient-man-character-broken-vector-26027814.jpg",
@@ -69,6 +70,7 @@ PUT user_v1/_doc/1
 PUT user_v1/_doc/2
 {
     "name": "hello world",
+    "profileCreationDate": "2022-02-01T07:30:00.000-0530",
     "first_name": "hello",
     "userType" : "registered",
      "profImageUrl":"https://cdn5.vectorstock.com/i/1000x1000/78/14/tiny-cute-cartoon-patient-man-character-broken-vector-26027814.jpg",
@@ -136,6 +138,7 @@ PUT user_v1/_doc/2
   PUT user_v1/_doc/3
 {
     "name": "Akash Neekhara",
+    "profileCreationDate": "2023-02-01T07:30:00.000-0530",
     "first_name": "Akash",
     "last_name": "Neekhara",
     "userType" : "registered",
@@ -204,6 +207,7 @@ PUT user_v1/_doc/2
 PUT user_v1/_doc/4
 {
     "name": "Sai bhai",
+    "profileCreationDate": "2024-02-01T07:30:00.000-0530",
     "first_name": "Sai",
     "last_name": "bhai",
     "userType" : "registered",
@@ -271,9 +275,10 @@ PUT user_v1/_doc/4
 
 PUT user_v1/_doc/5
 {
-    "name": "Raj bhai",
-    "first_name": "Raj",
-    "last_name": "bhai",
+    "name": "Mera Putra",
+    "profileCreationDate": "2025-02-01T07:30:00.000-0530",
+    "first_name": Mera,
+    "last_name": Putra,
     "DOB": "2022-07-22",
     "userType" : "registered",
      "profImageUrl":"https://cdn5.vectorstock.com/i/1000x1000/78/14/tiny-cute-cartoon-patient-man-character-broken-vector-26027814.jpg",
@@ -327,7 +332,7 @@ PUT user_v1/_doc/5
     "coins": 10,
     "isPremiumUser": false,
     "medicalDetails":[{
-      "name" : "raj bhai",
+      "name" : "Mera Putra",
       "bmi" : 16.5 ,
       "heartRate" : 85 ,
       "fbcStatus" : 122 ,

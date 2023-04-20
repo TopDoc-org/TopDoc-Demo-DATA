@@ -8,6 +8,10 @@ PUT user_v1
             "DOB": {
                 "type": "date"
             },
+            "profileCreationDate": {
+                "type": "date",
+                "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+            },
             "profImageUrl": {
                 "enabled": false
             },
@@ -24,24 +28,13 @@ PUT user_v1
                 "type": "keyword"
             },
             "district":{
-                "type": "text",
-                "fields": {
-                        "keyword": {
-                            "type": "keyword"
-                        }
-                }
+                "type": "keyword"
             },
             "country": {
                 "type": "keyword"
             },
             "email": {
-                "type": "text",
-                "fields": {
-                    "keyword": {
-                        "type": "keyword",
-                        "ignore_above": 256
-                    }
-                }
+                 "type":"keyword"
             },
             "gender": {
                 "type": "keyword"

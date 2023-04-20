@@ -10,15 +10,31 @@ PUT doctor_v1
          "profImageUrl":{
             "enabled":false
          },
+          "profileCreationDate": {
+                "type": "date",
+                "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+            },
          "reviewTags":{
-            "type":"nested",
             "properties":{
-               "tagName":{
-                  "type":"keyword"
+               "On Time":{
+                  "type":"long"
                },
-               "description":{
-                  "type":"keyword"
+               "well-mannered":{
+                  "type":"long"
+               },
+               "Explains lucidly":{
+                  "type":"long"
+               },
+               "Great Staff":{
+                  "type":"long"
+               },
+               "Accurate Diagnosis":{
+                  "type":"long"
+               },
+               "Clean and Hygenic":{
+                  "type":"long"
                }
+               
             }
          },
          "noOfReviews":{
@@ -130,12 +146,7 @@ PUT doctor_v1
             }
          },
          "district":{
-            "type":"text",
-            "fields":{
-               "keyword":{
-                  "type":"keyword"
-               }
-            }
+            "type":"keyword"
          },
          "country":{
             "type":"keyword"
