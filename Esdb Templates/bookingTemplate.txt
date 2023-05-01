@@ -141,6 +141,7 @@ PUT _scripts/bookingTemplate
         "aggs": {
             {{#doctorAggregation}}
             "doctorAggs": {
+              
             "filter": {
                 "bool": {     
          "must": [
@@ -327,7 +328,10 @@ PUT _scripts/bookingTemplate
              "date_histogram": {
                   "field": "{{rangeField}}",
                   "calendar_interval": "day",
-                  "format": "yyyy-MM-dd"
+                  "format": "yyyy-MM-dd",
+                  "order": {
+                      "_key": "asc"
+                    }
         },
         "aggs": {
         "unique_field_values": {
@@ -338,6 +342,10 @@ PUT _scripts/bookingTemplate
             "documents": {
               "top_hits": {
                 "size": 100
+                {{#boolSort}}
+                ,
+                "sort":{{#toJson}}sortVal{{/toJson}}
+                {{/boolSort}}
               }
             }
           }

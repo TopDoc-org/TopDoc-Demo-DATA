@@ -277,8 +277,8 @@ PUT user_v1/_doc/5
 {
     "name": "Mera Putra",
     "profileCreationDate": "2025-02-01T07:30:00.000-0530",
-    "first_name": Mera,
-    "last_name": Putra,
+    "first_name": "Mera",
+    "last_name": "Putra",
     "DOB": "2022-07-22",
     "userType" : "registered",
      "profImageUrl":"https://cdn5.vectorstock.com/i/1000x1000/78/14/tiny-cute-cartoon-patient-man-character-broken-vector-26027814.jpg",
