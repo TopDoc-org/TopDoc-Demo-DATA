@@ -42,7 +42,7 @@ PUT review_v1
             },
              "userScheduleId": {
                 "type": "keyword"
-            },
+            }
         }
     }
 }
