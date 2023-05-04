@@ -11,15 +11,15 @@ const index_Version = "v1";
  * and comment the indexes which is not required to be deleted
  */
 const indexToDelete = [
-  //   "ads",
-  //   "booking",
-  //   "doctor",
-  //   "notification",
-  //   "payments",
-  //   "review",
-  //   "schedule",
-  //   "staff",
-  //   "support",
+  "ads",
+  "booking",
+  "doctor",
+  "notification",
+  "payments",
+  "review",
+  "schedule",
+  "staff",
+  "support",
   "user",
 ];
 

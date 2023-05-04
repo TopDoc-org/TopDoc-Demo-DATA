@@ -12,15 +12,15 @@ const mappingIndexes_Version = "v1";
  * and comment the indexes whole mappings is not required to be inserted
  */
 const mappingsToInsert = [
-  // "ads",
-  // "booking",
-  // "doctor",
-  // "notification",
-  // "payments",
-  // "review",
-  // "schedule",
-  // "staff",
-  // "support",
+  "ads",
+  "booking",
+  "doctor",
+  "notification",
+  "payments",
+  "review",
+  "schedule",
+  "staff",
+  "support",
   "user",
 ];
 
