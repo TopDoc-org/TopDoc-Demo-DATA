@@ -1,0 +1,904 @@
+const bookingTemplate=
+{
+  "script": {
+    "lang": "mustache",
+    "source": """
+    {
+    "size": {{sizeValue}}, 
+     "from": {{fromValue}},
+     {{#boolSort}}
+     "sort":
+       {{#toJson}}sortVal{{/toJson}}
+    ,
+     {{/boolSort}}
+    "query": {
+    "bool": {     
+         "must": [
+        
+           {{#boolTermQuery}}
+          {
+          "term": {
+            "{{fieldName}}": "{{fieldValue}}" 
+          }
+        }
+        {{/boolTermQuery}}
+        {{#boolRangeComma}}
+        ,
+        {{/boolRangeComma}}
+        {{#boolRangeQuery}}
+        {
+          "range": {
+            "{{rangeField}}": {
+              "gte": "{{gteValue}}",
+              "lte": "{{lteValue}}"
+            }
+          }
+        } 
+        {{/boolRangeQuery}}
+      ]
+      {{#boolFilter}} 
+      , 
+           
+      "filter": [
+         {
+          "exists": {
+            "field": "doctorId"
+          }
+        } 
+        {{#filterDoctorId}}
+        ,
+        {
+          "term": {
+            "doctorId": "{{doctorIdValue}}"
+          }
+        }
+        {{/filterDoctorId}}
+        {{#filterAppointmentDateRange}}
+        ,       
+        {
+          "range": {
+            "appointmentDate": {
+              "gte": "{{gteAppointmentDateRange}}",
+              "lte": "{{lteAppointmentDateRange}}" 
+            }
+          }
+        }{{/filterAppointmentDateRange}}
+        {{#filterAppointmentDate}}
+        ,        
+        {
+          "term": {
+            "appointmentDate": "{{appointmentDateValue}}"
+          }
+        } {{/filterAppointmentDate}}
+         {{#filterSlotDay}}
+        ,        
+        {
+          "term": {
+            "slotDay": "{{slotDayValue}}"
+          }
+        }
+        {{/filterSlotDay}}
+        {{#filterUserId}}
+        ,        
+        {
+          "term": {
+            "userId": "{{userIdValue}}"
+          }
+        }{{/filterUserId}}
+        {{#filterStatus}}
+        ,        
+        {
+          "term": {
+            "status": "{{statusValue}}"
+          }
+        }{{/filterStatus}}
+        {{#filterSessionId}}
+        ,        
+        {
+          "term": {
+            "sessionId": "{{sessionIdValue}}"
+          }
+        }{{/filterSessionId}}
+        {{#filterSlotType}}
+        ,       
+        {
+          "terms": {
+            "slotType": "{{slotTypeValue}}"
+          }
+        }
+        {{/filterSlotType}}
+        {{#filterAppointmentType}}
+        ,       
+        {
+          "terms": {
+            "appointmentType": "{{appointmentTypeValue}}"
+          }
+        }
+        {{/filterAppointmentType}}
+        {{#filterUserType}}
+        ,       
+        {
+          "terms": {
+            "userType": "{{userTypeValue}}"
+          }
+        }
+        {{/filterUserType}}
+        {{#filterClinicId}}
+        ,       
+        {
+          "terms": {
+            "clinicId": "{{clinicIdValue}}"
+          }
+        }
+        {{/filterClinicId}}
+      ]
+      {{/boolFilter}}
+    }
+  },
+   "aggs": {
+        "TotalAggs": {
+        "global": {},
+        "aggs": {
+            {{#doctorAggregation}}
+            "doctorAggs": {
+            "filter": {
+                "bool": {     
+         "must": [
+        {
+          "term": {
+            "doctorId": "{{fieldValue}}" 
+          }
+        }
+        {{#boolRangeComma}}
+        ,
+        {{/boolRangeComma}}
+        {{#boolRangeQuery}}
+        {
+          "range": {
+            "{{rangeField}}": {
+              "gte": "{{gteValue}}",
+              "lte": "{{lteValue}}"
+            }
+          }
+        } 
+        {{/boolRangeQuery}}
+      ]
+      {{#boolFilter}} 
+      , 
+           
+      "filter": [
+         {
+          "exists": {
+            "field": "doctorId"
+          }
+        } 
+        {{#filterDoctorId}}
+        ,
+        {
+          "term": {
+            "doctorId": "{{doctorIdValue}}"
+          }
+        }
+        {{/filterDoctorId}}
+        {{#filterAppointmentDateRange}}
+        ,       
+        {
+          "range": {
+            "appointmentDate": {
+              "gte": "{{gteAppointmentDateRange}}" ,
+              "lte": "{{lteAppointmentDateRange}}" 
+            }
+          }
+        }{{/filterAppointmentDateRange}}
+        {{#filterStatus}}
+        ,        
+        {
+          "term": {
+            "status": "{{statusValue}}"
+          }
+        }{{/filterStatus}}
+        {{#filterAppointmentDate}}
+        ,        
+        {
+          "term": {
+            "appointmentDate": "{{appointmentDateValue}}"
+          }
+        } {{/filterAppointmentDate}}
+         {{#filterSlotDay}}
+        ,        
+        {
+          "term": {
+            "slotDay": "{{slotDayValue}}"
+          }
+        }
+        {{/filterSlotDay}}
+        {{#filterUserId}}
+        ,        
+        {
+          "term": {
+            "userId": "{{userIdValue}}"
+          }
+        }{{/filterUserId}}
+        {{#filterSessionId}}
+        ,        
+        {
+          "term": {
+            "sessionId": "{{sessionIdValue}}"
+          }
+        }{{/filterSessionId}}
+        {{#filterSlotType}}
+        ,       
+        {
+          "terms": {
+            "slotType": "{{slotTypeValue}}"
+          }
+        }
+        {{/filterSlotType}}
+        {{#filterAppointmentType}}
+        ,       
+        {
+          "terms": {
+            "appointmentType": "{{appointmentTypeValue}}"
+          }
+        }
+        {{/filterAppointmentType}}
+        {{#filterUserType}}
+        ,       
+        {
+          "terms": {
+            "userType": "{{userTypeValue}}"
+          }
+        }
+        {{/filterUserType}}
+        {{#filterClinicId}}
+        ,       
+        {
+          "terms": {
+            "clinicId": "{{clinicIdValue}}"
+          }
+        }
+        {{/filterClinicId}}
+      ]
+      {{/boolFilter}}
+    }
+            }
+            ,
+            "aggs": {
+                "appointmentTypeOfTheDoc": {
+                "terms": {
+                    "field": "appointmentType"
+                    
+                }
+                
+            },
+             "userTypeOfTheDoc": {
+                "terms": {
+                    "field": "userType"
+                    
+                }
+                
+            },
+          
+                "slotTypeOfTheDoc": {
+                "terms": {
+                    "field": "slotType"
+                   
+                }
+                
+            },
+            "totalSlotsBookedOfTheDoc": {
+                "value_count": {
+                    "field": "appointmentId"
+                   
+                }
+                
+            },
+            "totalSessionsOfTheDoc": {
+                "cardinality": {
+                    "field": "sessionId"
+                   
+                }
+                
+            },
+            "uniqueRegisteredUsersOfTheDoc": {
+                "cardinality": {
+                    "field": "userId"
+                   
+                }
+                
+            },
+           "uniqueClinicOfTheDoc": {
+                "cardinality": {
+                    "field": "clinicId"
+                   
+                }
+                
+            },
+                "bookingStatusOfTheDoc": {
+                "terms": {
+                    "field": "status"
+                   
+                }
+                
+            }
+        {{#boolRangeComma}}
+         ,
+        "results_by_date": {
+             "date_histogram": {
+                  "field": "{{rangeField}}",
+                  "calendar_interval": "day",
+                  "format": "yyyy-MM-dd"
+        },
+        "aggs": {
+        "unique_field_values": {
+            "terms": {
+            "field": "sessionId"
+          },
+          "aggs": {
+            "documents": {
+              "top_hits": {
+                "size": 100
+              }
+            }
+          }
+        },
+        "documents": {
+          "top_hits": {
+            "size": 100
+          }
+        }
+      }
+    }
+         {{/boolRangeComma}}
+            }
+            {{/doctorAggregation}}
+            
+            {{#sessionIdAggregation}}
+            
+            "sessionIdAggs": {
+            "filter": {
+                "bool": {     
+         "must": [
+        {
+          "term": {
+            "sessionId": "{{fieldValue}}" 
+          }
+        }
+        {{#boolRangeComma}}
+        ,
+        {{/boolRangeComma}}
+        {{#boolRangeQuery}}
+        {
+          "range": {
+            "{{rangeField}}": {
+              "gte": "{{gteValue}}",
+              "lte": "{{lteValue}}"
+            }
+          }
+        } 
+        {{/boolRangeQuery}}
+      ]
+      {{#boolFilter}} 
+      , 
+           
+      "filter": [
+         {
+          "exists": {
+            "field": "doctorId"
+          }
+        } 
+        {{#filterDoctorId}}
+        ,
+        {
+          "term": {
+            "doctorId": "{{doctorIdValue}}"
+          }
+        }
+        {{/filterDoctorId}}
+        {{#filterStatus}}
+        ,        
+        {
+          "term": {
+            "status": "{{statusValue}}"
+          }
+        }{{/filterStatus}}
+        {{#filterAppointmentDateRange}}
+        ,       
+        {
+          "range": {
+            "appointmentDate": {
+              "gte": "{{gteAppointmentDateRange}}" ,
+              "lte": "{{lteAppointmentDateRange}}" 
+            }
+          }
+        }{{/filterAppointmentDateRange}}
+        {{#filterAppointmentDate}}
+        ,        
+        {
+          "term": {
+            "appointmentDate": "{{appointmentDateValue}}"
+          }
+        } {{/filterAppointmentDate}}
+         {{#filterSlotDay}}
+        ,        
+        {
+          "term": {
+            "slotDay": "{{slotDayValue}}"
+          }
+        }
+        {{/filterSlotDay}}
+        {{#filterUserId}}
+        ,        
+        {
+          "term": {
+            "userId": "{{userIdValue}}"
+          }
+        }{{/filterUserId}}
+        {{#filterSessionId}}
+        ,        
+        {
+          "term": {
+            "sessionId": "{{sessionIdValue}}"
+          }
+        }{{/filterSessionId}}
+        {{#filterSlotType}}
+        ,       
+        {
+          "terms": {
+            "slotType": "{{slotTypeValue}}"
+          }
+        }
+        {{/filterSlotType}}
+        {{#filterAppointmentType}}
+        ,       
+        {
+          "terms": {
+            "appointmentType": "{{appointmentTypeValue}}"
+          }
+        }
+        {{/filterAppointmentType}}
+        {{#filterUserType}}
+        ,       
+        {
+          "terms": {
+            "userType": "{{userTypeValue}}"
+          }
+        }
+        {{/filterUserType}}
+        {{#filterClinicId}}
+        ,       
+        {
+          "terms": {
+            "clinicId": "{{clinicIdValue}}"
+          }
+        }
+        {{/filterClinicId}}
+      ]
+      {{/boolFilter}}
+    }
+            
+            }
+            ,
+             "aggs": {
+                "slotCountOfTheSession": {
+                "value_count": {
+                    "field": "slotId"
+                    
+                
+                }
+            },
+             
+                "bookingStatusOfTheSession": {
+                "terms": {
+                    "field": "status"
+                   
+                }
+                
+            },
+              "userTypeOfTheSession": {
+                "terms": {
+                    "field": "userType"
+                   
+                }
+                
+            },
+             
+                "appointmentTypeOfTheSession": {
+                "terms": {
+                    "field": "appointmentType"
+                    
+                }
+                
+            },
+             
+                "slotTypeOfTheSession": {
+                "terms": {
+                    "field": "slotType"
+                    
+                
+                }
+            }
+            }
+            {{/sessionIdAggregation}}
+            
+            {{#appointmentDateAggregation}}
+            
+            "appointmentDateAggs": {
+            "filter": {
+                 "bool": {     
+         "must": [
+        {
+          "term": {
+            "appointmentDate": "{{fieldValue}}" 
+          }
+        }
+        {{#boolRangeComma}}
+        ,
+        {{/boolRangeComma}}
+        {{#boolRangeQuery}}
+        {
+          "range": {
+            "{{rangeField}}": {
+              "gte": "{{gteValue}}",
+              "lte": "{{lteValue}}"
+            }
+          }
+        } 
+        {{/boolRangeQuery}}
+      ]
+      {{#boolFilter}} 
+      , 
+           
+      "filter": [
+         {
+          "exists": {
+            "field": "doctorId"
+          }
+        } 
+        {{#filterDoctorId}}
+        ,
+        {
+          "term": {
+            "doctorId": "{{doctorIdValue}}"
+          }
+        }
+        {{/filterDoctorId}}
+        {{#filterStatus}}
+        ,        
+        {
+          "term": {
+            "status": "{{statusValue}}"
+          }
+        }{{/filterStatus}}
+        {{#filterAppointmentDateRange}}
+        ,       
+        {
+          "range": {
+            "appointmentDate": {
+              "gte": "{{gteAppointmentDateRange}}" ,
+              "lte": "{{lteAppointmentDateRange}}" 
+            }
+          }
+        }{{/filterAppointmentDateRange}}
+        {{#filterAppointmentDate}}
+        ,        
+        {
+          "term": {
+            "appointmentDate": "{{appointmentDateValue}}"
+          }
+        } {{/filterAppointmentDate}}
+         {{#filterSlotDay}}
+        ,        
+        {
+          "term": {
+            "slotDay": "{{slotDayValue}}"
+          }
+        }
+        {{/filterSlotDay}}
+        {{#filterUserId}}
+        ,        
+        {
+          "term": {
+            "userId": "{{userIdValue}}"
+          }
+        }{{/filterUserId}}
+        {{#filterSessionId}}
+        ,        
+        {
+          "term": {
+            "sessionId": "{{sessionIdValue}}"
+          }
+        }{{/filterSessionId}}
+        {{#filterSlotType}}
+        ,       
+        {
+          "terms": {
+            "slotType": "{{slotTypeValue}}"
+          }
+        }
+        {{/filterSlotType}}
+        {{#filterAppointmentType}}
+        ,       
+        {
+          "terms": {
+            "appointmentType": "{{appointmentTypeValue}}"
+          }
+        }
+        {{/filterAppointmentType}}
+        {{#filterUserType}}
+        ,       
+        {
+          "terms": {
+            "userType": "{{userTypeValue}}"
+          }
+        }
+        {{/filterUserType}}
+        {{#filterClinicId}}
+        ,       
+        {
+          "terms": {
+            "clinicId": "{{clinicIdValue}}"
+          }
+        }
+        {{/filterClinicId}}
+      ]
+      {{/boolFilter}}
+    }
+            
+            }
+            ,
+            "aggs": {
+                "numberOfSessionOnTheDate": {
+                "cardinality": {
+                    "field": "sessionId"
+                   
+                }
+                
+            },
+          
+                "slotsOnTheDate": {
+                "cardinality": {
+                    "field": "slotId"
+                   
+                }
+                
+            },
+           
+                "doctorCountOnTheDate": {
+                "cardinality": {
+                    "field": "doctorId"
+                   
+                }
+                
+            },
+            "clinicCountOnTheDate": {
+                "cardinality": {
+                    "field": "clinicId"
+                   
+                }
+                
+            },
+           
+                "appointmentTypeOnTheDate": {
+                "terms": {
+                    "field": "appointmentType"
+                   
+                
+                }
+            },
+             "userTypeOnTheDate": {
+                "terms": {
+                    "field": "userType"
+                   
+                
+                }
+            },
+            
+                "slotTypeOnTheDate": {
+                "terms": {
+                    "field": "slotType"
+                   
+                }
+                
+            },
+           
+                "bookingStatusOnTheDate": {
+                "terms": {
+                    "field": "status"
+                   
+                }
+                
+            }
+            }
+            {{/appointmentDateAggregation}}
+            
+            {{#userIdAggregation}}
+            
+            "userIdAggs": {
+            "filter": {
+                "bool": {     
+         "must": [
+        {
+          "term": {
+            "userId": "{{fieldValue}}" 
+          }
+        }
+        {{#boolRangeComma}}
+        ,
+        {{/boolRangeComma}}
+        {{#boolRangeQuery}}
+        {
+          "range": {
+            "{{rangeField}}": {
+              "gte": "{{gteValue}}",
+              "lte": "{{lteValue}}"
+            }
+          }
+        } 
+        {{/boolRangeQuery}}
+      ]
+      {{#boolFilter}} 
+      , 
+           
+      "filter": [
+         {
+          "exists": {
+            "field": "doctorId"
+          }
+        } 
+        {{#filterDoctorId}}
+        ,
+        {
+          "term": {
+            "doctorId": "{{doctorIdValue}}"
+          }
+        }
+        {{/filterDoctorId}}
+        {{#filterStatus}}
+        ,        
+        {
+          "term": {
+            "status": "{{statusValue}}"
+          }
+        }{{/filterStatus}}
+        {{#filterAppointmentDateRange}}
+        ,       
+        {
+          "range": {
+            "appointmentDate": {
+              "gte": "{{gteAppointmentDateRange}}" ,
+              "lte": "{{lteAppointmentDateRange}}" 
+            }
+          }
+        }{{/filterAppointmentDateRange}}
+        {{#filterAppointmentDate}}
+        ,        
+        {
+          "term": {
+            "appointmentDate": "{{appointmentDateValue}}"
+          }
+        } {{/filterAppointmentDate}}
+         {{#filterSlotDay}}
+        ,        
+        {
+          "term": {
+            "slotDay": "{{slotDayValue}}"
+          }
+        }
+        {{/filterSlotDay}}
+        {{#filterUserId}}
+        ,        
+        {
+          "term": {
+            "userId": "{{userIdValue}}"
+          }
+        }{{/filterUserId}}
+        {{#filterSessionId}}
+        ,        
+        {
+          "term": {
+            "sessionId": "{{sessionIdValue}}"
+          }
+        }{{/filterSessionId}}
+        {{#filterSlotType}}
+        ,       
+        {
+          "terms": {
+            "slotType": "{{slotTypeValue}}"
+          }
+        }
+        {{/filterSlotType}}
+        {{#filterAppointmentType}}
+        ,       
+        {
+          "terms": {
+            "appointmentType": "{{appointmentTypeValue}}"
+          }
+        }
+        {{/filterAppointmentType}}
+        {{#filterUserType}}
+        ,       
+        {
+          "terms": {
+            "userType": "{{userTypeValue}}"
+          }
+        }
+        {{/filterUserType}}
+        {{#filterClinicId}}
+        ,       
+        {
+          "terms": {
+            "clinicId": "{{clinicIdValue}}"
+          }
+        }
+        {{/filterClinicId}}
+      ]
+      {{/boolFilter}}
+    }
+            
+            }
+             ,
+            "aggs": {
+                "slotsBookedOfTheUser": {
+                "value_count": {
+                    "field": "appointmentId"
+                   
+                }
+                
+            },
+           
+                "uniqueDoctorCountOfTheUser": {
+                "cardinality": {
+                    "field": "doctorId"
+                   
+                }
+                
+            },
+             "uniqueClinicCountOfTheUser": {
+                "cardinality": {
+                    "field": "clinicId"
+                   
+                }
+                
+            },
+           
+                "appointmentTypeOfTheUser": {
+                "terms": {
+                    "field": "appointmentType"
+                   
+                }
+                
+            },
+          
+                "slotTypeOfTheUser": {
+                "terms": {
+                    "field": "slotType"
+                    
+                }
+                
+            },
+         
+                "bookingStatusOfTheUser": {
+                "terms": {
+                    "field": "status"
+                   
+                }
+                
+            }
+            }
+            {{/userIdAggregation}}
+        }
+      }
+    }
+}}
+          
+        }
+     
+   }
+      
+    } """
+  }
+}
+
+
+module.exports = {bookingTemplate}
