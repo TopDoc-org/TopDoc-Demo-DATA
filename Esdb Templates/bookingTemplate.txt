@@ -63,6 +63,13 @@ PUT _scripts/bookingTemplate
             }
           }
         }{{/filterAppointmentDateRange}}
+                {{#filterBool}}
+        ,        
+        {
+          "bool":   {{#toJson}}boolValue{{/toJson}}
+          
+        } 
+        {{/filterBool}}
         {{#filterAppointmentDate}}
         ,        
         {
@@ -181,6 +188,13 @@ PUT _scripts/bookingTemplate
           }
         }
         {{/filterDoctorId}}
+                {{#filterBool}}
+        ,        
+        {
+          "bool":   {{#toJson}}boolValue{{/toJson}}
+          
+        } 
+        {{/filterBool}}
         {{#filterAppointmentDateRange}}
         ,       
         {
@@ -403,6 +417,13 @@ PUT _scripts/bookingTemplate
           }
         }
         {{/filterDoctorId}}
+                {{#filterBool}}
+        ,        
+        {
+          "bool":   {{#toJson}}boolValue{{/toJson}}
+          
+        } 
+        {{/filterBool}}
         {{#filterStatus}}
         ,        
         {
@@ -571,6 +592,13 @@ PUT _scripts/bookingTemplate
           }
         }
         {{/filterDoctorId}}
+                {{#filterBool}}
+        ,        
+        {
+          "bool":   {{#toJson}}boolValue{{/toJson}}
+          
+        } 
+        {{/filterBool}}
         {{#filterStatus}}
         ,        
         {
@@ -762,6 +790,13 @@ PUT _scripts/bookingTemplate
           }
         }
         {{/filterDoctorId}}
+                {{#filterBool}}
+        ,        
+        {
+          "bool":   {{#toJson}}boolValue{{/toJson}}
+          
+        } 
+        {{/filterBool}}
         {{#filterStatus}}
         ,        
         {
