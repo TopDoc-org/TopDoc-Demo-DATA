@@ -5,7 +5,14 @@ const doctor = {
   mappings: {
     properties: {
       profImageUrl: {
-        enabled: false,
+        properties: {
+          imageName: {
+            type: "keyword",
+          },
+          src: {
+            type: "keyword",
+          },
+        },
       },
       profileCreationDate: {
         type: "date",

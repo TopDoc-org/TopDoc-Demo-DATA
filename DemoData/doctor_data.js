@@ -634,8 +634,10 @@ const doctor = [
           dayName: "Sunday",
         },
       ],
-      profImageUrl:
-        "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
+      profImageUrl: {
+        imageName: "ProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023",
+        src: "https://firebasestorage.googleapis.com/v0/b/imageupload-1354b.appspot.com/o/uploads%2FProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023?alt=media&token=c4933e0b-0a2f-4d13-ae8b-81aed3bd2005",
+      },
       reviewTags: {
         "well-mannered": 6,
         "Explains lucidly": 1,
@@ -1361,8 +1363,10 @@ const doctor = [
           dayName: "Sunday",
         },
       ],
-      profImageUrl:
-        "https://images.theconversation.com/files/304957/original/file-20191203-66986-im7o5.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop",
+      profImageUrl: {
+        imageName: "ProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023",
+        src: "https://firebasestorage.googleapis.com/v0/b/imageupload-1354b.appspot.com/o/uploads%2FProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023?alt=media&token=c4933e0b-0a2f-4d13-ae8b-81aed3bd2005",
+      },
       reviewTags: {
         "On Time": 2,
         "well-mannered": 6,
@@ -2090,8 +2094,10 @@ const doctor = [
           dayName: "Sunday",
         },
       ],
-      profImageUrl:
-        "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
+      profImageUrl: {
+        imageName: "ProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023",
+        src: "https://firebasestorage.googleapis.com/v0/b/imageupload-1354b.appspot.com/o/uploads%2FProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023?alt=media&token=c4933e0b-0a2f-4d13-ae8b-81aed3bd2005",
+      },
       reviewTags: {
         "On Time": 2,
         "well-mannered": 6,
@@ -2818,8 +2824,10 @@ const doctor = [
           dayName: "Sunday",
         },
       ],
-      profImageUrl:
-        "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
+      profImageUrl: {
+        imageName: "ProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023",
+        src: "https://firebasestorage.googleapis.com/v0/b/imageupload-1354b.appspot.com/o/uploads%2FProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023?alt=media&token=c4933e0b-0a2f-4d13-ae8b-81aed3bd2005",
+      },
       reviewTags: {
         "On Time": 2,
         "well-mannered": 6,
@@ -3526,8 +3534,10 @@ const doctor = [
           dayName: "Sunday",
         },
       ],
-      profImageUrl:
-        "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
+      profImageUrl: {
+        imageName: "ProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023",
+        src: "https://firebasestorage.googleapis.com/v0/b/imageupload-1354b.appspot.com/o/uploads%2FProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023?alt=media&token=c4933e0b-0a2f-4d13-ae8b-81aed3bd2005",
+      },
       reviewTags: {
         "On Time": 2,
         "well-mannered": 6,
@@ -4255,8 +4265,10 @@ const doctor = [
           dayName: "Sunday",
         },
       ],
-      profImageUrl:
-        "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
+      profImageUrl: {
+        imageName: "ProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023",
+        src: "https://firebasestorage.googleapis.com/v0/b/imageupload-1354b.appspot.com/o/uploads%2FProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023?alt=media&token=c4933e0b-0a2f-4d13-ae8b-81aed3bd2005",
+      },
       reviewTags: {
         "On Time": 2,
         "well-mannered": 6,
