@@ -21,7 +21,8 @@ const user = [
       state: "Bihar",
       country: "India",
       Zipcode: 854301,
-      role: "Patient",
+      role: "patient",
+      rights: [],
       languages: ["English", "hindi"],
       blood_donor: true,
       favouriteDoctor: [
@@ -99,7 +100,8 @@ const user = [
       state: "Bihar",
       country: "India",
       Zipcode: 854301,
-      role: "Patient",
+      role: "patient",
+      rights: ["admin"],
       languages: ["English", "hindi"],
       blood_donor: true,
       favouriteDoctor: [
@@ -177,7 +179,8 @@ const user = [
       state: "Bihar",
       country: "India",
       Zipcode: 854301,
-      role: "Patient",
+      role: "patient",
+      rights: [],
       languages: ["English", "hindi"],
       blood_donor: true,
       favouriteDoctor: [
@@ -255,7 +258,8 @@ const user = [
       state: "Bihar",
       country: "India",
       Zipcode: 854301,
-      role: "Patient",
+      role: "patient",
+      rights: [],
       languages: ["English", "hindi"],
       blood_donor: true,
       favouriteDoctor: [
@@ -333,7 +337,8 @@ const user = [
       state: "Bihar",
       country: "India",
       Zipcode: 854301,
-      role: "Patient",
+      role: "patient",
+      rights: [],
       languages: ["English", "hindi"],
       blood_donor: true,
       favouriteDoctor: [

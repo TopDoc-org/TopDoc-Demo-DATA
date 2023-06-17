@@ -2,6 +2,8 @@ const doctor = [
   {
     1: {
       address: "MasterCanteen,unit-3,Odisha,756401",
+      role: "doctor",
+      rights: ["admin"],
       profileCreationDate: "2021-02-01T07:30:00.000-0530",
       ailmentsTreated: ["Cancer", "Skin Disease", "Chemo"],
       averageRating: "4.65",
@@ -731,6 +733,8 @@ const doctor = [
     2: {
       address:
         "Veerana Palya, Outer Ring Road, Landmark : Near Manyata Tech Park, Bangalore",
+      role: "doctor",
+      rights: [],
       profileCreationDate: "2022-02-01T07:30:00.000-0530",
       ailmentsTreated: ["Cancer", "Skin Disease", "Chemo"],
       averageRating: "4.65",
@@ -1460,6 +1464,8 @@ const doctor = [
   {
     3: {
       address: "MasterCanteen,unit-3,Odisha,756401",
+      role: "doctor",
+      rights: [],
       profileCreationDate: "2023-02-01T07:30:00.000-0530",
       ailmentsTreated: ["Tooth cleaning", "tooth repairing"],
       averageRating: "4.65",
@@ -2190,6 +2196,8 @@ const doctor = [
   {
     5: {
       address: "MasterCanteen,unit-3,Odisha,756401",
+      role: "doctor",
+      rights: [],
       profileCreationDate: "2025-02-01T07:30:00.000-0530",
       ailmentsTreated: ["Cancer", "Skin Disease", "Chemo"],
       averageRating: "4.65",
@@ -2898,6 +2906,8 @@ const doctor = [
   {
     6: {
       address: "MasterCanteen,unit-3,Odisha,756401",
+      role: "doctor",
+      rights: [],
       profileCreationDate: "2026-02-01T07:30:00.000-0530",
       ailmentsTreated: ["Cancer", "Skin Disease", "Chemo"],
       averageRating: "4.65",
@@ -3631,6 +3641,8 @@ const doctor = [
   {
     7: {
       address: "MasterCanteen,unit-3,Odisha,756401",
+      role: "doctor",
+      rights: [],
       profileCreationDate: "2020-02-01T07:30:00.000-0530",
       ailmentsTreated: ["Cancer", "Skin Disease", "Chemo"],
       averageRating: "4.65",

@@ -158,7 +158,10 @@ const user = {
         },
       },
       role: {
-        type: "text",
+        type: "keyword",
+      },
+      rights: {
+        type: "keyword",
       },
       userType: {
         type: "keyword",

@@ -22,6 +22,7 @@ const mappingsToInsert = [
   "staff",
   "support",
   "user",
+  "config",
 ];
 
 let filteredMappings = mappingsConstants.mappingIndexes.filter((index) =>

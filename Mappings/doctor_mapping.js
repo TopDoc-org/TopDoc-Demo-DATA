@@ -4,6 +4,12 @@ const doctor = {
   },
   mappings: {
     properties: {
+      role: {
+        type: "keyword",
+      },
+      rights: {
+        type: "keyword",
+      },
       profImageUrl: {
         properties: {
           imageName: {

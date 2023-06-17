@@ -21,6 +21,7 @@ const indexToDeleteAllDataFrom = [
   "staff",
   "support",
   "user",
+  "config",
 ];
 
 const filterIndexes = indexToDeleteAllDataFrom.map((variable) => {
