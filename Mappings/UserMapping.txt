@@ -161,6 +161,9 @@ PUT user_v1
             "role": {
                 "type": "keyword"
             },
+            "rights": {
+                "type": "keyword"
+            },
             "userType": {
              "type": "keyword"
             },

@@ -1,6 +1,7 @@
 PUT user_v1/_doc/1
 {
     "name": "Amit kumar Jha",
+    "rights":["admin"],
     "profileCreationDate": "2021-02-01T07:30:00.000-0530",
     "first_name": "Amit",
     "userType" : "registered",
@@ -19,7 +20,7 @@ PUT user_v1/_doc/1
     "state": "Bihar",
     "country": "India",
     "Zipcode": 854301,
-    "role": "Patient",
+    "role": "patient",
     "languages": ["English","hindi"],
     "blood_donor": true,
     "favouriteDoctor":[{"doctorId":"1","date":"20221021T115513+0000"},{"doctorId":"2","date":"20211021T115513+0000"},{"doctorId":"3","date":"20201021T115513+0000"},{"doctorId":"4","date":"20191021T115513+0000"},{"doctorId":"5","date":"20181021T115513+0000"},{"doctorId":"6","date":"20171021T115513+0000"}],
@@ -70,6 +71,7 @@ PUT user_v1/_doc/1
 PUT user_v1/_doc/2
 {
     "name": "hello world",
+    "rights":[],
     "profileCreationDate": "2022-02-01T07:30:00.000-0530",
     "first_name": "hello",
     "userType" : "registered",
@@ -88,7 +90,7 @@ PUT user_v1/_doc/2
     "state": "Bihar",
     "country": "India",
     "Zipcode": 854301,
-    "role": "Patient",
+    "role": "patient",
     "languages": ["English","hindi"],
     "blood_donor": true,
     "favouriteDoctor":[{"doctorId":"1","date":"20221021T115513+0000"},{"doctorId":"2","date":"20211021T115513+0000"},{"doctorId":"3","date":"20201021T115513+0000"},{"doctorId":"4","date":"20191021T115513+0000"},{"doctorId":"5","date":"20181021T115513+0000"},{"doctorId":"6","date":"20171021T115513+0000"}],
@@ -138,6 +140,7 @@ PUT user_v1/_doc/2
   PUT user_v1/_doc/3
 {
     "name": "Akash Neekhara",
+    "rights":[],
     "profileCreationDate": "2023-02-01T07:30:00.000-0530",
     "first_name": "Akash",
     "last_name": "Neekhara",
@@ -156,7 +159,7 @@ PUT user_v1/_doc/2
     "state": "Bihar",
     "country": "India",
     "Zipcode": 854301,
-    "role": "Patient",
+    "role": "patient",
     "languages": ["English","hindi"],
     "blood_donor": true,
     "favouriteDoctor":[{"doctorId":"1","date":"20221021T115513+0000"},{"doctorId":"2","date":"20211021T115513+0000"},{"doctorId":"3","date":"20201021T115513+0000"},{"doctorId":"4","date":"20191021T115513+0000"},{"doctorId":"5","date":"20181021T115513+0000"},{"doctorId":"6","date":"20171021T115513+0000"}],
@@ -207,6 +210,7 @@ PUT user_v1/_doc/2
 PUT user_v1/_doc/4
 {
     "name": "Sai bhai",
+    "rights":[],
     "profileCreationDate": "2024-02-01T07:30:00.000-0530",
     "first_name": "Sai",
     "last_name": "bhai",
@@ -225,7 +229,7 @@ PUT user_v1/_doc/4
     "state": "Bihar",
     "country": "India",
     "Zipcode": 854301,
-    "role": "Patient",
+    "role": "patient",
     "languages": ["English","hindi"],
     "blood_donor": true,
     "favouriteDoctor":[{"doctorId":"1","date":"20221021T115513+0000"},{"doctorId":"2","date":"20211021T115513+0000"},{"doctorId":"3","date":"20201021T115513+0000"},{"doctorId":"4","date":"20191021T115513+0000"},{"doctorId":"5","date":"20181021T115513+0000"},{"doctorId":"6","date":"20171021T115513+0000"}],
@@ -276,6 +280,7 @@ PUT user_v1/_doc/4
 PUT user_v1/_doc/5
 {
     "name": "Mera Putra",
+    "rights":[],
     "profileCreationDate": "2025-02-01T07:30:00.000-0530",
     "first_name": "Mera",
     "last_name": "Putra",
@@ -294,7 +299,7 @@ PUT user_v1/_doc/5
     "state": "Bihar",
     "country": "India",
     "Zipcode": 854301,
-    "role": "Patient",
+    "role": "patient",
     "languages": ["English","hindi"],
     "blood_donor": true,
    "favouriteDoctor":[{"doctorId":"1","date":"20221021T115513+0000"},{"doctorId":"2","date":"20211021T115513+0000"},{"doctorId":"3","date":"20201021T115513+0000"},{"doctorId":"4","date":"20191021T115513+0000"},{"doctorId":"5","date":"20181021T115513+0000"},{"doctorId":"6","date":"20171021T115513+0000"}],

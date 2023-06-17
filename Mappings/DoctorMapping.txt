@@ -7,6 +7,12 @@ PUT doctor_v1
    },
    "mappings":{
       "properties":{
+         "role": {
+                "type": "keyword"
+            },
+            "rights": {
+                "type": "keyword"
+            },
          "profImageUrl":{
             "properties":{
                "imageName":{
