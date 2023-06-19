@@ -1,4 +1,4 @@
-const payment = [
+const payments = [
   {
     sks5s4ss: {
       paymentType: "doctor",
@@ -79,4 +79,4 @@ const payment = [
   },
 ];
 
-module.exports = { payment };
+module.exports = { payments };

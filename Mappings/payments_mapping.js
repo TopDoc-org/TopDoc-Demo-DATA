@@ -1,4 +1,4 @@
-const payment = {
+const payments = {
   aliases: {
     payment: {},
   },
@@ -45,4 +45,4 @@ const payment = {
   },
 };
 
-module.exports = { payment };
+module.exports = { payments };
