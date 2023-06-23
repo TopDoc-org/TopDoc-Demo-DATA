@@ -1,8 +1,8 @@
 const config = [
   {
-    "user-config-v1.0": {
+    "user-config-vX.Y": {
       configRole: "doctor",
-      configVersion: "v1.8",
+      configVersion: "vX.Y",
       createdBy: "fbe52640-094b-11ee-b256-fb42efdca534",
       createdOn: "2023-06-17T13:13:28.716-0530",
       lastUpdatedBy: "fbe52640-094b-11ee-b256-fb42efdca534",
@@ -27,13 +27,13 @@ const config = [
         consumer: ["hji"],
       },
       isNewVersionAvl: true,
-      configId: "doctor-config-v1.0",
+      configId: "doctor-config-vX.Y",
     },
   },
   {
-    "doctor-config-v1.0": {
+    "doctor-config-vX.Y": {
       configRole: "doctor",
-      configVersion: "v1.8",
+      configVersion: "vX.Y",
       createdBy: "fbe52640-094b-11ee-b256-fb42efdca534",
       createdOn: "2023-06-17T13:13:28.716-0530",
       lastUpdatedBy: "fbe52640-094b-11ee-b256-fb42efdca534",
@@ -58,7 +58,7 @@ const config = [
         consumer: ["hji"],
       },
       isNewVersionAvl: true,
-      configId: "doctor-config-v1.0",
+      configId: "doctor-config-vX.Y",
     },
   },
 ];
