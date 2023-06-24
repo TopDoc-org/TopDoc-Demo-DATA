@@ -159,7 +159,10 @@ PUT user_v1
                 }
             },
             "role": {
-                "type": "text"
+                "type": "keyword"
+            },
+            "rights": {
+                "type": "keyword"
             },
             "userType": {
              "type": "keyword"

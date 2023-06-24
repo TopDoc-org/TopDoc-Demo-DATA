@@ -1,6 +1,8 @@
 PUT doctor_v1/_doc/1 
 {
   "address": "MasterCanteen,unit-3,Odisha,756401",
+  "role":"doctor",
+  "rights": ["admin"],
   "profileCreationDate": "2021-02-01T07:30:00.000-0530",
   "ailmentsTreated": [
     "Cancer",
@@ -790,6 +792,8 @@ PUT doctor_v1/_doc/1
 PUT doctor_v1/_doc/2
 {
   "address": "Veerana Palya, Outer Ring Road, Landmark : Near Manyata Tech Park, Bangalore",
+  "role":"doctor",
+  "rights": [],
   "profileCreationDate": "2022-02-01T07:30:00.000-0530",
   "ailmentsTreated": [
     "Cancer",
@@ -1579,6 +1583,8 @@ PUT doctor_v1/_doc/2
 PUT doctor_v1/_doc/3
 {
   "address": "MasterCanteen,unit-3,Odisha,756401",
+  "role":"doctor",
+  "rights": [],
   "profileCreationDate": "2023-02-01T07:30:00.000-0530",
   "ailmentsTreated": [
     "Tooth cleaning",
@@ -2367,6 +2373,8 @@ PUT doctor_v1/_doc/3
 PUT doctor_v1/_doc/4
 {
   "address": "Veerana Palya, Outer Ring Road, Landmark : Near Manyata Tech Park, Bangalore",
+  "role":"doctor",
+  "rights": [],
   "profileCreationDate": "2024-02-01T07:30:00.000-0530",
   "ailmentsTreated": [
     "Cancer",
@@ -3152,6 +3160,8 @@ PUT doctor_v1/_doc/4
 PUT doctor_v1/_doc/5 
 {
   "address": "MasterCanteen,unit-3,Odisha,756401",
+  "role":"doctor",
+  "rights": [],
   "profileCreationDate": "2025-02-01T07:30:00.000-0530",
   "ailmentsTreated": [
     "Cancer",
@@ -3916,6 +3926,8 @@ PUT doctor_v1/_doc/5
 PUT doctor_v1/_doc/6
 {
   "address": "MasterCanteen,unit-3,Odisha,756401",
+  "role":"doctor",
+  "rights": [],
   "profileCreationDate": "2026-02-01T07:30:00.000-0530",
   "ailmentsTreated": [
     "Cancer",
@@ -4708,6 +4720,8 @@ PUT doctor_v1/_doc/6
 PUT doctor_v1/_doc/7
 {
   "address": "MasterCanteen,unit-3,Odisha,756401",
+  "role":"doctor",
+  "rights": [],
   "profileCreationDate": "2020-02-01T07:30:00.000-0530",
   "ailmentsTreated": [
     "Cancer",
