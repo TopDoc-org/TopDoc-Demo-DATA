@@ -29,7 +29,7 @@ PUT config_v1/_doc/user-config-v1.0
         "hji"
       ]
     },
-    "isNewVersionAvl": true,
+    "isNewVersionAvl": "1.0.0",
     "configId": "doctor-config-v1.0"
 }
 
@@ -64,6 +64,6 @@ PUT config_v1/_doc/doctor-config-v1.0
         "hji"
       ]
     },
-    "isNewVersionAvl": true,
+    "isNewVersionAvl":  "1.0.0",
     "configId": "doctor-config-v1.0"
   }
