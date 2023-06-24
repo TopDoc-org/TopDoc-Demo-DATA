@@ -12,7 +12,7 @@ PUT config_v1
         "type": "keyword"
       },
      "isNewVersionAvl": {
-        "type": "boolean"
+        "type": "keyword"
       },
      "configRole": {
         "type": "keyword"
