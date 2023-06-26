@@ -5,6 +5,12 @@ PUT staff_v1
   },
   "mappings": {
     "properties": {
+        "isEmailVerified": {
+                "type": "boolean"
+            },
+         "emailVerificationOtp": {
+                "type": "long"
+            },
        "profileCreationDate": {
                 "type": "date",
                 "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
