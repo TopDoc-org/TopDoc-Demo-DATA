@@ -441,3 +441,78 @@ PUT booking_v1/_doc/15:40195
   },
   "appointmentDate": "2021-08-22"
 }
+
+PUT booking_v1/_doc/15:45195
+{
+  "doctorId": "2",
+  "doctorName":"hello she",
+  "appointmentType": "inPerson",
+  "slotType": "normal",
+  "status": "cancelled",
+  "sessionEndTime": "16:00",
+  "sessionStartTime": "13:00",
+   "nextApptDate":"2023-11-26",
+  "sessionId": 195,
+  "userId": 2,
+  "userName":"hello",
+  "mobile": "9978696875",
+  "email":"abc@gmail.com",
+  "gender":"Male",
+  "dob":"2000-02-22",
+  "pin":"1231",
+  "queueId":"202208221540",
+  "userType": "unRegistered",
+  "bookingTimeStamp": "2021-01-01T07:30:00.000-0530",
+  "actualCancelledTime": "2021-01-01T07:30:00.000-0530",
+  "appointmentId": "6ec74887-79d0-445b-992b-132582b078de",
+  "slotTime": "15:40",
+  "endTime":"15:00",
+  "slotDuration":"30",
+  "predictedSlotTime":"14:30",
+  "slotDay": "Wednesday",
+  "paymentStatus":"default",
+  "slotId": "15:40195",
+  "diagnosis":["typhoid","malaria","coding"],
+  "symptoms": [
+    "fever",
+    "cold",
+    "headache",
+    "weakness"
+  ],
+  "tests": [ 
+    "NAATs",
+    "CBC",
+    "TSH",
+    "gastric fluid analysis",
+    "aminocentesis"
+  ],
+  "medicine": [
+    
+  ],
+  "reasonForVisit": "Downward Pain",
+  "clinicId": 3,
+  "clinicDetails": {
+    "clinicLocation": "Bangalore",
+    "fees": 500,
+    "country": "India",
+    "geoPoint": "41.12,-71.34",
+    "district": "Hassan",
+    "clinicId": "1",
+    "clinicImageUrl": "dsjdhdjdhyfhdjkhf.png",
+    "isActive": true,
+    "clinicName": "Bansal Clinic",
+    "clinicRating": 4.5,
+    "state": "Karnataka",
+    "tagReceived": [
+      "Cleaning topper",
+      "Patient friendly"
+    ],
+    "zipCode": "486661",
+    "clinicSchedule": {
+      "from": "Wednesday",
+      "to": "Thursday",
+      "duration": "09:00 AM-09:00 PM"
+    }
+  },
+  "appointmentDate": "2021-08-22"
+}
