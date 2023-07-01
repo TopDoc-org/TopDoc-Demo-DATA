@@ -2,13 +2,17 @@ PUT staff_v1/_doc/1
 {
   "firstName": "Sai",
   "lastName": "bhai",
+  "name":"Sai bhai",
   "isEmailVerified": false,
   "emailVerificationOtp": null,
   "profileCreationDate": "2021-02-01T07:30:00.000-0530",
   "mobile": 8675849485,
   "email": "saibhai@gmail.com ",
   "mappedTo": [
-    "1"
+    {
+      "id":"1",
+      "name":"abcd"
+    }
   ],
   "education": [
     {
@@ -56,13 +60,17 @@ PUT staff_v1/_doc/2
 {
   "firstName": "Akash",
   "lastName": "Neekhara",
+  "name":"Akash Neekhara",
   "isEmailVerified": true,
   "emailVerificationOtp": null,
   "profileCreationDate": "2022-02-01T07:30:00.000-0530",
   "mobile": 8685849485,
   "email": "akashneekhara@gmail.com ",
   "mappedTo": [
-    "2"
+     {
+      "id":"3",
+      "name":"abcde"
+    }
   ],
   "education": [
     {
@@ -110,14 +118,21 @@ PUT staff_v1/_doc/3
 {
   "firstName": "Nitish",
   "lastName": "bhai",
+  "name":"Nitish bhai",
   "isEmailVerified": false,
   "emailVerificationOtp": 123456,
   "profileCreationDate": "2023-02-01T07:30:00.000-0530",
   "mobile": 8685878485,
   "email": "nitishbhai@gmail.com ",
   "mappedTo": [
-    "1",
-    "2"
+     {
+      "id":"1",
+      "name":"abcd"
+    },
+   {
+      "id":"2",
+      "name":"abcdg"
+    }
   ],
   "education": [
     {
@@ -165,13 +180,17 @@ PUT staff_v1/_doc/4
 {
   "firstName": "Akash",
   "lastName": "bhai",
+  "name":"Akash bhai",
   "isEmailVerified": true,
   "emailVerificationOtp": 987456,
   "profileCreationDate": "2024-02-01T07:30:00.000-0530",
   "mobile": 8612878485,
   "email": "akashbhai@gmail.com ",
   "mappedTo": [
-    "2"
+     {
+      "id":"2",
+      "name":"abcdg"
+    }
   ],
   "education": [
     {
@@ -220,15 +239,17 @@ PUT staff_v1/_doc/5
 {
   "firstName": "Ayush",
   "lastName": "bhai",
+  "name":"Ayush bhai",
   "isEmailVerified": false,
   "emailVerificationOtp": null,
   "profileCreationDate": "2025-02-01T07:30:00.000-0530",
   "mobile": 8616578485,
   "email": "ayushbhai@gmail.com ",
   "mappedTo": [
-    "2",
-    "4",
-    "1"
+     {
+      "id":"1",
+      "name":"abcd"
+    }
   ],
   "education": [
     {
@@ -277,13 +298,17 @@ PUT staff_v1/_doc/6
 {
   "firstName": "Sachin",
   "lastName": "Shukla",
+  "name":"Sachin Shukla",
   "isEmailVerified": false,
   "emailVerificationOtp": null,
   "profileCreationDate": "2026-02-01T07:30:00.000-0530",
   "mobile": 86165578485,
   "email": "sachinshukla@gmail.com ",
   "mappedTo": [
-    "2"
+     {
+      "id":"1",
+      "name":"abcd"
+    }
   ],
   "education": [
     {
