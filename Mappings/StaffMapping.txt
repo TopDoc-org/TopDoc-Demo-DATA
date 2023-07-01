@@ -23,6 +23,9 @@ PUT staff_v1
           }
         }
       },
+     "name": {
+            "type": "keyword"
+      },
       "lastName": {
         "type": "text",
         "fields": {
@@ -43,7 +46,15 @@ PUT staff_v1
         }
       },
       "mappedTo": {
-        "type": "keyword"
+          "type": "nested",
+        "properties": {
+          "id": {
+            "type": "keyword"
+          },
+          "name": {
+            "type": "text"
+          }
+        }
       },
       "education": {
         "type": "nested",
