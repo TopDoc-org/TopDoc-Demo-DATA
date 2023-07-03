@@ -103,7 +103,7 @@ PUT staff_v1
         }
       },
       "pin": {
-        "type": "long"
+        "type": "keyword"
       },
       "password": {
         "type": "keyword"
