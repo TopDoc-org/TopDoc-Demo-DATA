@@ -50,7 +50,7 @@ PUT staff_v1/_doc/1
       "title": "HOD and Professor of Neurosurgery Dept"
     }
   ],
-  "pin": 1234,
+  "pin": "1234",
   "password": "12345sai",
   "staffId": 1,
   "designation": "consultant"
@@ -108,7 +108,7 @@ PUT staff_v1/_doc/2
       "title": "HOD and Professor of Neurosurgery Dept"
     }
   ],
-  "pin": 4534,
+  "pin": "4534",
   "password": "12345akash",
   "staffId": 2,
   "designation": "receptionist"
@@ -170,7 +170,7 @@ PUT staff_v1/_doc/3
       "title": "HOD and Professor of Neurosurgery Dept"
     }
   ],
-  "pin": 4124,
+  "pin": "4124",
   "password": "12345nitish",
   "staffId": 3,
   "designation": "intern"
@@ -228,7 +228,7 @@ PUT staff_v1/_doc/4
       "title": "HOD and Professor of Neurosurgery Dept"
     }
   ],
-  "pin": 4127,
+  "pin": "4127",
   "password": "12345akash3",
   "staffId": 4,
   "designation": "receptionist"
@@ -287,7 +287,7 @@ PUT staff_v1/_doc/5
       "title": "HOD and Professor of Neurosurgery Dept"
     }
   ],
-  "pin": 9127,
+  "pin": "9127",
   "password": "12345ayush",
   "staffId": 5,
   "designation": "receptionist"
@@ -346,7 +346,7 @@ PUT staff_v1/_doc/6
       "title": "HOD and Professor of Neurosurgery Dept"
     }
   ],
-  "pin": 9167,
+  "pin": "9167",
   "password": "12345sachin",
   "staffId": 6,
   "designation": "consultant"
