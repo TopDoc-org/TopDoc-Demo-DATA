@@ -5,6 +5,12 @@ PUT staff_v1
   },
   "mappings": {
     "properties": {
+        "isEmailVerified": {
+                "type": "boolean"
+            },
+         "emailVerificationOtp": {
+                "type": "long"
+            },
        "profileCreationDate": {
                 "type": "date",
                 "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
@@ -16,6 +22,9 @@ PUT staff_v1
             "type": "keyword"
           }
         }
+      },
+     "name": {
+            "type": "keyword"
       },
       "lastName": {
         "type": "text",
@@ -37,7 +46,15 @@ PUT staff_v1
         }
       },
       "mappedTo": {
-        "type": "keyword"
+          "type": "nested",
+        "properties": {
+          "id": {
+            "type": "keyword"
+          },
+          "name": {
+            "type": "text"
+          }
+        }
       },
       "education": {
         "type": "nested",
@@ -86,7 +103,7 @@ PUT staff_v1
         }
       },
       "pin": {
-        "type": "long"
+        "type": "keyword"
       },
       "password": {
         "type": "keyword"
