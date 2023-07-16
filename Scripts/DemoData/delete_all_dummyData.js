@@ -11,17 +11,18 @@ const index_Version = "v1";
  * and comment the indexes whose data is not required to be deleted
  */
 const indexToDeleteAllDataFrom = [
-  "ads",
-  "booking",
-  "doctor",
-  "notification",
-  "payments",
-  "review",
-  "schedule",
-  "staff",
-  "support",
-  "user",
-  "config",
+  // "ads",
+  // "booking",
+  // "doctor",
+  // "notification",
+  // "payments",
+  // "review",
+  // "schedule",
+  // "staff",
+  // "support",
+  // "user",
+  // "config",
+  "post",
 ];
 
 const filterIndexes = indexToDeleteAllDataFrom.map((variable) => {

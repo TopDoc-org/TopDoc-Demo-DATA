@@ -26,6 +26,7 @@ const [
   support_data,
   user_data,
   config_data,
+  post_data,
 ] = [
   data_modules.ads_data,
   data_modules.booking_data,
@@ -38,6 +39,7 @@ const [
   data_modules.support_data,
   data_modules.user_data,
   data_modules.config_data,
+  data_modules.post_data,
 ];
 
 const [
@@ -52,6 +54,7 @@ const [
   support,
   user,
   config,
+  post,
 ] = [
   mapping_modules.ads_mapping,
   mapping_modules.booking_mapping,
@@ -64,6 +67,7 @@ const [
   mapping_modules.support_mapping,
   mapping_modules.user_mapping,
   mapping_modules.config_mapping,
+  mapping_modules.post_mapping,
 ];
 
 const mappingIndexes = [
@@ -78,6 +82,7 @@ const mappingIndexes = [
   support,
   user,
   config,
+  post,
 ];
 
 const demoData = [
@@ -92,6 +97,7 @@ const demoData = [
   support_data,
   user_data,
   config_data,
+  post_data,
 ];
 // const templates = [
 //   ads_template,

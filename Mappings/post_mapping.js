@@ -1,0 +1,133 @@
+const post = {
+  aliases: {
+    post: {},
+  },
+  mappings: {
+    properties: {
+      id: {
+        type: "keyword",
+      },
+      postVisibility: {
+        type: "keyword",
+      },
+      createdOn: {
+        type: "date",
+        format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
+      },
+      LastModifiedOn: {
+        type: "date",
+        format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
+      },
+      body: {
+        type: "object",
+        properties: {
+          post: {
+            type: "text",
+            fields: {
+              keyword: {
+                type: "keyword",
+                ignore_above: 256,
+              },
+            },
+          },
+          images: {
+            type: "keyword",
+          },
+          attachments: {
+            type: "keyword",
+          },
+        },
+      },
+      createdBy: {
+        type: "object",
+        properties: {
+          id: {
+            type: "keyword",
+          },
+          name: {
+            type: "keyword",
+          },
+          profilePicture: {
+            type: "keyword",
+          },
+        },
+      },
+      likedBy: {
+        type: "nested",
+        properties: {
+          id: {
+            type: "keyword",
+          },
+          name: {
+            type: "keyword",
+          },
+          profilePicture: {
+            type: "keyword",
+          },
+        },
+      },
+      commentedBy: {
+        type: "nested",
+        properties: {
+          id: {
+            type: "keyword",
+          },
+          name: {
+            type: "keyword",
+          },
+          profilePicture: {
+            type: "keyword",
+          },
+          commentBody: {
+            type: "text",
+            fields: {
+              keyword: {
+                type: "keyword",
+                ignore_above: 256,
+              },
+            },
+          },
+          createdOn: {
+            type: "date",
+            format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
+          },
+          LastModifiedOn: {
+            type: "date",
+            format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
+          },
+        },
+      },
+      flaggedBy: {
+        type: "nested",
+        properties: {
+          id: {
+            type: "keyword",
+          },
+          name: {
+            type: "keyword",
+          },
+          profilePicture: {
+            type: "keyword",
+          },
+        },
+      },
+      status: {
+        type: "keyword",
+      },
+      hashtags: {
+        type: "keyword",
+      },
+      mentionedPeople: {
+        type: "keyword",
+      },
+      language: {
+        type: "keyword",
+      },
+      postFrom: {
+        type: "keyword",
+      },
+    },
+  },
+};
+
+module.exports = { post };
