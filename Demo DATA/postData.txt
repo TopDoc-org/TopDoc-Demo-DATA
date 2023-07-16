@@ -3,6 +3,7 @@ PUT post_v1/_doc/1
   
   "id": "1",
   "postVisibility": "public",
+  postFrom: "patient",
   "createdOn": "2021-01-01T07:30:00.000-0530",
   "LastModifiedOn": "2023-07-01T07:30:00.000-0530",
   "body": {
@@ -12,7 +13,8 @@ PUT post_v1/_doc/1
   },
   "createdBy": {
     "id":  "3",
-    "name":  "Sai Sarthak"
+    "name":  "Sai Sarthak",
+    "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
   },
   "likedBy ": [{
     "id": "1",
@@ -53,6 +55,7 @@ PUT post_v1/_doc/2
   
   "id": "2",
   "postVisibility": "public",
+  postFrom: "doctor",
   "createdOn": "2021-01-01T07:30:00.000-0530",
   "LastModifiedOn": "2023-07-01T07:30:00.000-0530",
   "body": {
@@ -62,7 +65,8 @@ PUT post_v1/_doc/2
   },
   "createdBy": {
     "id":  "3",
-    "name":  "Sai Sarthak"
+    "name":  "Sai Sarthak",
+    "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
   },
   "likedBy ": [{
     "id": "1",
@@ -103,6 +107,7 @@ PUT post_v1/_doc/3
   
   "id": "3",
   "postVisibility": "private",
+  postFrom: "student",
   "createdOn": "2021-01-01T07:30:00.000-0530",
   "LastModifiedOn": "2023-07-01T07:30:00.000-0530",
   "body": {
@@ -112,7 +117,8 @@ PUT post_v1/_doc/3
   },
   "createdBy": {
     "id":  "3",
-    "name":  "Sai Sarthak"
+    "name":  "Sai Sarthak",
+    "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
   },
   "likedBy ": [{
     "id": "1",
@@ -153,6 +159,7 @@ PUT post_v1/_doc/4
   
   "id": "4",
   "postVisibility": "public",
+  postFrom: "patient",
   "createdOn": "2021-01-01T07:30:00.000-0530",
   "body": {
     "post": "hello this is my 4th post",
@@ -161,7 +168,8 @@ PUT post_v1/_doc/4
   },
   "createdBy": {
     "id":  "3",
-    "name":  "Sai Sarthak"
+    "name":  "Sai Sarthak",
+    "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
   },
   "likedBy ": [],
   "commentedBy ": [],
@@ -176,6 +184,7 @@ PUT post_v1/_doc/5
   
   "id": "5",
   "postVisibility": "private",
+  postFrom: "doctor",
   "createdOn": "2021-01-01T07:30:00.000-0530",
   "body": {
     "post": "hello this is my 1st post",
@@ -184,7 +193,8 @@ PUT post_v1/_doc/5
   },
   "createdBy": {
     "id":  "3",
-    "name":  "Sai Sarthak"
+    "name":  "Sai Sarthak",
+    "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
   },
   "likedBy ": [],
   "commentedBy ": [],
@@ -199,6 +209,7 @@ PUT post_v1/_doc/6
   
   "id": "6",
   "postVisibility": "public",
+  postFrom: "student",
   "createdOn": "2021-01-01T07:30:00.000-0530",
   "body": {
     "post": "hello this is my 1st post",
@@ -207,7 +218,8 @@ PUT post_v1/_doc/6
   },
   "createdBy": {
     "id":  "3",
-    "name":  "Sai Sarthak"
+    "name":  "Sai Sarthak",
+    "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
   },
   "likedBy ": [],
   "commentedBy ": [],
@@ -228,6 +240,7 @@ PUT post_v1/_doc/7
   
   "id": "7",
   "postVisibility": "public",
+  postFrom: "student",
   "createdOn": "2021-01-01T07:30:00.000-0530",
   "LastModifiedOn": "2023-07-01T07:30:00.000-0530",
   "body": {
@@ -237,7 +250,8 @@ PUT post_v1/_doc/7
   },
   "createdBy": {
     "id":  "3",
-    "name":  "Sai Sarthak"
+    "name":  "Sai Sarthak",
+    "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
   },
   "likedBy ": [{
     "id": "1",

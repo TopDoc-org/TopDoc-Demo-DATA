@@ -47,10 +47,13 @@ PUT post_v1
           },
           "name": {
             "type": "keyword"
+          },
+          "profilePicture": {
+            "type": "keyword"
           }
         }
       },
-      "likedBy ": {
+      "likedBy": {
         "type": "nested",
         "properties": {
           "id": {
@@ -64,7 +67,7 @@ PUT post_v1
           }
         }
       },
-      "commentedBy ": {
+      "commentedBy": {
         "type": "nested",
         "properties": {
           "id": {
@@ -119,6 +122,9 @@ PUT post_v1
         "type": "keyword"
       },
       "language": {
+        "type": "keyword"
+      },
+      "postFrom": {
         "type": "keyword"
       }
     }
