@@ -95,6 +95,20 @@ const post = {
             type: "date",
             format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
           },
+          likedBy: {
+            type: "nested",
+            properties: {
+              id: {
+                type: "keyword",
+              },
+              name: {
+                type: "keyword",
+              },
+              profilePicture: {
+                type: "keyword",
+              },
+            },
+          },
         },
       },
       flaggedBy: {

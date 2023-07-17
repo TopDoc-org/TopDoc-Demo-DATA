@@ -36,6 +36,14 @@ const post = [
           commentBody: "Good game",
           createdOn: "2021-01-01T07:30:00.000-0530",
           LastModifiedOn: "2021-04-01T07:30:00.000-0530",
+          likedBy: [
+            {
+              id: "1",
+              name: "Sachin",
+              profilePicture:
+                "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
+            },
+          ],
         },
         {
           id: "3",
@@ -44,6 +52,14 @@ const post = [
             "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
           commentBody: "Good game",
           createdOn: "2023-01-01T07:30:00.000-0530",
+          likedBy: [
+            {
+              id: "1",
+              name: "Sachin",
+              profilePicture:
+                "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
+            },
+          ],
         },
       ],
       flaggedBy: [
@@ -97,6 +113,14 @@ const post = [
           commentBody: "Good game",
           createdOn: "2021-01-01T07:30:00.000-0530",
           LastModifiedOn: "2021-04-01T07:30:00.000-0530",
+          likedBy: [
+            {
+              id: "1",
+              name: "Sachin",
+              profilePicture:
+                "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
+            },
+          ],
         },
         {
           id: "3",
@@ -105,6 +129,14 @@ const post = [
             "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
           commentBody: "Good game",
           createdOn: "2023-01-01T07:30:00.000-0530",
+          likedBy: [
+            {
+              id: "1",
+              name: "Sachin",
+              profilePicture:
+                "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
+            },
+          ],
         },
       ],
       flaggedBy: [
@@ -158,6 +190,14 @@ const post = [
           commentBody: "Good game",
           createdOn: "2021-01-01T07:30:00.000-0530",
           LastModifiedOn: "2021-04-01T07:30:00.000-0530",
+          likedBy: [
+            {
+              id: "1",
+              name: "Sachin",
+              profilePicture:
+                "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
+            },
+          ],
         },
         {
           id: "3",
@@ -166,6 +206,14 @@ const post = [
             "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
           commentBody: "Good game",
           createdOn: "2023-01-01T07:30:00.000-0530",
+          likedBy: [
+            {
+              id: "1",
+              name: "Sachin",
+              profilePicture:
+                "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
+            },
+          ],
         },
       ],
       flaggedBy: [
@@ -310,6 +358,14 @@ const post = [
           commentBody: "Good game",
           createdOn: "2021-01-01T07:30:00.000-0530",
           LastModifiedOn: "2021-04-01T07:30:00.000-0530",
+          likedBy: [
+            {
+              id: "1",
+              name: "Sachin",
+              profilePicture:
+                "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
+            },
+          ],
         },
         {
           id: "3",
