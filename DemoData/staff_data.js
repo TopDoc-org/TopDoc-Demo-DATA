@@ -6,7 +6,12 @@ const staff = [
       profileCreationDate: "2021-02-01T07:30:00.000-0530",
       mobile: 8675849485,
       email: "saibhai@gmail.com ",
-      mappedTo: ["1"],
+      mappedTo: [
+        {
+          id: "74a87536-63bd-4072-9bef-a24a2a3b7ea3",
+          name: "Sai Sarthak Mohanty",
+        },
+      ],
       education: [
         {
           degree: "MCh",
@@ -59,7 +64,12 @@ const staff = [
       profileCreationDate: "2022-02-01T07:30:00.000-0530",
       mobile: 8685849485,
       email: "akashneekhara@gmail.com ",
-      mappedTo: ["2"],
+      mappedTo: [
+        {
+          id: "74a87536-63bd-4072-9bef-a24a2a3b7ea3",
+          name: "Sai Sarthak Mohanty",
+        },
+      ],
       education: [
         {
           degree: "MCh",
@@ -112,7 +122,12 @@ const staff = [
       profileCreationDate: "2023-02-01T07:30:00.000-0530",
       mobile: 8685878485,
       email: "nitishbhai@gmail.com ",
-      mappedTo: ["1", "2"],
+      mappedTo: [
+        {
+          id: "74a87536-63bd-4072-9bef-a24a2a3b7ea3",
+          name: "Sai Sarthak Mohanty",
+        },
+      ],
       education: [
         {
           degree: "MCh",
@@ -166,7 +181,12 @@ const staff = [
       profileCreationDate: "2024-02-01T07:30:00.000-0530",
       mobile: 8612878485,
       email: "akashbhai@gmail.com ",
-      mappedTo: ["2"],
+      mappedTo: [
+        {
+          id: "74a87536-63bd-4072-9bef-a24a2a3b7ea3",
+          name: "Sai Sarthak Mohanty",
+        },
+      ],
       education: [
         {
           degree: "MCh",
@@ -220,7 +240,12 @@ const staff = [
       profileCreationDate: "2025-02-01T07:30:00.000-0530",
       mobile: 8616578485,
       email: "ayushbhai@gmail.com ",
-      mappedTo: ["2", "4", "1"],
+      mappedTo: [
+        {
+          id: "74a87536-63bd-4072-9bef-a24a2a3b7ea3",
+          name: "Sai Sarthak Mohanty",
+        },
+      ],
       education: [
         {
           degree: "MCh",
@@ -274,7 +299,12 @@ const staff = [
       profileCreationDate: "2026-02-01T07:30:00.000-0530",
       mobile: 86165578485,
       email: "sachinshukla@gmail.com ",
-      mappedTo: ["2"],
+      mappedTo: [
+        {
+          id: "74a87536-63bd-4072-9bef-a24a2a3b7ea3",
+          name: "Sai Sarthak Mohanty",
+        },
+      ],
       education: [
         {
           degree: "MCh",

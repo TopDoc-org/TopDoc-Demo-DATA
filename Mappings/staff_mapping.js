@@ -36,7 +36,15 @@ const staff = {
         },
       },
       mappedTo: {
-        type: "keyword",
+        type: "nested",
+        properties: {
+          id: {
+            type: "keyword",
+          },
+          name: {
+            type: "keyword",
+          },
+        },
       },
       education: {
         type: "nested",
