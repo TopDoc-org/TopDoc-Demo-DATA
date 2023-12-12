@@ -37,15 +37,7 @@ PUT staff_v1
         }
       },
       "mappedTo": {
-        "type": "nested",
-        "properties": {
-          "id": {
-            "type": "keyword"
-          },
-          "name": {
-            "type": "keyword"
-          }
-        }
+        "type": "keyword"
       },
       "education": {
         "type": "nested",
