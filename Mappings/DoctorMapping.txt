@@ -10,6 +10,12 @@ PUT doctor_v1
          "role": {
                 "type": "keyword"
             },
+         "isEmailVerified": {
+                "type": "boolean"
+            },
+         "emailVerificationOtp": {
+                "type": "long"
+            },
             "rights": {
                 "type": "keyword"
             },

@@ -1,6 +1,8 @@
 PUT user_v1/_doc/1
 {
     "name": "Amit kumar Jha",
+    "isEmailVerified": false,
+    "emailVerificationOtp": null,
     "rights":["admin"],
     "profileCreationDate": "2021-02-01T07:30:00.000-0530",
     "first_name": "Amit",
@@ -71,6 +73,8 @@ PUT user_v1/_doc/1
 PUT user_v1/_doc/2
 {
     "name": "hello world",
+    "isEmailVerified": false,
+    "emailVerificationOtp": null,
     "rights":[],
     "profileCreationDate": "2022-02-01T07:30:00.000-0530",
     "first_name": "hello",
@@ -140,6 +144,8 @@ PUT user_v1/_doc/2
   PUT user_v1/_doc/3
 {
     "name": "Akash Neekhara",
+    "isEmailVerified": true,
+    "emailVerificationOtp": null,
     "rights":[],
     "profileCreationDate": "2023-02-01T07:30:00.000-0530",
     "first_name": "Akash",
@@ -210,6 +216,8 @@ PUT user_v1/_doc/2
 PUT user_v1/_doc/4
 {
     "name": "Sai bhai",
+    "isEmailVerified": true,
+    "emailVerificationOtp": 456123,
     "rights":[],
     "profileCreationDate": "2024-02-01T07:30:00.000-0530",
     "first_name": "Sai",
@@ -280,6 +288,8 @@ PUT user_v1/_doc/4
 PUT user_v1/_doc/5
 {
     "name": "Mera Putra",
+    "isEmailVerified": false,
+    "emailVerificationOtp": 456987,
     "rights":[],
     "profileCreationDate": "2025-02-01T07:30:00.000-0530",
     "first_name": "Mera",
