@@ -42,7 +42,7 @@ const staff = {
             type: "keyword",
           },
           name: {
-            type: "keyword",
+            type: "text",
           },
         },
       },
