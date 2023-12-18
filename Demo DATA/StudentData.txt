@@ -1,0 +1,340 @@
+PUT student_v1/_doc/1
+{
+  "id": "1",
+  "firstName": "Sachin",
+  "name": "Sachin Shukla",
+  "lastName": "Shukla",
+  "mobile": "1234567890",
+  "email": "sachin@gmail.com",
+  "isEmailVerified": "false",
+  "acceptTerms": true,
+  "emailVerificationOtp": null,
+  "profileCreationDate": "2021-02-01T07:30:00.000-0530",
+  "password": "12345",
+  "dob": "2022-07-22",
+  "gender": "male",
+  "role": "student",
+  "userType": "verified",
+  "currentDegree": "UG",
+  "course": "MD",
+  "subject": "pedantology",
+  "rollNo": "0301ME151012",
+  "state": "Madhya Pradesh",
+  "collegeName": "Faltu college",
+  "yearOfPassing": "2015",
+  "awardsAndPublications": [
+    {
+      "awardName": "award 1",
+      "place": "Jabalpur",
+      "date": "2022-07-22"
+    },
+    {
+      "awardName": "award 2",
+      "place": "Mysore",
+      "date": "2022-01-17"
+    }
+    ],
+    "education": [
+      {
+        "degree": "MCh",
+        "description": "MCH is short for mean corpuscular hemoglobin",
+        "endDate": "1997",
+        "fieldOfStudy": "Neuro Surgery",
+        "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+        "startDate": "1995"
+      },
+      {
+        "degree": "MBBS",
+        "description": "Bachelor of Medicine Bachelor of Surgery",
+        "endDate": "1994",
+        "fieldOfStudy": "Neuro Surgery",
+        "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+        "startDate": "1989"
+      }
+      ],
+      "rights":[],
+      "address": "",
+      "country":"India",
+      "profImageUrl": {"imageName":"ProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023","src":"https://firebasestorage.googleapis.com/v0/b/imageupload-1354b.appspot.com/o/uploads%2FProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023?alt=media&token=c4933e0b-0a2f-4d13-ae8b-81aed3bd2005"}
+}
+
+
+
+PUT student_v1/_doc/2
+{
+  "id": "1",
+  "firstName": "Akash",
+  "name": "Akash Neekhara",
+  "lastName": "Neekhara",
+  "mobile": "1234514590",
+  "email": "akash@gmail.com",
+  "isEmailVerified": "false",
+  "acceptTerms": true,
+  "emailVerificationOtp": null,
+  "profileCreationDate": "2021-02-01T07:30:00.000-0530",
+  "password": "123451452",
+  "dob": "2022-07-22",
+  "gender": "female",
+  "role": "student",
+  "userType": "notVerified",
+  "currentDegree": "PG",
+  "course": "MD",
+  "subject": "pedantology",
+  "rollNo": "1541bmkgnb4",
+  "state": "Madhya Pradesh",
+  "collegeName": "Faltu 2 college",
+  "yearOfPassing": "2019",
+  "awardsAndPublications": [],
+  "education": [],
+  "rights":[],
+  "address": "near faltu college , above  nala , sidhi",
+  "country":"India",
+  "profImageUrl": {"imageName":"ProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023","src":"https://firebasestorage.googleapis.com/v0/b/imageupload-1354b.appspot.com/o/uploads%2FProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023?alt=media&token=c4933e0b-0a2f-4d13-ae8b-81aed3bd2005"}
+}
+
+
+
+PUT student_v1/_doc/3
+{
+  "id": "1",
+  "firstName": "Sai",
+  "name": "Sai Sarthak",
+  "lastName": "Sarthak",
+  "mobile": "1234567845",
+  "email": "sai@gmail.com",
+  "isEmailVerified": "false",
+  "acceptTerms": true,
+  "emailVerificationOtp": null,
+  "profileCreationDate": "2021-02-01T07:30:00.000-0530",
+  "password": "12345",
+  "dob": "2022-07-22",
+  "gender": "male",
+  "role": "student",
+  "userType": "verified",
+  "currentDegree": "UG",
+  "course": "",
+  "subject": "",
+  "rollNo": "0301145212",
+  "state": "Odisha",
+  "collegeName": "Govt college",
+  "yearOfPassing": "2013",
+  "awardsAndPublications": [
+    {
+      "awardName": "award 1",
+      "place": "Jabalpur",
+      "date": "2022-07-22"
+    },
+    {
+      "awardName": "award 2",
+      "place": "Mysore",
+      "date": "2022-01-17"
+    }
+    ],
+    "education": [
+      {
+        "degree": "MCh",
+        "description": "MCH is short for mean corpuscular hemoglobin",
+        "endDate": "1997",
+        "fieldOfStudy": "Neuro Surgery",
+        "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+        "startDate": "1995"
+      },
+      {
+        "degree": "MBBS",
+        "description": "Bachelor of Medicine Bachelor of Surgery",
+        "endDate": "1994",
+        "fieldOfStudy": "Neuro Surgery",
+        "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+        "startDate": "1989"
+      }
+      ],
+      "rights":[admin],
+      "address": "near ghar",
+      "country":"India",
+      "profImageUrl": {"imageName":"ProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023","src":"https://firebasestorage.googleapis.com/v0/b/imageupload-1354b.appspot.com/o/uploads%2FProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023?alt=media&token=c4933e0b-0a2f-4d13-ae8b-81aed3bd2005"}
+}
+
+
+
+PUT student_v1/_doc/4
+{
+  "id": "1",
+  "firstName": "Nitish",
+  "name": "Nitish Kumar",
+  "lastName": "Kumar",
+  "mobile": "1234565890",
+  "email": "nitish@gmail.com",
+  "isEmailVerified": "false",
+  "acceptTerms": true,
+  "emailVerificationOtp": null,
+  "profileCreationDate": "2023-02-01T07:30:00.000-0530",
+  "password": "124545",
+  "dob": "2022-07-29",
+  "gender": "male",
+  "role": "student",
+  "userType": "notVerified",
+  "currentDegree": "PG",
+  "course": "MD",
+  "subject": "pedantology",
+  "rollNo": "030vnjg4845012",
+  "state": "Bihar",
+  "collegeName": "Acha college",
+  "yearOfPassing": "2016",
+  "awardsAndPublications": [
+    {
+      "awardName": "award 1",
+      "place": "Jabalpur",
+      "date": "2022-07-22"
+    },
+    {
+      "awardName": "award 2",
+      "place": "Mysore",
+      "date": "2022-01-17"
+    }
+    ],
+    "education": [
+      {
+        "degree": "MCh",
+        "description": "MCH is short for mean corpuscular hemoglobin",
+        "endDate": "1997",
+        "fieldOfStudy": "Neuro Surgery",
+        "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+        "startDate": "1995"
+      },
+      {
+        "degree": "MBBS",
+        "description": "Bachelor of Medicine Bachelor of Surgery",
+        "endDate": "1994",
+        "fieldOfStudy": "Neuro Surgery",
+        "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+        "startDate": "1989"
+      }
+      ],
+      "rights":[],
+      "address": "",
+      "country":"India",
+      "profImageUrl": {"imageName":"ProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023","src":"https://firebasestorage.googleapis.com/v0/b/imageupload-1354b.appspot.com/o/uploads%2FProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023?alt=media&token=c4933e0b-0a2f-4d13-ae8b-81aed3bd2005"}
+}
+
+
+
+PUT student_v1/_doc/5
+{
+  "id": "1",
+  "firstName": "Ayush",
+  "name": "Ayush Kataria",
+  "lastName": "Kataria",
+  "mobile": "1234598790",
+  "email": "ayush@gmail.com",
+  "isEmailVerified": "false",
+  "acceptTerms": true,
+  "emailVerificationOtp": null,
+  "profileCreationDate": "2021-02-01T07:30:00.000-0530",
+  "password": "12345",
+  "dob": "2022-07-22",
+  "gender": "male",
+  "role": "student",
+  "userType": "verified",
+  "currentDegree": "UG",
+  "course": "",
+  "subject": "",
+  "rollNo": "0301474858012",
+  "state": "Chandigarh",
+  "collegeName": "Great college",
+  "yearOfPassing": "2012",
+  "awardsAndPublications": [
+    {
+      "awardName": "award 1",
+      "place": "Jabalpur",
+      "date": "2022-07-22"
+    },
+    {
+      "awardName": "award 2",
+      "place": "Mysore",
+      "date": "2022-01-17"
+    }
+    ],
+    "education": [
+      {
+        "degree": "MCh",
+        "description": "MCH is short for mean corpuscular hemoglobin",
+        "endDate": "1997",
+        "fieldOfStudy": "Neuro Surgery",
+        "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+        "startDate": "1995"
+      },
+      {
+        "degree": "MBBS",
+        "description": "Bachelor of Medicine Bachelor of Surgery",
+        "endDate": "1994",
+        "fieldOfStudy": "Neuro Surgery",
+        "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+        "startDate": "1989"
+      }
+      ],
+      "rights":[admin],
+      "address": "",
+      "country":"India",
+      "profImageUrl": {"imageName":"ProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023","src":"https://firebasestorage.googleapis.com/v0/b/imageupload-1354b.appspot.com/o/uploads%2FProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023?alt=media&token=c4933e0b-0a2f-4d13-ae8b-81aed3bd2005"}
+}
+
+
+PUT student_v1/_doc/6
+{
+  "id": "1",
+  "firstName": "Akash",
+  "name": "Akash Gaikwad",
+  "lastName": "Gaikwad",
+  "mobile": "1234657890",
+  "email": "akashg@gmail.com",
+  "isEmailVerified": "false",
+  "acceptTerms": true,
+  "emailVerificationOtp": null,
+  "profileCreationDate": "2029-02-01T07:30:00.000-0530",
+  "password": "12345",
+  "dob": "2022-07-22",
+  "gender": "male",
+  "role": "student",
+  "userType": "verified",
+  "currentDegree": "UG",
+  "course": "",
+  "subject": "",
+  "rollNo": "030chb9882",
+  "state": "Madhya Pradesh",
+  "collegeName": "Faltu college",
+  "yearOfPassing": "2015",
+  "awardsAndPublications": [
+    {
+      "awardName": "award 1",
+      "place": "Jabalpur",
+      "date": "2022-07-22"
+    },
+    {
+      "awardName": "award 2",
+      "place": "Mysore",
+      "date": "2022-01-17"
+    }
+    ],
+    "education": [
+      {
+        "degree": "MCh",
+        "description": "MCH is short for mean corpuscular hemoglobin",
+        "endDate": "1997",
+        "fieldOfStudy": "Neuro Surgery",
+        "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+        "startDate": "1995"
+      },
+      {
+        "degree": "MBBS",
+        "description": "Bachelor of Medicine Bachelor of Surgery",
+        "endDate": "1994",
+        "fieldOfStudy": "Neuro Surgery",
+        "institute": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+        "startDate": "1989"
+      }
+      ],
+      "rights":[],
+      "address": "",
+      "country":"India",
+      "profImageUrl": {"imageName":"ProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023","src":"https://firebasestorage.googleapis.com/v0/b/imageupload-1354b.appspot.com/o/uploads%2FProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023?alt=media&token=c4933e0b-0a2f-4d13-ae8b-81aed3bd2005"}
+}
