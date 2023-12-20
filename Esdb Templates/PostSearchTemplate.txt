@@ -104,20 +104,32 @@ PUT _scripts/postSearchTemplate
         }
         {{/filterLanguage}}
         {{#filterFlaggedByName}}
-        ,       
+        , 
         {
-          "terms": {
-            "flaggedBy.name": {{#toJson}}flaggedByNameValue{{/toJson}}
-            
+          "nested": {
+            "path": "flaggedBy",
+            "query": {
+              "term": {
+                "flaggedBy.name": {
+                  "value": {{#toJson}}flaggedByNameValue{{/toJson}}
+                }
+              }
+            }
           }
         }
         {{/filterFlaggedByName}}
         {{#filterFlaggedById}}
         ,       
         {
-          "terms": {
-            "flaggedBy.id": {{#toJson}}flaggedByIdValue{{/toJson}}
-            
+          "nested": {
+            "path": "flaggedBy",
+            "query": {
+              "term": {
+                "flaggedBy.id": {
+                  "value": {{#toJson}}flaggedByIdValue{{/toJson}}
+                }
+              }
+            }
           }
         }
         {{/filterFlaggedById}}
@@ -206,20 +218,32 @@ PUT _scripts/postSearchTemplate
                   }
                   {{/filterLanguage}}
                   {{#filterFlaggedByName}}
-                  ,       
+                  , 
                   {
-                    "terms": {
-                      "flaggedBy.name": {{#toJson}}flaggedByNameValue{{/toJson}}
-                      
+                    "nested": {
+                      "path": "flaggedBy",
+                      "query": {
+                        "term": {
+                          "flaggedBy.name": {
+                            "value": {{#toJson}}flaggedByNameValue{{/toJson}}
+                          }
+                        }
+                      }
                     }
                   }
                   {{/filterFlaggedByName}}
                   {{#filterFlaggedById}}
                   ,       
                   {
-                    "terms": {
-                      "flaggedBy.id": {{#toJson}}flaggedByIdValue{{/toJson}}
-                      
+                    "nested": {
+                      "path": "flaggedBy",
+                      "query": {
+                        "term": {
+                          "flaggedBy.id": {
+                            "value": {{#toJson}}flaggedByIdValue{{/toJson}}
+                          }
+                        }
+                      }
                     }
                   }
                   {{/filterFlaggedById}}
@@ -317,20 +341,32 @@ PUT _scripts/postSearchTemplate
                     }
                     {{/filterLanguage}}
                     {{#filterFlaggedByName}}
-                    ,       
+                    , 
                     {
-                      "terms": {
-                        "flaggedBy.name": {{#toJson}}flaggedByNameValue{{/toJson}}
-                        
+                      "nested": {
+                        "path": "flaggedBy",
+                        "query": {
+                          "term": {
+                            "flaggedBy.name": {
+                              "value": {{#toJson}}flaggedByNameValue{{/toJson}}
+                            }
+                          }
+                        }
                       }
                     }
                     {{/filterFlaggedByName}}
                     {{#filterFlaggedById}}
                     ,       
                     {
-                      "terms": {
-                        "flaggedBy.id": {{#toJson}}flaggedByIdValue{{/toJson}}
-                        
+                      "nested": {
+                        "path": "flaggedBy",
+                        "query": {
+                          "term": {
+                            "flaggedBy.id": {
+                              "value": {{#toJson}}flaggedByIdValue{{/toJson}}
+                            }
+                          }
+                        }
                       }
                     }
                     {{/filterFlaggedById}}
@@ -428,20 +464,32 @@ PUT _scripts/postSearchTemplate
                     }
                     {{/filterLanguage}}
                     {{#filterFlaggedByName}}
-                    ,       
+                    , 
                     {
-                      "terms": {
-                        "flaggedBy.name": {{#toJson}}flaggedByNameValue{{/toJson}}
-                        
+                      "nested": {
+                        "path": "flaggedBy",
+                        "query": {
+                          "term": {
+                            "flaggedBy.name": {
+                              "value": {{#toJson}}flaggedByNameValue{{/toJson}}
+                            }
+                          }
+                        }
                       }
                     }
                     {{/filterFlaggedByName}}
                     {{#filterFlaggedById}}
                     ,       
                     {
-                      "terms": {
-                        "flaggedBy.id": {{#toJson}}flaggedByIdValue{{/toJson}}
-                        
+                      "nested": {
+                        "path": "flaggedBy",
+                        "query": {
+                          "term": {
+                            "flaggedBy.id": {
+                              "value": {{#toJson}}flaggedByIdValue{{/toJson}}
+                            }
+                          }
+                        }
                       }
                     }
                     {{/filterFlaggedById}}
@@ -489,75 +537,87 @@ PUT _scripts/postSearchTemplate
                     }
                   ]
                   {{#boolFilter}} 
-                  , 
-                       
-                  "filter": [
-                     {
-                      "exists": {
-                        "field": "id"
-                      }
-                    } 
-                    {{#filterPostVisibility}}
-                    ,
-                    {
-                      "terms": {
-                        "postVisibility": {{#toJson}}postVisibilityValue{{/toJson}}
-                      }
-                    }
-                    {{/filterPostVisibility}}
-                    {{#filterFlairs}}
-                    ,
-                    {
-                      "terms": {
-                        "flairs": {{#toJson}}flairsValue{{/toJson}}
-                      }
-                    }
-                    {{/filterFlairs}}
-                    {{#filterPostFrom}}
-                    ,       
-                    {
-                      "terms": {
-                        "postFrom": {{#toJson}}postFromValue{{/toJson}}
-                      }
-                    }
-                    }{{/filterPostFrom}}
-                    {{#filterStatus}}
-                    ,        
-                    {
-                      "terms": {
-                        "status": {{#toJson}}statusValue{{/toJson}}
-                      }
-                    }
-                    {{/filterStatus}}
-                    {{#filterLanguage}}
-                    ,       
-                    {
-                      "terms": {
-                        "language": {{#toJson}}languageValue{{/toJson}}
-                        
-                      }
-                    }
-                    {{/filterLanguage}}
-                    {{#filterFlaggedByName}}
-                    ,       
-                    {
-                      "terms": {
-                        "flaggedBy.name": {{#toJson}}flaggedByNameValue{{/toJson}}
-                        
-                      }
-                    }
-                    {{/filterFlaggedByName}}
-                    {{#filterFlaggedById}}
-                    ,       
-                    {
-                      "terms": {
-                        "flaggedBy.id": {{#toJson}}flaggedByIdValue{{/toJson}}
-                        
-                      }
-                    }
-                    {{/filterFlaggedById}}
-                  ]
-                  {{/boolFilter}}
+      , 
+           
+      "filter": [
+         {
+          "exists": {
+            "field": "id"
+          }
+        } 
+        {{#filterPostVisibility}}
+        ,
+        {
+          "terms": {
+            "postVisibility": {{#toJson}}postVisibilityValue{{/toJson}}
+          }
+        }
+        {{/filterPostVisibility}}
+        {{#filterFlairs}}
+        ,
+        {
+          "terms": {
+            "flairs": {{#toJson}}flairsValue{{/toJson}}
+          }
+        }
+        {{/filterFlairs}}
+        {{#filterPostFrom}}
+        ,       
+        {
+          "terms": {
+            "postFrom": {{#toJson}}postFromValue{{/toJson}}
+          }
+        }
+        }{{/filterPostFrom}}
+        {{#filterStatus}}
+        ,        
+        {
+          "terms": {
+            "status": {{#toJson}}statusValue{{/toJson}}
+          }
+        }
+        {{/filterStatus}}
+        {{#filterLanguage}}
+        ,       
+        {
+          "terms": {
+            "language": {{#toJson}}languageValue{{/toJson}}
+            
+          }
+        }
+        {{/filterLanguage}}
+        {{#filterFlaggedByName}}
+        , 
+        {
+          "nested": {
+            "path": "flaggedBy",
+            "query": {
+              "term": {
+                "flaggedBy.name": {
+                  "value": {{#toJson}}flaggedByNameValue{{/toJson}}
+                }
+              }
+            }
+          }
+        }
+        {{/filterFlaggedByName}}
+        {{#filterFlaggedById}}
+        ,       
+        {
+          "nested": {
+            "path": "flaggedBy",
+            "query": {
+              "term": {
+                "flaggedBy.id": {
+                  "value": {{#toJson}}flaggedByIdValue{{/toJson}}
+                }
+              }
+            }
+          }
+        }
+        {{/filterFlaggedById}}
+      ]
+      {{/boolFilter}}
     }
             }
             ,
@@ -652,20 +712,32 @@ PUT _scripts/postSearchTemplate
                     }
                     {{/filterLanguage}}
                     {{#filterFlaggedByName}}
-                    ,       
+                    , 
                     {
-                      "terms": {
-                        "flaggedBy.name": {{#toJson}}flaggedByNameValue{{/toJson}}
-                        
+                      "nested": {
+                        "path": "flaggedBy",
+                        "query": {
+                          "term": {
+                            "flaggedBy.name": {
+                              "value": {{#toJson}}flaggedByNameValue{{/toJson}}
+                            }
+                          }
+                        }
                       }
                     }
                     {{/filterFlaggedByName}}
                     {{#filterFlaggedById}}
                     ,       
                     {
-                      "terms": {
-                        "flaggedBy.id": {{#toJson}}flaggedByIdValue{{/toJson}}
-                        
+                      "nested": {
+                        "path": "flaggedBy",
+                        "query": {
+                          "term": {
+                            "flaggedBy.id": {
+                              "value": {{#toJson}}flaggedByIdValue{{/toJson}}
+                            }
+                          }
+                        }
                       }
                     }
                     {{/filterFlaggedById}}
@@ -764,20 +836,32 @@ PUT _scripts/postSearchTemplate
                     }
                     {{/filterLanguage}}
                     {{#filterFlaggedByName}}
-                    ,       
+                    , 
                     {
-                      "terms": {
-                        "flaggedBy.name": {{#toJson}}flaggedByNameValue{{/toJson}}
-                        
+                      "nested": {
+                        "path": "flaggedBy",
+                        "query": {
+                          "term": {
+                            "flaggedBy.name": {
+                              "value": {{#toJson}}flaggedByNameValue{{/toJson}}
+                            }
+                          }
+                        }
                       }
                     }
                     {{/filterFlaggedByName}}
                     {{#filterFlaggedById}}
                     ,       
                     {
-                      "terms": {
-                        "flaggedBy.id": {{#toJson}}flaggedByIdValue{{/toJson}}
-                        
+                      "nested": {
+                        "path": "flaggedBy",
+                        "query": {
+                          "term": {
+                            "flaggedBy.id": {
+                              "value": {{#toJson}}flaggedByIdValue{{/toJson}}
+                            }
+                          }
+                        }
                       }
                     }
                     {{/filterFlaggedById}}
@@ -875,20 +959,32 @@ PUT _scripts/postSearchTemplate
                     }
                     {{/filterLanguage}}
                     {{#filterFlaggedByName}}
-                    ,       
+                    , 
                     {
-                      "terms": {
-                        "flaggedBy.name": {{#toJson}}flaggedByNameValue{{/toJson}}
-                        
+                      "nested": {
+                        "path": "flaggedBy",
+                        "query": {
+                          "term": {
+                            "flaggedBy.name": {
+                              "value": {{#toJson}}flaggedByNameValue{{/toJson}}
+                            }
+                          }
+                        }
                       }
                     }
                     {{/filterFlaggedByName}}
                     {{#filterFlaggedById}}
                     ,       
                     {
-                      "terms": {
-                        "flaggedBy.id": {{#toJson}}flaggedByIdValue{{/toJson}}
-                        
+                      "nested": {
+                        "path": "flaggedBy",
+                        "query": {
+                          "term": {
+                            "flaggedBy.id": {
+                              "value": {{#toJson}}flaggedByIdValue{{/toJson}}
+                            }
+                          }
+                        }
                       }
                     }
                     {{/filterFlaggedById}}
