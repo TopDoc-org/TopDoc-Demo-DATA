@@ -26,7 +26,8 @@ PUT _scripts/postSearchTemplate
               "createdBy.name^4",
               "commentedBy.name^2",
               "commentedBy.commentBody^1",
-              "hashtags^3"
+              "hashtags^3",
+              "flairs^6"
             ],
               "fuzziness" : "AUTO",
               "prefix_length" : 2
@@ -45,7 +46,8 @@ PUT _scripts/postSearchTemplate
               "createdBy.name^4",
               "commentedBy.name^2",
               "commentedBy.commentBody^1",
-              "hashtags^3"
+              "hashtags^3",
+              "flairs^6"
             ]
           }
         }
@@ -68,6 +70,14 @@ PUT _scripts/postSearchTemplate
           }
         }
         {{/filterPostVisibility}}
+        {{#filterFlairs}}
+        ,
+        {
+          "terms": {
+            "flairs": {{#toJson}}flairsValue{{/toJson}}
+          }
+        }
+        {{/filterFlairs}}
         {{#filterPostFrom}}
         ,       
         {
@@ -136,7 +146,8 @@ PUT _scripts/postSearchTemplate
                         "createdBy.name^4",
                         "commentedBy.name^2",
                         "commentedBy.commentBody^1",
-                        "hashtags^3"
+                        "hashtags^3",
+                        "flairs^6"
                       ],
                         "fuzziness" : "AUTO",
                         "prefix_length" : 2
@@ -161,6 +172,14 @@ PUT _scripts/postSearchTemplate
                     }
                   }
                   {{/filterPostVisibility}}
+                  {{#filterFlairs}}
+                  ,
+                  {
+                    "terms": {
+                      "flairs": {{#toJson}}flairsValue{{/toJson}}
+                    }
+                  }
+                  {{/filterFlairs}}
                   {{#filterPostFrom}}
                   ,       
                   {
@@ -223,7 +242,7 @@ PUT _scripts/postSearchTemplate
             {{#postVisibilityAggregation}}
             {{#postVisibilityAggregationComma}},{{/postVisibilityAggregationComma}}
             "postVisibilityAggs": {
-            "filter": {
+              "filter": {
                 "bool": {     
                   "must": [
                     {
@@ -238,7 +257,8 @@ PUT _scripts/postSearchTemplate
                           "createdBy.name^4",
                           "commentedBy.name^2",
                           "commentedBy.commentBody^1",
-                          "hashtags^3"
+                          "hashtags^3",
+                          "flairs^6"
                         ],
                           "fuzziness" : "AUTO",
                           "prefix_length" : 2
@@ -263,6 +283,14 @@ PUT _scripts/postSearchTemplate
                       }
                     }
                     {{/filterPostVisibility}}
+                    {{#filterFlairs}}
+                    ,
+                    {
+                      "terms": {
+                        "flairs": {{#toJson}}flairsValue{{/toJson}}
+                      }
+                    }
+                    {{/filterFlairs}}
                     {{#filterPostFrom}}
                     ,       
                     {
@@ -325,7 +353,7 @@ PUT _scripts/postSearchTemplate
             {{#languageAggregation}}
             {{#languageAggregationComma}},{{/languageAggregationComma}}
             "languageAggs": {
-            "filter": {
+              "filter": {
                 "bool": {     
                   "must": [
                     {
@@ -340,7 +368,8 @@ PUT _scripts/postSearchTemplate
                           "createdBy.name^4",
                           "commentedBy.name^2",
                           "commentedBy.commentBody^1",
-                          "hashtags^3"
+                          "hashtags^3",
+                          "flairs^6"
                         ],
                           "fuzziness" : "AUTO",
                           "prefix_length" : 2
@@ -365,6 +394,14 @@ PUT _scripts/postSearchTemplate
                       }
                     }
                     {{/filterPostVisibility}}
+                    {{#filterFlairs}}
+                    ,
+                    {
+                      "terms": {
+                        "flairs": {{#toJson}}flairsValue{{/toJson}}
+                      }
+                    }
+                    {{/filterFlairs}}
                     {{#filterPostFrom}}
                     ,       
                     {
@@ -427,7 +464,7 @@ PUT _scripts/postSearchTemplate
             {{#postFromAggregation}}
             {{#postFromAggregationComma}},{{/postFromAggregationComma}}
             "postFromAggs": {
-            "filter": {
+              "filter": {
                 "bool": {     
                   "must": [
                     {
@@ -442,7 +479,8 @@ PUT _scripts/postSearchTemplate
                           "createdBy.name^4",
                           "commentedBy.name^2",
                           "commentedBy.commentBody^1",
-                          "hashtags^3"
+                          "hashtags^3",
+                          "flairs^6"
                         ],
                           "fuzziness" : "AUTO",
                           "prefix_length" : 2
@@ -467,6 +505,14 @@ PUT _scripts/postSearchTemplate
                       }
                     }
                     {{/filterPostVisibility}}
+                    {{#filterFlairs}}
+                    ,
+                    {
+                      "terms": {
+                        "flairs": {{#toJson}}flairsValue{{/toJson}}
+                      }
+                    }
+                    {{/filterFlairs}}
                     {{#filterPostFrom}}
                     ,       
                     {
@@ -531,7 +577,7 @@ PUT _scripts/postSearchTemplate
             {{#flaggedByNameAggregation}}
             {{#flaggedByNameAggregationComma}},{{/flaggedByNameAggregationComma}}
             "flaggedByNameAggs": {
-            "filter": {
+              "filter": {
                 "bool": {     
                   "must": [
                     {
@@ -546,7 +592,8 @@ PUT _scripts/postSearchTemplate
                           "createdBy.name^4",
                           "commentedBy.name^2",
                           "commentedBy.commentBody^1",
-                          "hashtags^3"
+                          "hashtags^3",
+                          "flairs^6"
                         ],
                           "fuzziness" : "AUTO",
                           "prefix_length" : 2
@@ -571,6 +618,14 @@ PUT _scripts/postSearchTemplate
                       }
                     }
                     {{/filterPostVisibility}}
+                    {{#filterFlairs}}
+                    ,
+                    {
+                      "terms": {
+                        "flairs": {{#toJson}}flairsValue{{/toJson}}
+                      }
+                    }
+                    {{/filterFlairs}}
                     {{#filterPostFrom}}
                     ,       
                     {
@@ -634,7 +689,7 @@ PUT _scripts/postSearchTemplate
             {{#flaggedByIdAggregation}}
             {{#flaggedByIdAggregationComma}},{{/flaggedByIdAggregationComma}}
             "flaggedByIdAggs": {
-            "filter": {
+              "filter": {
                 "bool": {     
                   "must": [
                     {
@@ -649,7 +704,8 @@ PUT _scripts/postSearchTemplate
                           "createdBy.name^4",
                           "commentedBy.name^2",
                           "commentedBy.commentBody^1",
-                          "hashtags^3"
+                          "hashtags^3",
+                          "flairs^6"
                         ],
                           "fuzziness" : "AUTO",
                           "prefix_length" : 2
@@ -674,6 +730,14 @@ PUT _scripts/postSearchTemplate
                       }
                     }
                     {{/filterPostVisibility}}
+                    {{#filterFlairs}}
+                    ,
+                    {
+                      "terms": {
+                        "flairs": {{#toJson}}flairsValue{{/toJson}}
+                      }
+                    }
+                    {{/filterFlairs}}
                     {{#filterPostFrom}}
                     ,       
                     {
@@ -733,7 +797,116 @@ PUT _scripts/postSearchTemplate
             }
             {{/flaggedByIdAggregation}}
             
-            
+            {{#flairsAggregation}}
+            {{#flairsAggregationComma}},{{/flairsAggregationComma}}
+            "flairsAggs": {
+              "filter": {
+                "bool": {     
+                  "must": [
+                    {
+                      {{#boolMustMatchAll}}
+                      "match_all": {}
+                      {{/boolMustMatchAll}}
+                      {{#boolMustMultiMatch}}
+                      "multi_match": {
+                        "query": "{{queryValue}}",
+                        "fields": [
+                          "body.post^5",
+                          "createdBy.name^4",
+                          "commentedBy.name^2",
+                          "commentedBy.commentBody^1",
+                          "hashtags^3",
+                          "flairs^6"
+                        ],
+                          "fuzziness" : "AUTO",
+                          "prefix_length" : 2
+                      }
+                      {{/boolMustMultiMatch}}
+                    }
+                  ]
+                  {{#boolFilter}} 
+                  , 
+                       
+                  "filter": [
+                     {
+                      "exists": {
+                        "field": "id"
+                      }
+                    } 
+                    {{#filterPostVisibility}}
+                    ,
+                    {
+                      "terms": {
+                        "postVisibility": {{#toJson}}postVisibilityValue{{/toJson}}
+                      }
+                    }
+                    {{/filterPostVisibility}}
+                    {{#filterFlairs}}
+                    ,
+                    {
+                      "terms": {
+                        "flairs": {{#toJson}}flairsValue{{/toJson}}
+                      }
+                    }
+                    {{/filterFlairs}}
+                    {{#filterPostFrom}}
+                    ,       
+                    {
+                      "terms": {
+                        "postFrom": {{#toJson}}postFromValue{{/toJson}}
+                      }
+                    }
+                    }{{/filterPostFrom}}
+                    {{#filterStatus}}
+                    ,        
+                    {
+                      "terms": {
+                        "status": {{#toJson}}statusValue{{/toJson}}
+                      }
+                    }
+                    {{/filterStatus}}
+                    {{#filterLanguage}}
+                    ,       
+                    {
+                      "terms": {
+                        "language": {{#toJson}}languageValue{{/toJson}}
+                        
+                      }
+                    }
+                    {{/filterLanguage}}
+                    {{#filterFlaggedByName}}
+                    ,       
+                    {
+                      "terms": {
+                        "flaggedBy.name": {{#toJson}}flaggedByNameValue{{/toJson}}
+                        
+                      }
+                    }
+                    {{/filterFlaggedByName}}
+                    {{#filterFlaggedById}}
+                    ,       
+                    {
+                      "terms": {
+                        "flaggedBy.id": {{#toJson}}flaggedByIdValue{{/toJson}}
+                        
+                      }
+                    }
+                    {{/filterFlaggedById}}
+                  ]
+                  {{/boolFilter}}
+    }
+            }
+            ,
+            "aggs": {
+                "flairsAggs": {
+                "terms": {
+                    "field": "flairs"
+                    
+                }
+                }
+            }
+            }
+            {{/flairsAggregation}}
             
         }
         }
