@@ -3,71 +3,79 @@ PUT post_v1/_doc/1
   
   "id": "1",
   "postVisibility": "public",
-  postFrom: "patient",
+  "postFrom": "patient",
   "createdOn": "2021-01-01T07:30:00.000-0530",
   "LastModifiedOn": "2023-07-01T07:30:00.000-0530",
-  "body": {
-    "post": "hello this is my 1st post",
-    "images": ["https://img.freepik.com/premium-vector/hi-word-speech-bubble-funny-lettering-typography-sticker-social-media-content_102918-48.jpg"],
-    "attachments": ["https://www.africau.edu/images/default/sample.pdf"]
-  },
-  "createdBy": {
-    "id":  "3",
-    "name":  "Sai Sarthak",
-    "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
-  },
-  "likedBy ": [{
-    "id": "1",
-    "name": "Sachin",
-    "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
-  }],
-  "commentedBy ": [{
-    "id": "2",
-    "name": "Akash Nekhara",
-    "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
-    "commentBody": "Good game",
-    "createdOn": "2021-01-01T07:30:00.000-0530",
-    "LastModifiedOn": "2021-04-01T07:30:00.000-0530",
+  "flairs" : [
+    "ORTHOPEDICS RESIDENCY",
+    "DERMA RESIDENCY",
+    "NExT"],
+    "body": {
+      "post": "hello this is my 1st post",
+      "images": ["https://img.freepik.com/premium-vector/hi-word-speech-bubble-funny-lettering-typography-sticker-social-media-content_102918-48.jpg"],
+      "attachments": ["https://www.africau.edu/images/default/sample.pdf"]
+    },
+    "createdBy": {
+      "id":  "3",
+      "name":  "Sai Sarthak",
+      "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
+    },
     "likedBy ": [{
-    "id": "1",
-    "name": "Sachin",
-    "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
-  }]
-  },
-  {
-    "id": "3",
-    "name": "Shukla Sachin",
-    "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
-    "commentBody": "Good game",
-    "createdOn": "2023-01-01T07:30:00.000-0530",
-    "likedBy ": [{
-    "id": "1",
-    "name": "Sachin",
-    "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
-  }]
-    
-  }
-  ],
-  "flaggedBy": [
+      "id": "1",
+      "name": "Sachin",
+      "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
+    }],
+    "commentedBy ": [{
+      "id": "2",
+      "name": "Akash Nekhara",
+      "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
+      "commentBody": "Good game",
+      "createdOn": "2021-01-01T07:30:00.000-0530",
+      "LastModifiedOn": "2021-04-01T07:30:00.000-0530",
+      "likedBy ": [{
+        "id": "1",
+        "name": "Sachin",
+        "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
+      }]
+    },
     {
       "id": "3",
-      "name": "Sachin muthuswamy venugopal Krishnagopal Iyer",
-      "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
+      "name": "Shukla Sachin",
+      "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
+      "commentBody": "Good game",
+      "createdOn": "2023-01-01T07:30:00.000-0530",
+      "likedBy ": [{
+        "id": "1",
+        "name": "Sachin",
+        "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
+      }]
+      
     }
     ],
-    "status": "published",
-    "hashtags": ["#heloo","#topdoc","#justiceForChutki"],
-    "mentionedPeople": [],
-    "language": ["English","Hindi"]
+    "flaggedBy": [
+      {
+        "id": "3",
+        "name": "Sachin muthuswamy venugopal Krishnagopal Iyer",
+        "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
+      }
+      ],
+      "status": "published",
+      "hashtags": ["#heloo","#topdoc","#justiceForChutki"],
+      "mentionedPeople": [],
+      "language": ["English","Hindi"]
 }
 PUT post_v1/_doc/2
 {
   
   "id": "2",
   "postVisibility": "public",
-  postFrom: "doctor",
+  "postFrom": "doctor",
   "createdOn": "2021-01-01T07:30:00.000-0530",
   "LastModifiedOn": "2023-07-01T07:30:00.000-0530",
+    "flairs" : [
+    "Meme",
+    "Internal Exams"
+    ],
   "body": {
     "post": "hello this is my 2nd post",
     "images": ["https://img.freepik.com/premium-vector/hi-word-speech-bubble-funny-lettering-typography-sticker-social-media-content_102918-48.jpg"],
@@ -127,9 +135,13 @@ PUT post_v1/_doc/3
   
   "id": "3",
   "postVisibility": "private",
-  postFrom: "student",
+  "postFrom": "student",
   "createdOn": "2021-01-01T07:30:00.000-0530",
   "LastModifiedOn": "2023-07-01T07:30:00.000-0530",
+    "flairs" : [
+    "Discussion",
+    "Recommendation",
+     "NExT"],
   "body": {
     "post": "hello this is my 3rd post",
     "images": ["https://img.freepik.com/premium-vector/hi-word-speech-bubble-funny-lettering-typography-sticker-social-media-content_102918-48.jpg"],
@@ -189,8 +201,9 @@ PUT post_v1/_doc/4
   
   "id": "4",
   "postVisibility": "public",
-  postFrom: "patient",
+  "postFrom": "patient",
   "createdOn": "2021-01-01T07:30:00.000-0530",
+  "flairs" : [ ],
   "body": {
     "post": "hello this is my 4th post",
     "images": ["https://img.freepik.com/premium-vector/hi-word-speech-bubble-funny-lettering-typography-sticker-social-media-content_102918-48.jpg"],
@@ -214,8 +227,11 @@ PUT post_v1/_doc/5
   
   "id": "5",
   "postVisibility": "private",
-  postFrom: "doctor",
+  "postFrom": "doctor",
   "createdOn": "2021-01-01T07:30:00.000-0530",
+    "flairs" : [
+    "PLAB",
+    "SURGERY RESIDENCY"],
   "body": {
     "post": "hello this is my 1st post",
     "images": ["https://img.freepik.com/premium-vector/hi-word-speech-bubble-funny-lettering-typography-sticker-social-media-content_102918-48.jpg"],
@@ -239,8 +255,11 @@ PUT post_v1/_doc/6
   
   "id": "6",
   "postVisibility": "public",
-  postFrom: "student",
+  "postFrom": "student",
   "createdOn": "2021-01-01T07:30:00.000-0530",
+    "flairs" : [
+    "Recommendation"
+    ],
   "body": {
     "post": "hello this is my 1st post",
     "images": ["https://img.freepik.com/premium-vector/hi-word-speech-bubble-funny-lettering-typography-sticker-social-media-content_102918-48.jpg"],
@@ -270,9 +289,14 @@ PUT post_v1/_doc/7
   
   "id": "7",
   "postVisibility": "public",
-  postFrom: "student",
+  "postFrom": "student",
   "createdOn": "2021-01-01T07:30:00.000-0530",
   "LastModifiedOn": "2023-07-01T07:30:00.000-0530",
+    "flairs" : [
+    "Medical News",
+    "Incident",
+    "Counselling"
+    ],
   "body": {
     "post": "hello this is my 1st post",
     "images": ["https://img.freepik.com/premium-vector/hi-word-speech-bubble-funny-lettering-typography-sticker-social-media-content_102918-48.jpg"],
