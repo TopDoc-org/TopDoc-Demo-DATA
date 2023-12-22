@@ -4,6 +4,12 @@ const staff = {
   },
   mappings: {
     properties: {
+      isEmailVerified: {
+        type: "boolean",
+      },
+      emailVerificationOtp: {
+        type: "long",
+      },
       profileCreationDate: {
         type: "date",
         format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
@@ -15,6 +21,9 @@ const staff = {
             type: "keyword",
           },
         },
+      },
+      name: {
+        type: "keyword",
       },
       lastName: {
         type: "text",
@@ -93,7 +102,7 @@ const staff = {
         },
       },
       pin: {
-        type: "long",
+        type: "keyword",
       },
       password: {
         type: "keyword",

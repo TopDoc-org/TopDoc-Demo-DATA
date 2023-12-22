@@ -126,6 +126,30 @@ const booking = {
         type: "date",
         format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
       },
+      actualCancelledTime: {
+        type: "date",
+        format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
+      },
+      actualPinGeneratedTime: {
+        type: "date",
+        format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
+      },
+      actualStartedTime: {
+        type: "date",
+        format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
+      },
+      actualSkippedTime: {
+        type: "date",
+        format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
+      },
+      actualPausedTime: {
+        type: "date",
+        format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
+      },
+      actualSessionCancelledTime: {
+        type: "date",
+        format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
+      },
       predictedSlotTime: {
         type: "keyword",
       },

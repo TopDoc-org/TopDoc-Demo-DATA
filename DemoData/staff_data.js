@@ -3,13 +3,16 @@ const staff = [
     1: {
       firstName: "Sai",
       lastName: "bhai",
+      name: "Sai bhai",
+      isEmailVerified: false,
+      emailVerificationOtp: null,
       profileCreationDate: "2021-02-01T07:30:00.000-0530",
       mobile: 8675849485,
       email: "saibhai@gmail.com ",
       mappedTo: [
         {
-          id: "74a87536-63bd-4072-9bef-a24a2a3b7ea3",
-          name: "Sai Sarthak Mohanty",
+          id: "1",
+          name: "abcd",
         },
       ],
       education: [
@@ -51,7 +54,7 @@ const staff = [
           title: "HOD and Professor of Neurosurgery Dept",
         },
       ],
-      pin: 1234,
+      pin: "1234",
       password: "12345sai",
       staffId: 1,
       designation: "consultant",
@@ -61,13 +64,16 @@ const staff = [
     2: {
       firstName: "Akash",
       lastName: "Neekhara",
+      name: "Akash Neekhara",
+      isEmailVerified: true,
+      emailVerificationOtp: null,
       profileCreationDate: "2022-02-01T07:30:00.000-0530",
       mobile: 8685849485,
       email: "akashneekhara@gmail.com ",
       mappedTo: [
         {
-          id: "74a87536-63bd-4072-9bef-a24a2a3b7ea3",
-          name: "Sai Sarthak Mohanty",
+          id: "3",
+          name: "abcde",
         },
       ],
       education: [
@@ -109,7 +115,7 @@ const staff = [
           title: "HOD and Professor of Neurosurgery Dept",
         },
       ],
-      pin: 4534,
+      pin: "4534",
       password: "12345akash",
       staffId: 2,
       designation: "receptionist",
@@ -119,13 +125,20 @@ const staff = [
     3: {
       firstName: "Nitish",
       lastName: "bhai",
+      name: "Nitish bhai",
+      isEmailVerified: false,
+      emailVerificationOtp: 123456,
       profileCreationDate: "2023-02-01T07:30:00.000-0530",
       mobile: 8685878485,
       email: "nitishbhai@gmail.com ",
       mappedTo: [
         {
-          id: "74a87536-63bd-4072-9bef-a24a2a3b7ea3",
-          name: "Sai Sarthak Mohanty",
+          id: "1",
+          name: "abcd",
+        },
+        {
+          id: "2",
+          name: "abcdg",
         },
       ],
       education: [
@@ -167,7 +180,7 @@ const staff = [
           title: "HOD and Professor of Neurosurgery Dept",
         },
       ],
-      pin: 4124,
+      pin: "4124",
       password: "12345nitish",
       staffId: 3,
       designation: "intern",
@@ -178,13 +191,16 @@ const staff = [
     4: {
       firstName: "Akash",
       lastName: "bhai",
+      name: "Akash bhai",
+      isEmailVerified: true,
+      emailVerificationOtp: 987456,
       profileCreationDate: "2024-02-01T07:30:00.000-0530",
       mobile: 8612878485,
       email: "akashbhai@gmail.com ",
       mappedTo: [
         {
-          id: "74a87536-63bd-4072-9bef-a24a2a3b7ea3",
-          name: "Sai Sarthak Mohanty",
+          id: "2",
+          name: "abcdg",
         },
       ],
       education: [
@@ -226,7 +242,7 @@ const staff = [
           title: "HOD and Professor of Neurosurgery Dept",
         },
       ],
-      pin: 4127,
+      pin: "4127",
       password: "12345akash3",
       staffId: 4,
       designation: "receptionist",
@@ -237,13 +253,16 @@ const staff = [
     5: {
       firstName: "Ayush",
       lastName: "bhai",
+      name: "Ayush bhai",
+      isEmailVerified: false,
+      emailVerificationOtp: null,
       profileCreationDate: "2025-02-01T07:30:00.000-0530",
       mobile: 8616578485,
       email: "ayushbhai@gmail.com ",
       mappedTo: [
         {
-          id: "74a87536-63bd-4072-9bef-a24a2a3b7ea3",
-          name: "Sai Sarthak Mohanty",
+          id: "1",
+          name: "abcd",
         },
       ],
       education: [
@@ -285,7 +304,7 @@ const staff = [
           title: "HOD and Professor of Neurosurgery Dept",
         },
       ],
-      pin: 9127,
+      pin: "9127",
       password: "12345ayush",
       staffId: 5,
       designation: "receptionist",
@@ -296,13 +315,16 @@ const staff = [
     6: {
       firstName: "Sachin",
       lastName: "Shukla",
+      name: "Sachin Shukla",
+      isEmailVerified: false,
+      emailVerificationOtp: null,
       profileCreationDate: "2026-02-01T07:30:00.000-0530",
       mobile: 86165578485,
       email: "sachinshukla@gmail.com ",
       mappedTo: [
         {
-          id: "74a87536-63bd-4072-9bef-a24a2a3b7ea3",
-          name: "Sai Sarthak Mohanty",
+          id: "1",
+          name: "abcd",
         },
       ],
       education: [
@@ -344,7 +366,7 @@ const staff = [
           title: "HOD and Professor of Neurosurgery Dept",
         },
       ],
-      pin: 9167,
+      pin: "9167",
       password: "12345sachin",
       staffId: 6,
       designation: "consultant",

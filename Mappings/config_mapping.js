@@ -11,7 +11,7 @@ const config = {
         type: "keyword",
       },
       isNewVersionAvl: {
-        type: "boolean",
+        type: "keyword",
       },
       configRole: {
         type: "keyword",

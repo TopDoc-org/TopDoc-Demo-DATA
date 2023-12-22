@@ -7,6 +7,12 @@ const user = {
       DOB: {
         type: "date",
       },
+      isEmailVerified: {
+        type: "boolean",
+      },
+      emailVerificationOtp: {
+        type: "long",
+      },
       profileCreationDate: {
         type: "date",
         format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ",

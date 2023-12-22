@@ -2,6 +2,9 @@ const user = [
   {
     1: {
       name: "Amit kumar Jha",
+      isEmailVerified: false,
+      emailVerificationOtp: null,
+      rights: ["admin"],
       profileCreationDate: "2021-02-01T07:30:00.000-0530",
       first_name: "Amit",
       userType: "registered",
@@ -22,7 +25,6 @@ const user = [
       country: "India",
       Zipcode: 854301,
       role: "patient",
-      rights: [],
       languages: ["English", "hindi"],
       blood_donor: true,
       favouriteDoctor: [
@@ -81,6 +83,9 @@ const user = [
   {
     2: {
       name: "hello world",
+      isEmailVerified: false,
+      emailVerificationOtp: null,
+      rights: [],
       profileCreationDate: "2022-02-01T07:30:00.000-0530",
       first_name: "hello",
       userType: "registered",
@@ -101,7 +106,6 @@ const user = [
       country: "India",
       Zipcode: 854301,
       role: "patient",
-      rights: ["admin"],
       languages: ["English", "hindi"],
       blood_donor: true,
       favouriteDoctor: [
@@ -160,6 +164,9 @@ const user = [
   {
     3: {
       name: "Akash Neekhara",
+      isEmailVerified: true,
+      emailVerificationOtp: null,
+      rights: [],
       profileCreationDate: "2023-02-01T07:30:00.000-0530",
       first_name: "Akash",
       last_name: "Neekhara",
@@ -180,7 +187,6 @@ const user = [
       country: "India",
       Zipcode: 854301,
       role: "patient",
-      rights: [],
       languages: ["English", "hindi"],
       blood_donor: true,
       favouriteDoctor: [
@@ -239,6 +245,9 @@ const user = [
   {
     4: {
       name: "Sai bhai",
+      isEmailVerified: true,
+      emailVerificationOtp: 456123,
+      rights: [],
       profileCreationDate: "2024-02-01T07:30:00.000-0530",
       first_name: "Sai",
       last_name: "bhai",
@@ -259,7 +268,6 @@ const user = [
       country: "India",
       Zipcode: 854301,
       role: "patient",
-      rights: [],
       languages: ["English", "hindi"],
       blood_donor: true,
       favouriteDoctor: [
@@ -318,6 +326,9 @@ const user = [
   {
     5: {
       name: "Mera Putra",
+      isEmailVerified: false,
+      emailVerificationOtp: 456987,
+      rights: [],
       profileCreationDate: "2025-02-01T07:30:00.000-0530",
       first_name: "Mera",
       last_name: "Putra",
@@ -338,7 +349,6 @@ const user = [
       country: "India",
       Zipcode: 854301,
       role: "patient",
-      rights: [],
       languages: ["English", "hindi"],
       blood_donor: true,
       favouriteDoctor: [

@@ -3,9 +3,10 @@ const post = [
     1: {
       id: "1",
       postVisibility: "public",
-      postFrom: "student",
-      createdOn: "2021-01-01T07:30:00.000-0530",
+      postFrom: "patient",
+      createdOn: "2022-01-01T07:30:00.000-0530",
       LastModifiedOn: "2023-07-01T07:30:00.000-0530",
+      flairs: ["ORTHOPEDICS RESIDENCY", "DERMA RESIDENCY", "NExT"],
       body: {
         post: "hello this is my 1st post",
         images: [
@@ -83,6 +84,7 @@ const post = [
       postFrom: "doctor",
       createdOn: "2021-01-01T07:30:00.000-0530",
       LastModifiedOn: "2023-07-01T07:30:00.000-0530",
+      flairs: ["Meme", "Internal Exams"],
       body: {
         post: "hello this is my 2nd post",
         images: [
@@ -157,9 +159,10 @@ const post = [
     3: {
       id: "3",
       postVisibility: "private",
-      postFrom: "patient",
-      createdOn: "2021-01-01T07:30:00.000-0530",
+      postFrom: "student",
+      createdOn: "2023-01-01T07:30:00.000-0530",
       LastModifiedOn: "2023-07-01T07:30:00.000-0530",
+      flairs: ["Discussion", "Recommendation", "NExT"],
       body: {
         post: "hello this is my 3rd post",
         images: [
@@ -234,8 +237,9 @@ const post = [
     4: {
       id: "4",
       postVisibility: "public",
-      postFrom: "student",
-      createdOn: "2021-01-01T07:30:00.000-0530",
+      postFrom: "patient",
+      createdOn: "2024-01-01T07:30:00.000-0530",
+      flairs: [],
       body: {
         post: "hello this is my 4th post",
         images: [
@@ -263,7 +267,8 @@ const post = [
       id: "5",
       postVisibility: "private",
       postFrom: "doctor",
-      createdOn: "2021-01-01T07:30:00.000-0530",
+      createdOn: "2019-01-01T07:30:00.000-0530",
+      flairs: ["PLAB", "SURGERY RESIDENCY"],
       body: {
         post: "hello this is my 1st post",
         images: [
@@ -290,8 +295,9 @@ const post = [
     6: {
       id: "6",
       postVisibility: "public",
-      postFrom: "patient",
-      createdOn: "2021-01-01T07:30:00.000-0530",
+      postFrom: "student",
+      createdOn: "2018-01-01T07:30:00.000-0530",
+      flairs: ["Recommendation"],
       body: {
         post: "hello this is my 1st post",
         images: [
@@ -326,8 +332,9 @@ const post = [
       id: "7",
       postVisibility: "public",
       postFrom: "student",
-      createdOn: "2021-01-01T07:30:00.000-0530",
+      createdOn: "2017-01-01T07:30:00.000-0530",
       LastModifiedOn: "2023-07-01T07:30:00.000-0530",
+      flairs: ["Medical News", "Incident", "Counselling"],
       body: {
         post: "hello this is my 1st post",
         images: [
@@ -374,6 +381,14 @@ const post = [
             "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
           commentBody: "Good game",
           createdOn: "2023-01-01T07:30:00.000-0530",
+          likedBy: [
+            {
+              id: "1",
+              name: "Sachin",
+              profilePicture:
+                "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
+            },
+          ],
         },
       ],
       flaggedBy: [

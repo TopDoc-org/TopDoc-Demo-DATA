@@ -140,6 +140,9 @@ const post = {
       postFrom: {
         type: "keyword",
       },
+      flairs: {
+        type: "keyword",
+      },
     },
   },
 };

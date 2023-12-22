@@ -7,6 +7,12 @@ const doctor = {
       role: {
         type: "keyword",
       },
+      isEmailVerified: {
+        type: "boolean",
+      },
+      emailVerificationOtp: {
+        type: "long",
+      },
       rights: {
         type: "keyword",
       },

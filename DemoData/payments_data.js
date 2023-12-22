@@ -40,16 +40,13 @@ const payments = [
   },
   {
     sks56xx1c45s4ss: {
-      paymentType: "doctor",
-      couponApplied: null,
+      paymentType: "ads",
+      couponApplied: "abcdxjxkghsgdhsgdh",
       doctorId: "2",
-      userId: "1",
-      userName: "akash",
-      orderId: "sks56xx1c45s4ss",
-      amount: "999",
+      orderId: "skxhxnjs5s5s4ss",
+      amount: "4587",
       dateAndTime: "2021-01-01T07:30:00.000-0530",
       paymentStatus: "Failed",
-      slotType: "priority",
     },
   },
   {
