@@ -23,6 +23,7 @@ const indexToDelete = [
   "user",
   "config",
   "post",
+  "student",
 ];
 
 const filterIndexes = indexToDelete.map((variable) => {

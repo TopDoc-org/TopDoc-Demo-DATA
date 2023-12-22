@@ -24,6 +24,7 @@ const mappingsToInsert = [
   "user",
   "config",
   "post",
+  "student",
 ];
 
 let filteredDemoData = demoDataConstants.demoData.filter((index) =>
