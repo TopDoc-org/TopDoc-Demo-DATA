@@ -4,7 +4,7 @@ PUT post_v1/_doc/1
   "id": "1",
   "postVisibility": "public",
   "postFrom": "patient",
-  "createdOn": "2021-01-01T07:30:00.000-0530",
+  "createdOn": "2022-01-01T07:30:00.000-0530",
   "LastModifiedOn": "2023-07-01T07:30:00.000-0530",
   "flairs" : [
     "ORTHOPEDICS RESIDENCY",
@@ -20,19 +20,19 @@ PUT post_v1/_doc/1
       "name":  "Sai Sarthak",
       "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
     },
-    "likedBy ": [{
+    "likedBy": [{
       "id": "1",
       "name": "Sachin",
       "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
     }],
-    "commentedBy ": [{
+    "commentedBy": [{
       "id": "2",
       "name": "Akash Nekhara",
       "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
       "commentBody": "Good game",
       "createdOn": "2021-01-01T07:30:00.000-0530",
       "LastModifiedOn": "2021-04-01T07:30:00.000-0530",
-      "likedBy ": [{
+      "likedBy": [{
         "id": "1",
         "name": "Sachin",
         "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
@@ -44,7 +44,7 @@ PUT post_v1/_doc/1
       "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
       "commentBody": "Good game",
       "createdOn": "2023-01-01T07:30:00.000-0530",
-      "likedBy ": [{
+      "likedBy": [{
         "id": "1",
         "name": "Sachin",
         "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
@@ -86,19 +86,19 @@ PUT post_v1/_doc/2
     "name":  "Sai Sarthak",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
   },
-  "likedBy ": [{
+  "likedBy": [{
     "id": "1",
     "name": "Sachin",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
   }],
-  "commentedBy ": [{
+  "commentedBy": [{
     "id": "2",
     "name": "Akash Nekhara",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
     "commentBody": "Good game",
     "createdOn": "2021-01-01T07:30:00.000-0530",
     "LastModifiedOn": "2021-04-01T07:30:00.000-0530",
-    "likedBy ": [{
+    "likedBy": [{
     "id": "1",
     "name": "Sachin",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
@@ -110,7 +110,7 @@ PUT post_v1/_doc/2
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
     "commentBody": "Good game",
     "createdOn": "2023-01-01T07:30:00.000-0530",
-    "likedBy ": [{
+    "likedBy": [{
     "id": "1",
     "name": "Sachin",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
@@ -136,7 +136,7 @@ PUT post_v1/_doc/3
   "id": "3",
   "postVisibility": "private",
   "postFrom": "student",
-  "createdOn": "2021-01-01T07:30:00.000-0530",
+  "createdOn": "2023-01-01T07:30:00.000-0530",
   "LastModifiedOn": "2023-07-01T07:30:00.000-0530",
     "flairs" : [
     "Discussion",
@@ -152,19 +152,19 @@ PUT post_v1/_doc/3
     "name":  "Sai Sarthak",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
   },
-  "likedBy ": [{
+  "likedBy": [{
     "id": "1",
     "name": "Sachin",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
   }],
-  "commentedBy ": [{
+  "commentedBy": [{
     "id": "2",
     "name": "Akash Nekhara",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
     "commentBody": "Good game",
     "createdOn": "2021-01-01T07:30:00.000-0530",
     "LastModifiedOn": "2021-04-01T07:30:00.000-0530",
-    "likedBy ": [{
+    "likedBy": [{
     "id": "1",
     "name": "Sachin",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
@@ -176,7 +176,7 @@ PUT post_v1/_doc/3
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
     "commentBody": "Good game",
     "createdOn": "2023-01-01T07:30:00.000-0530",
-    "likedBy ": [{
+    "likedBy": [{
     "id": "1",
     "name": "Sachin",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
@@ -202,7 +202,7 @@ PUT post_v1/_doc/4
   "id": "4",
   "postVisibility": "public",
   "postFrom": "patient",
-  "createdOn": "2021-01-01T07:30:00.000-0530",
+  "createdOn": "2024-01-01T07:30:00.000-0530",
   "flairs" : [ ],
   "body": {
     "post": "hello this is my 4th post",
@@ -214,8 +214,8 @@ PUT post_v1/_doc/4
     "name":  "Sai Sarthak",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
   },
-  "likedBy ": [],
-  "commentedBy ": [],
+  "likedBy": [],
+  "commentedBy": [],
   "flaggedBy": [],
   "status": "draft",
   "hashtags": ["#heloo","#topdoc","#justiceForChutki"],
@@ -228,7 +228,7 @@ PUT post_v1/_doc/5
   "id": "5",
   "postVisibility": "private",
   "postFrom": "doctor",
-  "createdOn": "2021-01-01T07:30:00.000-0530",
+  "createdOn": "2019-01-01T07:30:00.000-0530",
     "flairs" : [
     "PLAB",
     "SURGERY RESIDENCY"],
@@ -242,8 +242,8 @@ PUT post_v1/_doc/5
     "name":  "Sai Sarthak",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
   },
-  "likedBy ": [],
-  "commentedBy ": [],
+  "likedBy": [],
+  "commentedBy": [],
   "flaggedBy": [],
     "status": "draft",
     "hashtags": ["#heloo","#topdoc","#justiceForChutki"],
@@ -256,7 +256,7 @@ PUT post_v1/_doc/6
   "id": "6",
   "postVisibility": "public",
   "postFrom": "student",
-  "createdOn": "2021-01-01T07:30:00.000-0530",
+  "createdOn": "2018-01-01T07:30:00.000-0530",
     "flairs" : [
     "Recommendation"
     ],
@@ -270,8 +270,8 @@ PUT post_v1/_doc/6
     "name":  "Sai Sarthak",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
   },
-  "likedBy ": [],
-  "commentedBy ": [],
+  "likedBy": [],
+  "commentedBy": [],
   "flaggedBy": [
     {
       "id": "3",
@@ -290,7 +290,7 @@ PUT post_v1/_doc/7
   "id": "7",
   "postVisibility": "public",
   "postFrom": "student",
-  "createdOn": "2021-01-01T07:30:00.000-0530",
+  "createdOn": "2017-01-01T07:30:00.000-0530",
   "LastModifiedOn": "2023-07-01T07:30:00.000-0530",
     "flairs" : [
     "Medical News",
@@ -307,19 +307,19 @@ PUT post_v1/_doc/7
     "name":  "Sai Sarthak",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
   },
-  "likedBy ": [{
+  "likedBy": [{
     "id": "1",
     "name": "Sachin",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
   }],
-  "commentedBy ": [{
+  "commentedBy": [{
     "id": "2",
     "name": "Akash Nekhara",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
     "commentBody": "Good game",
     "createdOn": "2021-01-01T07:30:00.000-0530",
     "LastModifiedOn": "2021-04-01T07:30:00.000-0530",
-    "likedBy ": [{
+    "likedBy": [{
     "id": "1",
     "name": "Sachin",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
@@ -331,7 +331,7 @@ PUT post_v1/_doc/7
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg",
     "commentBody": "Good game",
     "createdOn": "2023-01-01T07:30:00.000-0530",
-    "likedBy ": [{
+    "likedBy": [{
     "id": "1",
     "name": "Sachin",
     "profilePicture": "https://ih1.redbubble.net/image.4285147971.3103/mo,small,flatlay,product_square,600x600.jpg"
