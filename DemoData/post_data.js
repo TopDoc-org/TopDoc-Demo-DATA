@@ -6,7 +6,20 @@ const post = [
       postFrom: "patient",
       createdOn: "2022-01-01T07:30:00.000-0530",
       LastModifiedOn: "2023-07-01T07:30:00.000-0530",
-      flairs: ["ORTHOPEDICS RESIDENCY", "DERMA RESIDENCY", "NExT"],
+      flairs: [
+        {
+          label: "Question",
+          color: "bg-blue-100",
+        },
+        {
+          label: "Post Graduate Exams",
+          color: "bg-red-100",
+        },
+        {
+          label: "Professional Exams",
+          color: "bg-blue-700",
+        },
+      ],
       body: {
         post: "hello this is my 1st post",
         images: [
@@ -84,7 +97,12 @@ const post = [
       postFrom: "doctor",
       createdOn: "2021-01-01T07:30:00.000-0530",
       LastModifiedOn: "2023-07-01T07:30:00.000-0530",
-      flairs: ["Meme", "Internal Exams"],
+      flairs: [
+        {
+          label: "Question",
+          color: "bg-blue-100",
+        },
+      ],
       body: {
         post: "hello this is my 2nd post",
         images: [
@@ -162,7 +180,12 @@ const post = [
       postFrom: "student",
       createdOn: "2023-01-01T07:30:00.000-0530",
       LastModifiedOn: "2023-07-01T07:30:00.000-0530",
-      flairs: ["Discussion", "Recommendation", "NExT"],
+      flairs: [
+        {
+          label: "Professional Exams",
+          color: "bg-blue-700",
+        },
+      ],
       body: {
         post: "hello this is my 3rd post",
         images: [
@@ -268,7 +291,16 @@ const post = [
       postVisibility: "private",
       postFrom: "doctor",
       createdOn: "2019-01-01T07:30:00.000-0530",
-      flairs: ["PLAB", "SURGERY RESIDENCY"],
+      flairs: [
+        {
+          label: "Question",
+          color: "bg-blue-100",
+        },
+        {
+          label: "Post Graduate Exams",
+          color: "bg-red-100",
+        },
+      ],
       body: {
         post: "hello this is my 1st post",
         images: [
@@ -297,7 +329,16 @@ const post = [
       postVisibility: "public",
       postFrom: "student",
       createdOn: "2018-01-01T07:30:00.000-0530",
-      flairs: ["Recommendation"],
+      flairs: [
+        {
+          label: "Post Graduate Exams",
+          color: "bg-red-100",
+        },
+        {
+          label: "Professional Exams",
+          color: "bg-blue-700",
+        },
+      ],
       body: {
         post: "hello this is my 1st post",
         images: [
@@ -334,7 +375,20 @@ const post = [
       postFrom: "student",
       createdOn: "2017-01-01T07:30:00.000-0530",
       LastModifiedOn: "2023-07-01T07:30:00.000-0530",
-      flairs: ["Medical News", "Incident", "Counselling"],
+      flairs: [
+        {
+          label: "Question",
+          color: "bg-blue-100",
+        },
+        {
+          label: "Post Graduate Exams",
+          color: "bg-red-100",
+        },
+        {
+          label: "Professional Exams",
+          color: "bg-blue-700",
+        },
+      ],
       body: {
         post: "hello this is my 1st post",
         images: [

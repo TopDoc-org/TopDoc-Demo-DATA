@@ -141,7 +141,15 @@ const post = {
         type: "keyword",
       },
       flairs: {
-        type: "keyword",
+        type: "nested",
+        properties: {
+          label: {
+            type: "keyword",
+          },
+          color: {
+            type: "keyword",
+          },
+        },
       },
     },
   },
