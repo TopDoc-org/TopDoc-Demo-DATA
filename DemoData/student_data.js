@@ -155,7 +155,7 @@ const student = [
           startDate: "1989",
         },
       ],
-      rights: [admin],
+      rights: ["admin"],
       address: "near ghar",
       country: "India",
       profImageUrl: {
@@ -287,7 +287,7 @@ const student = [
           startDate: "1989",
         },
       ],
-      rights: [admin],
+      rights: ["admin"],
       address: "",
       country: "India",
       profImageUrl: {
