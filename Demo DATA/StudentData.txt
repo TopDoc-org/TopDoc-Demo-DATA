@@ -148,7 +148,7 @@ PUT student_v1/_doc/3
         "startDate": "1989"
       }
       ],
-      "rights":[admin],
+      "rights":["admin"],
       "address": "near ghar",
       "country":"India",
       "profImageUrl": {"imageName":"ProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023","src":"https://firebasestorage.googleapis.com/v0/b/imageupload-1354b.appspot.com/o/uploads%2FProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023?alt=media&token=c4933e0b-0a2f-4d13-ae8b-81aed3bd2005"}
@@ -272,7 +272,7 @@ PUT student_v1/_doc/5
         "startDate": "1989"
       }
       ],
-      "rights":[admin],
+      "rights":["admin"],
       "address": "",
       "country":"India",
       "profImageUrl": {"imageName":"ProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023","src":"https://firebasestorage.googleapis.com/v0/b/imageupload-1354b.appspot.com/o/uploads%2FProfImga6abd763-c265-47fc-99cc-a8865d8c1beeon_06-07-2023?alt=media&token=c4933e0b-0a2f-4d13-ae8b-81aed3bd2005"}
