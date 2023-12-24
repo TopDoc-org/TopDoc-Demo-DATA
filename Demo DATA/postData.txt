@@ -7,9 +7,11 @@ PUT post_v1/_doc/1
   "createdOn": "2022-01-01T07:30:00.000-0530",
   "LastModifiedOn": "2023-07-01T07:30:00.000-0530",
   "flairs" : [
-    "ORTHOPEDICS RESIDENCY",
-    "DERMA RESIDENCY",
-    "NExT"],
+    {
+      "label": "Question",
+      "color": "bg-blue-100"
+    }
+    ],
     "body": {
       "post": "hello this is my 1st post",
       "images": ["https://img.freepik.com/premium-vector/hi-word-speech-bubble-funny-lettering-typography-sticker-social-media-content_102918-48.jpg"],
@@ -73,8 +75,18 @@ PUT post_v1/_doc/2
   "createdOn": "2021-01-01T07:30:00.000-0530",
   "LastModifiedOn": "2023-07-01T07:30:00.000-0530",
     "flairs" : [
-    "Meme",
-    "Internal Exams"
+      {
+      "label": "Question",
+      "color": "bg-blue-100"
+    },
+    {
+      "label": "Post Graduate Exams",
+      "color": "bg-red-100"
+    },
+    {
+      "label": "Professional Exams",
+      "color": "bg-blue-700"
+    }
     ],
   "body": {
     "post": "hello this is my 2nd post",
@@ -139,9 +151,14 @@ PUT post_v1/_doc/3
   "createdOn": "2023-01-01T07:30:00.000-0530",
   "LastModifiedOn": "2023-07-01T07:30:00.000-0530",
     "flairs" : [
-    "Discussion",
-    "Recommendation",
-     "NExT"],
+    {
+      "label": "Post Graduate Exams",
+      "color": "bg-red-100"
+    },
+    {
+      "label": "Professional Exams",
+      "color": "bg-blue-700"
+    }],
   "body": {
     "post": "hello this is my 3rd post",
     "images": ["https://img.freepik.com/premium-vector/hi-word-speech-bubble-funny-lettering-typography-sticker-social-media-content_102918-48.jpg"],
@@ -230,8 +247,18 @@ PUT post_v1/_doc/5
   "postFrom": "doctor",
   "createdOn": "2019-01-01T07:30:00.000-0530",
     "flairs" : [
-    "PLAB",
-    "SURGERY RESIDENCY"],
+    {
+      "label": "Question",
+      "color": "bg-blue-100"
+    },
+    {
+      "label": "Post Graduate Exams",
+      "color": "bg-red-100"
+    },
+    {
+      "label": "Professional Exams",
+      "color": "bg-blue-700"
+    }],
   "body": {
     "post": "hello this is my 1st post",
     "images": ["https://img.freepik.com/premium-vector/hi-word-speech-bubble-funny-lettering-typography-sticker-social-media-content_102918-48.jpg"],
@@ -258,7 +285,7 @@ PUT post_v1/_doc/6
   "postFrom": "student",
   "createdOn": "2018-01-01T07:30:00.000-0530",
     "flairs" : [
-    "Recommendation"
+   
     ],
   "body": {
     "post": "hello this is my 1st post",
@@ -293,9 +320,10 @@ PUT post_v1/_doc/7
   "createdOn": "2017-01-01T07:30:00.000-0530",
   "LastModifiedOn": "2023-07-01T07:30:00.000-0530",
     "flairs" : [
-    "Medical News",
-    "Incident",
-    "Counselling"
+    {
+      "label": "Professional Exams",
+      "color": "bg-blue-700"
+    }
     ],
   "body": {
     "post": "hello this is my 1st post",
