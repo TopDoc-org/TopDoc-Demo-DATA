@@ -10,6 +10,9 @@ const staff = {
       emailVerificationOtp: {
         type: "long",
       },
+      role: {
+        type: "keyword",
+      },
       profileCreationDate: {
         type: "date",
         format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ",

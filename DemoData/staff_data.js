@@ -3,6 +3,7 @@ const staff = [
     1: {
       firstName: "Sai",
       lastName: "bhai",
+      role: "staff",
       name: "Sai bhai",
       isEmailVerified: false,
       emailVerificationOtp: null,
@@ -64,6 +65,7 @@ const staff = [
     2: {
       firstName: "Akash",
       lastName: "Neekhara",
+      role: "staff",
       name: "Akash Neekhara",
       isEmailVerified: true,
       emailVerificationOtp: null,
@@ -126,6 +128,7 @@ const staff = [
       firstName: "Nitish",
       lastName: "bhai",
       name: "Nitish bhai",
+      role: "staff",
       isEmailVerified: false,
       emailVerificationOtp: 123456,
       profileCreationDate: "2023-02-01T07:30:00.000-0530",
@@ -192,6 +195,7 @@ const staff = [
       firstName: "Akash",
       lastName: "bhai",
       name: "Akash bhai",
+      role: "staff",
       isEmailVerified: true,
       emailVerificationOtp: 987456,
       profileCreationDate: "2024-02-01T07:30:00.000-0530",
@@ -254,6 +258,7 @@ const staff = [
       firstName: "Ayush",
       lastName: "bhai",
       name: "Ayush bhai",
+      role: "staff",
       isEmailVerified: false,
       emailVerificationOtp: null,
       profileCreationDate: "2025-02-01T07:30:00.000-0530",
@@ -315,6 +320,7 @@ const staff = [
     6: {
       firstName: "Sachin",
       lastName: "Shukla",
+      role: "staff",
       name: "Sachin Shukla",
       isEmailVerified: false,
       emailVerificationOtp: null,
